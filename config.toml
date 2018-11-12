@@ -4,8 +4,6 @@ title = "Tobi Lehman"
 theme = "hugo-code"
 paginate = 20
 canonifyurls = true
-copyrightYear = 2018
-
 
 pygmentsstyle = "bw"
 pygmentscodefences = true
