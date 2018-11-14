@@ -8,25 +8,22 @@ Something amazing happens every time you snap a picture on your phone,
 light travels in through a lense into an array of sensors, triggering 
 electric signals that get processed by a computer and stored as a list 
 of pixels.
-
-When you have an list of pixels, that can take up a lot of space. It is 
+When you have a list of pixels, that can take up a lot of space. It is 
 always possible to compress that down to at least 1/6th of the original 
 size. 
 
-## Why red/green/blue?
 The pixels on most screens emit three different colors: 
 {{<red "red">}}, {{<green "green">}} and {{<blue "blue">}}. The reason 
 those colors where chosen is that human color perception is enabled 
 by [cone cells](https://en.wikipedia.org/wiki/Cone_cell), with cells 
 that respond to red, green and blue light.
-
 Another reason red, green and blue were chosen as the primary colors 
 for screens is that those colors can be readily made with liquid crystal 
 or LEDs.
 
 Human cone cells are sensitive to color, but 
 [rod cells](https://en.wikipedia.org/wiki/Rod_cell) are sensitive to 
-brightness. And it turns out that rod cells are more sensitive, so 
+brightness. And it turns out that rod cells are *more* sensitive, so 
 humans can see changes in brightness with much higher resolution than 
 changes in color. This is the first fact we will use to start compressing 
 an image.
@@ -68,3 +65,20 @@ Then imagine we take U and V, and then scale them back up, they will have lost
 3/4 of their information after scaling back up, so that the total information 
 left will be 1 + 1/4 + 1/4 = 2 times less than what we started with.
 
+<div class="pedantic-note">
+<b>Pedantic note</b>
+<br>
+
+The actual color space used in JPEG and other common image compression 
+algorithms is a variant of YUV called YCbCr, the equations are given 
+in terms of RGB components:
+
+$$Y = k_r R + k_g G + k_b B $$
+$$C_b = \frac{(B - Y)}{2(1-k_b)} + 0.5$$
+$$C_r = \frac{(R - Y)}{2(1-k_r)} + 0.5$$
+
+The YCbCr color space is a standard defined by the <a href="https://itu.int">ITU</a>,
+or the International Telecommunications Union, which is currently an agency of 
+the United Nations.
+
+</div>
