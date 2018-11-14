@@ -35,3 +35,36 @@ This will be our starting image:
 
 {{<img "img/scene0.jpg">}}
 
+This can be decomposed into R,G and B components:
+
+{{<img "img/decompose_rgb.png">}}
+
+What we want is a way to decompose the image into brightness and color
+components, that way we can use the fact that the eyes are more sensitive 
+to brightness differences to compress this information. Specifically, 
+we can shrink the color components since the eyes will have a hard time 
+noticing.
+
+There is a way to do this already, it's called YUV color space. The Y is 
+the brightness component, called the **luma** and the U,V components are the 
+color components, collectively called the **chroma**.
+
+The way to calculate the YUV values from the RGB values is given by these 
+equations:
+
+$$Y = k_r R + k_g G + k_b B $$
+$$U = R - Y$$
+$$V = B - Y$$
+
+Since human eyes are less sensitive to the chroma (U and V), we can simply 
+shrink each one by 1/2 along the width and height dimensions, that compresses 
+the image by a factor of 2.
+
+We can visualize it like this:
+
+{{<img "img/decompose_yuv.png">}}
+
+Then imagine we take U and V, and then scale them back up, they will have lost 
+3/4 of their information after scaling back up, so that the total information 
+left will be 1 + 1/4 + 1/4 = 2 times less than what we started with.
+
