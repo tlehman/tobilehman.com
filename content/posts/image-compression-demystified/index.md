@@ -1,25 +1,22 @@
 +++
 title = "Image Compression Demystified"
-date = 2018-11-12T19:27:47-08:00
+date = 2018-11-15T19:27:47-08:00
 tags = ["compression", "deep-dive"]
 +++
 
 Something amazing happens every time you snap a picture on your phone, 
-light travels in through a lense into an array of sensors, triggering 
+light travels in through a lense to an array of sensors, triggering 
 electric signals that get processed by a computer and stored as a list 
 of pixels.
 When you have a list of pixels, that can take up a lot of space. It is 
 always possible to compress that down to at least 1/6th of the original 
 size. 
 
-The pixels on most screens emit three different colors: 
+The pixels on most screens emit three different colors of light: 
 {{<red "red">}}, {{<green "green">}} and {{<blue "blue">}}. The reason 
 those colors where chosen is that human color perception is enabled 
 by [cone cells](https://en.wikipedia.org/wiki/Cone_cell), with cells 
 that respond to red, green and blue light.
-Another reason red, green and blue were chosen as the primary colors 
-for screens is that those colors can be readily made with liquid crystal 
-or LEDs.
 
 Human cone cells are sensitive to color, but 
 [rod cells](https://en.wikipedia.org/wiki/Rod_cell) are sensitive to 
@@ -55,15 +52,15 @@ $$V = B - Y$$
 
 Since human eyes are less sensitive to the chroma (U and V), we can simply 
 shrink each one by 1/2 along the width and height dimensions, that compresses 
-the image by a factor of 2.
+it by a factor of four.
 
 We can visualize it like this:
 
 {{<img "img/decompose_yuv.png">}}
 
 Then imagine we take U and V, and then scale them back up, they will have lost 
-3/4 of their information after scaling back up, so that the total information 
-left will be 1 + 1/4 + 1/4 = 2 times less than what we started with.
+3/4 of the original pixel values. With three components, and two scaled down to 
+1/4th, the total data left will be (1 + 1/4 + 1/4)/3 = 2 times smaller.
 
 <div class="pedantic-note">
 <b>Pedantic note</b>
@@ -82,3 +79,45 @@ or the International Telecommunications Union, which is currently an agency of
 the United Nations.
 
 </div>
+
+## Throwing away the higher frequencies
+
+This technique is not as obvious as the biologically inspired one above, but it's 
+brilliant, and once you see it, you cannot unsee it, this will change you forever.
+
+{{<img "img/dtft.png" "Borrowed from @trekhleb's Github repo">}}
+
+Imagine the red curve is a sound signal, vibrating over time. The Fourier transform 
+calculates the blue chart showing the frequencies in the original signal. The 3D 
+decomposition of the three perfect sine waves can be constructed by only taking the 
+three high peaks in the frequency chart.
+
+The above chart came from [Oleksii Trekhleb](https://medium.com/@trekhleb/playing-with-discrete-fourier-transform-algorithm-in-javascript-57087c74a520) who has an excellent article 
+explaining it in more detail. In this deep-dive, I want to focus on image compression, for 
+that, we will need a transform that is related to Fourier, it's called the [Discrete Cosine 
+Transform](https://en.wikipedia.org/wiki/Discrete_cosine_transform).
+
+Instead of transforming a 1D signal in time, we want to transform a 2D signal in space, 
+otherwise known as an image. Below I wrote an interactive transformer so you can see it in 
+practice, then we can dive into the mathematics and start to understand how it works.
+
+<canvas id="dct1" width="256" height="256" style="border:1px solid #000000;">
+</canvas>
+<span style="font-size: 3em;">&rarr;</span>
+<canvas id="dct2" width="256" height="256" style="border:1px solid #000000;">
+</canvas>
+
+<script>
+var ctx1 = document.getElementById("dct1").getContext("2d");
+
+function drawPixel(ctx,x,y) {
+  ctx.fillStyle = "black";
+  ctx.rect(x,y,16,16);
+  ctx.fill();
+}
+
+drawPixel(ctx1,0,0);
+drawPixel(ctx1,16,16);
+drawPixel(ctx1,32,32);
+
+</script>
