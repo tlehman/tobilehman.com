@@ -107,17 +107,4 @@ practice, then we can dive into the mathematics and start to understand how it w
 <canvas id="dct2" width="256" height="256" style="border:1px solid #000000;">
 </canvas>
 
-<script>
-var ctx1 = document.getElementById("dct1").getContext("2d");
-
-function drawPixel(ctx,x,y) {
-  ctx.fillStyle = "black";
-  ctx.rect(x,y,16,16);
-  ctx.fill();
-}
-
-drawPixel(ctx1,0,0);
-drawPixel(ctx1,16,16);
-drawPixel(ctx1,32,32);
-
-</script>
+{{<script "dct.js">}}
