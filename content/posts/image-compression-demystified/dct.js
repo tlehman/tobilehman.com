@@ -29,13 +29,15 @@ function remove(set, point) {
 }
 
 function drawPixel(ctx,x,y,color) {
-    ctx.fillStyle = "black";
-    ctx.rect(x * scale, y * scale,16,16);
+    ctx.fillStyle = color;
+    ctx.rect(x * scale, y * scale, scale, scale);
     ctx.fill();
 }
 
-function redraw(ctx, canvas) {
-    //ctx.clearRect(0, 0, canvas.width, canvas.height);
+function redraw(ctx) {
+    // clear canvas
+    ctx.canvas.width = ctx.canvas.width;
+
     for(var i = 0; i < imgData.length; i++) {
         var x = imgData[i][0];
         var y = imgData[i][1];
@@ -49,14 +51,14 @@ function handleClick1(e) {
 
     if(contains(imgData, [x,y])) {
         remove(imgData, [x,y]);
-        drawPixel(ctx1,x,y,"red");
     } else {
         imgData.push([x,y]);
-        drawPixel(ctx1,x,y,"black");
     }
+    redraw(ctx1);
     console.log(JSON.stringify(imgData));
 }
 
 dct1.addEventListener('click', handleClick1);
 
 redraw(ctx1, dct1);
+

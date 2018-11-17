@@ -2,6 +2,7 @@
 title = "Image Compression Demystified"
 date = 2018-11-15T19:27:47-08:00
 tags = ["compression", "deep-dive"]
+draft = false
 +++
 
 Something amazing happens every time you snap a picture on your phone, 
