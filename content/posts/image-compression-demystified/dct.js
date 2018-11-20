@@ -1,7 +1,9 @@
-var scale = 16;
-var width = 256/scale; // 16
-var height = 256/scale; // 16
+const scale = 16;
+const width = 256/scale; // 16
+const height = 256/scale; // 16
 var imgData = new Uint8Array(16 * 16);
+var imgDataDCT = new Uint8Array(16 * 16);
+const N = imgData.length;
 
 var dct1 = document.getElementById("dct1");
 var dct2 = document.getElementById("dct2");
@@ -43,12 +45,19 @@ function handleClick1(e) {
         imgData[x + y*16] = 0;
     }
     redraw(ctx1);
-    console.log(imgData);
+    dct();
 }
 
 // xs is an array of image data, 16x16 in this file
-function dct(xs) {
-
+function dct() {
+    for(var k = 0; k < N; k++) {
+        var xk = 0;
+        for(var n = 0; n < N; n++) {
+            xk += imgData[n] * Math.cos((Math.PI/N) * (n + 0.5) * k);
+        }
+        imgDataDCT[k] = xk;
+    }
+    console.log(imgDataDCT);
 }
 
 dct1.addEventListener('click', handleClick1);
