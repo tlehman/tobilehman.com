@@ -89,11 +89,12 @@ brilliant, and once you see it, you cannot unsee it, this will change you foreve
 {{<img "img/dtft.png" "Borrowed from @trekhleb's Github repo">}}
 
 Imagine the red curve is a sound signal, vibrating over time. The Fourier transform 
-calculates the blue chart showing the frequencies in the original signal. The 3D 
-decomposition of the three perfect sine waves can be constructed by only taking the 
-three high peaks in the frequency chart.
+calculates the blue chart showing the frequencies in the original signal. 
+Those three perfect sine waves floating between those two charts represent the 
+three highest peaks in the blue chart. They are the dominant frequencies in the 
+red chart.
 
-The above chart came from [Oleksii Trekhleb](https://medium.com/@trekhleb/playing-with-discrete-fourier-transform-algorithm-in-javascript-57087c74a520) who has an excellent article 
+The above graphic came from [Oleksii Trekhleb](https://medium.com/@trekhleb/playing-with-discrete-fourier-transform-algorithm-in-javascript-57087c74a520) who has an excellent article 
 explaining it in more detail. In this deep-dive, I want to focus on image compression, for 
 that, we will need a transform that is related to Fourier, it's called the [Discrete Cosine 
 Transform](https://en.wikipedia.org/wiki/Discrete_cosine_transform).
