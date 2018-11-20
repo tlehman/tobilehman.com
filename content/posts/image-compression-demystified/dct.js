@@ -4,6 +4,7 @@ const height = 256/scale; // 16
 var imgData = new Uint8Array(16 * 16);
 var imgDataDCT = new Uint8Array(16 * 16);
 const N = imgData.length;
+const max = 255; // max value of DCT pixel
 
 var dct1 = document.getElementById("dct1");
 var dct2 = document.getElementById("dct2");
@@ -13,10 +14,11 @@ var ctx2 = dct2.getContext("2d");
 function remove(set, point) {
 }
 
-function drawPixel(ctx,x,y,color) {
+function drawPixel(ctx,x,y,data) {
+    var v = max - data[x + y*16];
+    var color = "rgb(" + v + "," + v + "," + v + ")";
     ctx.fillStyle = color;
-    ctx.rect(x * scale, y * scale, scale, scale);
-    ctx.fill();
+    ctx.fillRect(x * scale, y * scale, scale, scale);
 }
 
 function redraw(ctx) {
@@ -25,11 +27,10 @@ function redraw(ctx) {
 
     for(var x = 0; x < 16; x++) {
         for(var y = 0; y < 16; y++) {
-            if(imgData[x + y*16] == 1) {
-                drawPixel(ctx1,x,y,"black");
-                console.log("pixel at (" + x + "," + y + ") is black");
-            } else {
+            if(imgData[x + y*16] == max) {
+                drawPixel(ctx1,x,y,imgData);
             }
+            drawPixel(ctx2,x,y,imgDataDCT);
         }
     }
 }
@@ -39,7 +40,7 @@ function handleClick1(e) {
     var y = Math.floor(e.offsetY / scale);
 
     if(imgData[x + y*16] == 0) {
-        imgData[x + y*16] = 1;
+        imgData[x + y*16] = max;
         console.log("(" + x + "," + y + ")");
     } else {
         imgData[x + y*16] = 0;
@@ -57,7 +58,8 @@ function dct() {
         }
         imgDataDCT[k] = xk;
     }
-    console.log(imgDataDCT);
+    console.log("input = " + imgData);
+    console.log("dct = " + imgDataDCT);
 }
 
 dct1.addEventListener('click', handleClick1);
