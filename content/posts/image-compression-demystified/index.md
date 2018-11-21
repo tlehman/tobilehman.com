@@ -103,6 +103,8 @@ Instead of transforming a 1D signal in time, we want to transform a 2D signal in
 otherwise known as an image. Below I wrote an interactive transformer so you can see it in 
 practice, then we can dive into the mathematics and start to understand how it works.
 
+Click the pixels on the first square to see the discrete cosine transform on the second square.
+
 <canvas id="dct1" width="256" height="256" style="border:1px solid #000000;">
 </canvas>
 <span style="font-size: 3em;">&rarr;</span>
@@ -110,3 +112,5 @@ practice, then we can dive into the mathematics and start to understand how it w
 </canvas>
 
 {{<script "dct.js">}}
+
+
