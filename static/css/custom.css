@@ -3,4 +3,6 @@
   border-style: solid;
   border-color: lightgray;
   background-color: lightyellow;
+  overflow-x: scroll;
+  overflow-y: hidden;
 }

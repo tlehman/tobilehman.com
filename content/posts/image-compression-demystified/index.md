@@ -10,7 +10,7 @@ light travels in through a lense to an array of sensors, triggering
 electric signals that get processed by a computer and stored as a list 
 of pixels.
 When you have a list of pixels, that can take up a lot of space. It is 
-always possible to compress that down to at least 1/6th of the original 
+always possible to compress that down to at least 1/16th of the original 
 size. 
 
 The pixels on most screens emit three different colors of light: 
@@ -104,6 +104,9 @@ otherwise known as an image. Below I wrote an interactive transformer so you can
 practice, then we can dive into the mathematics and start to understand how it works.
 
 Click the pixels on the first square to see the discrete cosine transform on the second square.
+Click black dot to flip back to white. Try transforms 
+of single black pixels, then try two pixels, turn pixels on and off to develop intuition to 
+how the transformed image is constructed.
 
 <canvas id="dct1" width="256" height="256" style="border:1px solid #000000;">
 </canvas>
@@ -113,4 +116,36 @@ Click the pixels on the first square to see the discrete cosine transform on the
 
 {{<script "dct.js">}}
 
+After playing around with the transform for a while, you might notice that a single black dot 
+usually transforms to a simple periodic image. The further to the bottom right you go, the 
+higher frequency it transforms to.
 
+It turns out that humans are much more sensitive to lower frequencies, so we can use this 
+discrete cosine transform to throw away higher frequencies by deleting values in the lower 
+right of the transformed image. 
+
+
+<div class="pedantic-note">
+<b>Nerdy details of the DCT (Discrete Cosine Transform)</b>
+<br>
+
+JPEG and other common image compression algorithms that use a DCT stage break the image 
+into blocks of pixels called <b>macroblocks</b>, commonly sized at 8x8 or 16x16 pixels.
+
+If we only consider the luma, then we can represent an 8x8 macroblock as an 8x8 matrix:
+
+$$M = \begin{pmatrix} 
+0 & 1 & 0 & 0 & 0 & 0 & 0 & 0 \\
+0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 \\
+0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 \\
+0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 \\
+0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 \\
+0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 \\
+0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 \\
+0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 \\
+\end{pmatrix}$$
+
+Then the DCT can be defined by the following orthogonal matrix:
+
+
+</div>
