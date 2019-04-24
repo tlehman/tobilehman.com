@@ -4,7 +4,7 @@
       <div class="avatar"><img src="{{ . }}" alt="avatar"></div>
     {{ end }}
     <h1>{{ .Site.Params.author }}</h1>
-    <h2>{{ .Site.Params.info }}</h2>
+    <strong>{{ .Site.Params.info }}</strong>
     {{ with .Site.Params.social }}
     <ul>
       {{ range sort .}}

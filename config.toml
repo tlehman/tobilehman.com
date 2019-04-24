@@ -11,7 +11,7 @@ pygmentscodefencesguesssyntax = true
 
 [params]
     author = "Tobi Lehman"
-    info = "Programming, mathematics and optimism"
+    info = "Programmer and math nerd. Works as an SDE at Amazon"
     description = "Tobi Lehman"
     keywords = "blog,developer,personal"
     avatarurl = "images/avatar.jpg"
@@ -35,11 +35,6 @@ pygmentscodefencesguesssyntax = true
     icon = "fab fa-github fa-2x"
     weight = 1
     url = "https://github.com/tlehman/"
-[[params.social]]
-    name = "Twitter"
-    icon = "fab fa-twitter fa-2x"
-    weight = 3
-    url = "https://twitter.com/tobi_lehman/"
 [[params.social]]
     name = "LinkedIn"
     icon = "fab fa-linkedin fa-2x"

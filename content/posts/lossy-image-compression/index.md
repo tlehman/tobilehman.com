@@ -60,7 +60,7 @@ Then imagine we take U and V, and then scale them back up, they will have lost
 3/4 of the original pixel values. With three components, and two scaled down to
 1/4th, the total data left will be (1 + 1/4 + 1/4)/3 = 2 times smaller.
 
-<div class="pedantic-note">
+<div class="yellow-note">
 <b>Pedantic note</b>
 <br>
 
@@ -122,7 +122,7 @@ discrete cosine transform to throw away higher frequencies by deleting values in
 right of the transformed image.
 
 
-<div class="pedantic-note">
+<div class="yellow-note">
 <b>Nerdy details of the DCT (Discrete Cosine Transform)</b>
 <br>
 
