@@ -1,7 +1,7 @@
 +++
 title = "The Dream of the 90s is alive in WebAssembly"
 date = 2019-04-23T19:59:57-07:00
-categories = ["wasm", "history"]
+tags = ["wasm", "history"]
 draft = false
 +++
 

@@ -11,7 +11,15 @@ pygmentscodefencesguesssyntax = true
 
 [params]
     author = "Tobi Lehman"
-    info = "Programmer and math nerd. Works as an SDE at Amazon"
+    info = "Programmer, optimist, math nerd."
+    bio = """Hi, I'm Tobi, this is my site.
+
+
+I'm a computer programmer and amateur mathematician.
+
+By day I work for Amazon Web Services and by night I read about 
+the past, think about the future and enjoy the present.
+"""
     description = "Tobi Lehman"
     keywords = "blog,developer,personal"
     avatarurl = "images/avatar.jpg"
@@ -40,7 +48,11 @@ pygmentscodefencesguesssyntax = true
     icon = "fab fa-linkedin fa-2x"
     weight = 3
     url = "https://www.linkedin.com/in/tobilehman/"
-
+[[params.social]]
+    name = "Twitter"
+    icon = "fab fa-twitter fa-2x"
+    weight = 3
+    url = "https://twitter.com/tobi_lehman"
 [[params.social]]
     name = "Keybase"
     icon = "fab fa-keybase fa-2x"

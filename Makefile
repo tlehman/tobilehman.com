@@ -10,3 +10,6 @@ sync:
 
 hugo:
 	hugo
+
+post:
+	./new_post.sh
