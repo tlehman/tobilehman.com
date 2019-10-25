@@ -42,7 +42,8 @@ So that settles it, no slippery slope, introducing one imaginary unit \\(i\\) is
 ## The space of complex numbers
 
 The set \\( \mathbb{C} \\) of complex numbers has a beautiful 2-dimensional geometry. Let's
-start with a point, <span style="color: blue">\\( z = 1 + 2i \\) </span>
+start with a point, <span style="color: blue" id="example-z1">z = 1 + 2i</span>
+</span>
 
 <canvas id="example-1" class="plot-2d"
         data-min="-3" data-max="3"
