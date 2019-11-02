@@ -21,11 +21,14 @@
 
     <div style="text-align: left">
       <h3>Recent posts</h3>
-      {{ range .Pages }}
-      <li>
-        <a href="{{.Permalink}}">{{.Date.Format "2006-01-02"}}: {{.Title}}</a>
-      </li>
-      {{ end }}
+      <ul>
+        {{ range .Paginator.Pages }}
+        <li style="display: block">
+          <span>{{ .Date.Format (.Site.Params.dateFormat | default "2006-January-2" ) }}</span>
+          <a href="{{ .URL }}" style="text-transform: none;">{{ .Title }}</a>
+        </li>
+        {{ end }}
+      </ul>
     </div>
   </div>
 </section>

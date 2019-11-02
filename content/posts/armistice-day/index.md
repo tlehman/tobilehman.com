@@ -21,4 +21,4 @@ DJ Patil said it well:
 
 I would like to thank all the men and women in uniform, the members of the intelligence community, 
 and the diplomats that negotiate ceasefires and peace treaties. Your work has made the world a 
-more peaceful and safe place to live, and for that I am grateful. 🇺🇸
+more peaceful and safe place to live, and for that I am grateful.

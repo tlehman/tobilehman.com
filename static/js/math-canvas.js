@@ -124,8 +124,8 @@ function renderPlot2D(canvas) {
   // Points
   var p = transformPoint(pointFromComplex(canvas.dataset.point));
   drawPoint(canvas, p.x, p.y, 4, p.c || 'blue');
-  drawTickVertical(canvas, p.x, transform(0), 3, p.c || 'blue');
-  drawPoint(canvas, transform(0), p.y, 3, p.c || 'blue');
+  drawPoint(canvas, transform(0), p.y, 2, p.c || 'black');
+  drawPoint(canvas, p.x, transform(0), 2, p.c || 'black');
 }
 
 function renderPlots2D() {
@@ -198,17 +198,6 @@ function drawPoint(canvas, x, y, radius, color) {
   ctx.moveTo(x, y);
   ctx.beginPath();
   ctx.arc(x, y, radius, 0, 2*Math.PI, false);
-  ctx.fill();
-  ctx.closePath();
-}
-
-function drawTickVertical(canvas, x, y, color) {
-  var ctx = canvas.getContext("2d");
-  ctx.strokeStyle = color;
-  ctx.fillStyle = color;
-  ctx.moveTo(x, y-10);
-  ctx.beginPath();
-  ctx.lineTo(x, y+10);
   ctx.fill();
   ctx.closePath();
 }

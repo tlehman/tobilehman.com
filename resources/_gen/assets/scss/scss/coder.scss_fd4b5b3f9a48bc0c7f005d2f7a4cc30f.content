@@ -306,8 +306,7 @@ img {
   .navigation a:hover, .navigation a:focus {
     color: #1565c0; }
   .navigation .navigation-title {
-    letter-spacing: 0.1rem;
-    text-transform: uppercase; }
+    letter-spacing: 0.1rem; }
   .navigation .navigation-list {
     float: right;
     list-style: none;

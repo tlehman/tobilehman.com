@@ -41,15 +41,31 @@ So that settles it, no slippery slope, introducing one imaginary unit \\(i\\) is
 
 ## The space of complex numbers
 
-The set \\( \mathbb{C} \\) of complex numbers has a beautiful 2-dimensional geometry. Let's
-start with a point, <span style="color: blue" id="example-z1">z = 1 + 2i</span>
+The set \\( \mathbb{C} \\) of complex numbers has a beautiful 2-dimensional geometry. The real number line is the horizontal axis, and the 
+imaginary number line is the vertical axis. A complex number is the sum of a real number and an imaginary one. To visualize it, let's
+start with a point. Tap or click around to see the blue point and it's 
+complex number representation: <span style="color: blue" id="example-z1">z = 1 + 2i</span>
 </span>
 
 <canvas id="example-1" class="plot-2d"
         data-min="-3" data-max="3"
         data-point="1 + 2i">
 </canvas>
-{{<script "examples.js">}}
+
+## Adding complex numbers
+Given two complex numbers <span style="color: blue">\\(a = a_x + ia_y\\)</span> and <span style="color: red">\\(b = b_x + ib_y\\)</span>, the sum is <span style="color: purple">$$ c = a + b = (a_x + b_x) + i(a_y + b_y) $$</span>
+This is the parallelogram rule, since the sum of these complex numbers is equal to the diagonal of 
+
+## Multiplying complex numbers
+Given two complex numbers <span style="color: blue">\\(a = a_x + ia_y\\)</span> and <span style="color: red">\\(b = b_x + ib_y\\)</span>, the product is <span style="color: purple">$$ c = a * b = ab_x + iab_y = (a_xb_x + a_yb_x) + i(a_xb_y + a_yb_y) $$ </span>
+
+
+## Fractals
+This is where it gets _weird_, these Euclidean points have a nice predictable algebraic structure, but lurking 
+beneath this facade of simplicity is an infinite abyss of chaos and seeming randomness. Let's see how easy it 
+is to fall into this abyss. 
+
+Start with a point z, the square it, z^2, 
 
 <a name="citations"></a>
 1. C.F. Gauss' Fundamental Theorem of Algebra http://math.huji.ac.il/~ehud/MH/Gauss-HarelCain.pdf
