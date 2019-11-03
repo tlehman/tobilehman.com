@@ -32,7 +32,7 @@ TL;DR: No, Carl Freidrich Gauss solved this in 1799 [1]
 
 What Gauss' Fundamental Theorem of Algebra shows is that the set \\(\mathbb{C}\\) of complex numbers, which can be defined: $$ \mathbb{C} = \\{ x + iy : x,y \in \mathbb{R} \\} $$
 
-Is **algebraically complete**, meaning any polynomial equation:
+is **algebraically complete**, meaning any polynomial equation:
 $$ a_n x^n + ... + a_1 x + a_0 = 0$$
 
 has all of it's solutions in \\(\mathbb{C}\\), if all coefficients \\(a_n \in \mathbb{C} \\)
@@ -49,11 +49,22 @@ complex number representation: <span style="color: blue" id="example-z1">z = 1 +
 
 <canvas id="example-1" class="plot-2d"
         data-min="-3" data-max="3"
-        data-point="1 + 2i">
+        data-point-blue="1 + 2i">
 </canvas>
 
+So, every complex number is a point in the plane, and every point in the plane is a complex number. All polynomial equations have all their solutions in that plane, and the imaginary component is just another dimension, they are no less real than the familiar real numbers.
+
 ## Adding complex numbers
-Given two complex numbers <span style="color: blue">\\(a = a_x + ia_y\\)</span> and <span style="color: red">\\(b = b_x + ib_y\\)</span>, the sum is <span style="color: purple">$$ c = a + b = (a_x + b_x) + i(a_y + b_y) $$</span>
+Given two complex numbers 
+<span style="color: blue" id="ex-add-blue">a = 1 + 2i</span> and 
+<span style="color: red" id="ex-add-red">b = 1 + 0.5i</span>, the sum is 
+<span style="color: purple" id="ex-add-purple">c = a + b = 2 + 2.5i</span>
+<canvas id="example-add" class="plot-2d"
+        data-min="-3" data-max="3"
+        data-point-blue="1 + 2i"
+        data-point-red="1 + 0.5i"
+        data-point-purple="2 + 2.5i">
+</canvas>
 This is the parallelogram rule, since the sum of these complex numbers is equal to the diagonal of 
 
 ## Multiplying complex numbers
@@ -66,6 +77,9 @@ beneath this facade of simplicity is an infinite abyss of chaos and seeming rand
 is to fall into this abyss. 
 
 Start with a point z, the square it, z^2, 
+
+
+{{<script "examples.js">}}
 
 <a name="citations"></a>
 1. C.F. Gauss' Fundamental Theorem of Algebra http://math.huji.ac.il/~ehud/MH/Gauss-HarelCain.pdf

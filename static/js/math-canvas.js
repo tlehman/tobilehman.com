@@ -69,11 +69,41 @@ function transformPoint(p) {
 }
 
 function pointFromComplex(z) {
-  var regexComplex = /(-?\d+(\.\d+)?) \+ (-?\d(\.\d+)?)i/;
+  var regexComplex = /(-?\d+(\.\d+)?) ([\+|\-]) (\d(\.\d+)?)i/;
   var m = z.match(regexComplex);
   var re = parseFloat(m[1]);
-  var im = parseFloat(m[3]);
+  var im = parseFloat(m[4]);
+  var op = m[3];
+  if(op == '-') { im = -im; }
   return {x: re, y: im};
+}
+
+function pointToComplex(p) {
+  var re = Math.round(p.x * 10)/10;
+  var im = Math.round(p.y * 10)/10;
+  z = "";
+  if(re == 0) {
+    z += (im > 0) ? "" : "-"; // only show if im is negative and re is zero
+  } else {
+    z += re.toString();
+    z += (im > 0) ? " + " : " - "; // operation
+  }
+  
+  if(Math.abs(im) == 1) {
+    z += "i";
+  } else { 
+    z += im.toString() + "i";
+  }
+  return z;
+}
+
+function addComplex(a, b) {
+  var ap = pointFromComplex(a);
+  var bp = pointFromComplex(b);
+  console.log({x: ap.x + bp.x, y: ap.y + bp.y});
+  var aPlusB = pointToComplex({x: ap.x + bp.x, y: ap.y + bp.y});
+  console.log(aPlusB);
+  return aPlusB;
 }
 
 function renderPlot2D(canvas) {
@@ -105,6 +135,9 @@ function renderPlot2D(canvas) {
   for(var x = min; x <= max; x++) {
     var tx1 = transform(x, min, max, w);
     var tx2 = transform(max, min, max, w);
+    // label the ticks on the axes
+    var sx = x.toString();
+    ctx.fillText(sx, tx1 - 10, transform(0) + 10);
     ctx.beginPath();
     ctx.moveTo(tx1, 0);
     ctx.lineTo(tx1, h);
@@ -113,7 +146,19 @@ function renderPlot2D(canvas) {
   }
 
   for(var y = min; y <= max; y += 1) {
-    var ty1 = transform(y, min, max, w);
+    var ty1 = transform(-y, min, max, w);
+    // label the ticks on the axes
+    var sy = "";
+    if(y == 0) {
+      sy = "";
+    } else if(y == -1) {
+      sy = "-i";
+    } else if(y == 1) {
+      sy = "i";
+    } else {
+      sy = y.toString() + "i";
+    }
+    ctx.fillText(sy, transform(0) - 15, ty1 + 10);
     ctx.beginPath();
     ctx.moveTo(0, ty1);
     ctx.lineTo(w, ty1);
@@ -122,10 +167,17 @@ function renderPlot2D(canvas) {
   }
 
   // Points
-  var p = transformPoint(pointFromComplex(canvas.dataset.point));
-  drawPoint(canvas, p.x, p.y, 4, p.c || 'blue');
-  drawPoint(canvas, transform(0), p.y, 2, p.c || 'black');
-  drawPoint(canvas, p.x, transform(0), 2, p.c || 'black');
+  var p = transformPoint(pointFromComplex(canvas.dataset.pointBlue));
+  drawPoint(canvas, p.x, p.y, 4, 'blue');
+  // If there is a red point, plot it
+  if(canvas.dataset.pointRed) {
+    var pRed = transformPoint(pointFromComplex(canvas.dataset.pointRed));
+    drawPoint(canvas, pRed.x, pRed.y, 4, 'red');
+  }
+  if(canvas.dataset.pointPurple) {
+    var pPurple = transformPoint(pointFromComplex(canvas.dataset.pointPurple));
+    drawPoint(canvas, pPurple.x, pPurple.y, 4, 'purple');
+  }
 }
 
 function renderPlots2D() {
