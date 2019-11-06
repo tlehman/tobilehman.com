@@ -22,7 +22,7 @@ we all learn in high school:
 The naming of the Real Number Line suggests that all other forms of numbers are not _real_, which
 is unfortunate. If you spend any time doing electrical engineering problems, or particle physics, you will encounter equations like this $$ x^2 + 1 = 0 $$
 
-The above equation can have real, practical applications, but the solution is not on the real line. In order to solve it, you have to posit a number that has this property: \\(x^2 = -1\\), conventionally, \\(x\\) is called \\(i\\), but in some contexts it's called \\(j\\). The number is called \\(i\\) because it stands for "imaginary".
+The above equation can have real, practical applications, but the solution is not on the real line. In order to solve it, you have to posit a number that has this property: \\(x^2 = -1\\), conventionally, \\(x\\) is called \\(i\\), The number is called \\(i\\) because it stands for "imaginary".
 
 ## Slippery slope?
 
@@ -30,12 +30,14 @@ But wait a minute, if you introduce a new type of number to solve an equation, w
 
 TL;DR: No, Carl Freidrich Gauss solved this in 1799 [1]
 
-What Gauss' Fundamental Theorem of Algebra shows is that the set \\(\mathbb{C}\\) of complex numbers, which can be defined: $$ \mathbb{C} = \\{ x + iy : x,y \in \mathbb{R} \\} $$
+What Gauss' Fundamental Theorem of Algebra shows is that the set complex numbers
 
-is **algebraically complete**, meaning any polynomial equation:
+is **algebraically complete**, meaning any polynomial equation with complex coefficients (the \\(a_i\\)s):
+
 $$ a_n x^n + ... + a_1 x + a_0 = 0$$
 
-has all of it's solutions in \\(\mathbb{C}\\), if all coefficients \\(a_n \in \mathbb{C} \\)
+will have \\(n\\) complex solutions. So the set of all complex numbers is "complete" in the sense that every algebraic equation can be 
+solved by a complex number.
 
 So that settles it, no slippery slope, introducing one imaginary unit \\(i\\) is all you need.
 
@@ -49,30 +51,37 @@ complex number representation: <span style="color: blue" id="example-z1">z = 1 +
 
 <canvas id="example-1" class="plot-2d"
         data-min="-3" data-max="3"
-        data-point-blue="1 + 2i">
+        data-point-blue='{"x": 1, "y": 2}'>
 </canvas>
 
 So, every complex number is a point in the plane, and every point in the plane is a complex number. All polynomial equations have all their solutions in that plane, and the imaginary component is just another dimension, they are no less real than the familiar real numbers.
 
 ## Adding complex numbers
+If you want to add two complex numbers, you use the parallelogram rule. Click around below and you will see how a, b and c = a+b form a parallelogram. 
+
+<span id="challenge-1">
+**Challenge: try to set the blue point so that the parallelogram is a square.**
+</span>
+
 Given two complex numbers 
 <span style="color: blue" id="ex-add-blue">a = 1 + 2i</span> and 
 <span style="color: red" id="ex-add-red">b = 1 + 0.5i</span>, the sum is 
 <span style="color: purple" id="ex-add-purple">c = a + b = 2 + 2.5i</span>
 <canvas id="example-add" class="plot-2d"
         data-min="-3" data-max="3"
-        data-point-blue="1 + 2i"
-        data-point-red="1 + 0.5i"
-        data-point-purple="2 + 2.5i">
+        data-point-blue='{"x": 1, "y": 2}'
+        data-point-red='{"x": 1, "y": 0.5}'
+        data-point-purple='{"x": 2, "y": 2.5}'>
 </canvas>
-This is the parallelogram rule, since the sum of these complex numbers is equal to the diagonal of 
+
+We learned above that adding complex numbers is equivalent to forming a parallelogram with 0. Another way to think of addition is using Cartesian coordinates (u,v) + (x,y) = (u + x, v + y).
 
 ## Multiplying complex numbers
-Given two complex numbers <span style="color: blue">\\(a = a_x + ia_y\\)</span> and <span style="color: red">\\(b = b_x + ib_y\\)</span>, the product is <span style="color: purple">$$ c = a * b = ab_x + iab_y = (a_xb_x + a_yb_x) + i(a_xb_y + a_yb_y) $$ </span>
+What about multiplying complex numbers? Well, in order for these new numbers to be "backwards compatible" with the real numbers, they will need to satisfy all the same laws, like associativity, the distribution rule.
 
 
 ## Fractals
-This is where it gets _weird_, these Euclidean points have a nice predictable algebraic structure, but lurking 
+This is where it gets _weird_. These Euclidean points have a nice predictable algebraic structure, but lurking 
 beneath this facade of simplicity is an infinite abyss of chaos and seeming randomness. Let's see how easy it 
 is to fall into this abyss. 
 

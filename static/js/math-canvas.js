@@ -86,24 +86,19 @@ function pointToComplex(p) {
     z += (im > 0) ? "" : "-"; // only show if im is negative and re is zero
   } else {
     z += re.toString();
-    z += (im > 0) ? " + " : " - "; // operation
+    z += (im < 0) ? " - " : " + "; // operation
   }
   
   if(Math.abs(im) == 1) {
     z += "i";
-  } else { 
-    z += im.toString() + "i";
+  } else {
+    z += Math.abs(im).toString() + "i";
   }
   return z;
 }
 
-function addComplex(a, b) {
-  var ap = pointFromComplex(a);
-  var bp = pointFromComplex(b);
-  console.log({x: ap.x + bp.x, y: ap.y + bp.y});
-  var aPlusB = pointToComplex({x: ap.x + bp.x, y: ap.y + bp.y});
-  console.log(aPlusB);
-  return aPlusB;
+function add(a, b) {
+  return {x: a.x + b.x, y: a.y + b.y};
 }
 
 function renderPlot2D(canvas) {
@@ -167,15 +162,15 @@ function renderPlot2D(canvas) {
   }
 
   // Points
-  var p = transformPoint(pointFromComplex(canvas.dataset.pointBlue));
+  var p = transformPoint(JSON.parse(canvas.dataset.pointBlue));
   drawPoint(canvas, p.x, p.y, 4, 'blue');
   // If there is a red point, plot it
   if(canvas.dataset.pointRed) {
-    var pRed = transformPoint(pointFromComplex(canvas.dataset.pointRed));
+    var pRed = transformPoint(JSON.parse(canvas.dataset.pointRed));
     drawPoint(canvas, pRed.x, pRed.y, 4, 'red');
   }
   if(canvas.dataset.pointPurple) {
-    var pPurple = transformPoint(pointFromComplex(canvas.dataset.pointPurple));
+    var pPurple = transformPoint(JSON.parse (canvas.dataset.pointPurple));
     drawPoint(canvas, pPurple.x, pPurple.y, 4, 'purple');
   }
 }
