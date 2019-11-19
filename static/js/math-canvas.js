@@ -37,12 +37,14 @@
 // Store DOM elements globally to avoid having to query them multiple times.
 var plots1D = document.getElementsByClassName("plot-1d");
 var plots2D = document.getElementsByClassName("plot-2d");
+var polarPlots = document.getElementsByClassName('polar-plot');
 
 // By default all canvas elements are rendered at maximum width inside an article.
 var articles = document.getElementsByTagName("article");
 var defaultWidth = 200;
 var canvasWidth = articles[0].offsetWidth || defaultWidth;
 var min, max, w;
+var rmax; // max radius on a polar plot
 
 function render() {
     renderPlots1D();
@@ -180,6 +182,46 @@ function renderPlots2D() {
     canvas = plots2D[i];
     renderPlot2D(canvas);
   }
+  for(var i = 0; i < polarPlots.length; i++) {
+    canvas = polarPlots[i];
+    renderPolarPlot(canvas);
+  }
+}
+
+function renderPolarPlot(canvas) {
+  var ctx = canvas.getContext("2d");
+  var w = canvas.width = canvasWidth;
+  var h = canvas.height = canvasWidth;
+
+  rmax = parseInt(canvas.dataset.rmax);
+
+  ctx.strokeStyle = '#000000';
+  ctx.lineWidth = 2;
+
+  // Concentric circles
+  ctx.strokeStyle = '#dddddd';
+  ctx.lineWidth = 1;
+  var o = transform(0);
+  for(var r = 0; r <= rmax; r += 0.5) {
+    var r1 = transform(r) - w/2;
+    // label the ticks on the axes
+    var sx = r.toString();
+    ctx.beginPath();
+    ctx.arc(o, o, r1, 0, 2 * Math.PI);
+    ctx.stroke();
+  }
+
+  // Radial lines
+  ctx.strokeStyle = '#dddddd';
+  ctx.lineWidth = 1;
+  var o = transform(0);
+  for(var theta = 0; theta <= 2 * Math.PI; theta += Math.PI/6) {
+    ctx.beginPath();
+    ctx.moveTo(o,o);
+    ctx.lineTo(transform(rmax * Math.cos(theta)), transform(rmax * Math.sin(theta)));
+    ctx.stroke();
+  }
+
 }
 
 function renderPlots1D() {

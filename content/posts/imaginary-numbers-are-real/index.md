@@ -77,7 +77,32 @@ Given two complex numbers
 We learned above that adding complex numbers is equivalent to forming a parallelogram with 0. Another way to think of addition is using Cartesian coordinates (u,v) + (x,y) = (u + x, v + y).
 
 ## Multiplying complex numbers
-What about multiplying complex numbers? Well, in order for these new numbers to be "backwards compatible" with the real numbers, they will need to satisfy all the same laws, like associativity, the distribution rule.
+What about multiplying complex numbers? Well, in order for these new numbers to be "backwards compatible" with the real numbers, they will need to satisfy all the same laws, like associativity and the distribution rule.
+
+**Associativity** is the property that $$ x + (y + z) = (x + y) + z $$
+**Distributivity** is the property that $$ x (y + z) = x y + x z $$
+
+Suppose \\(x = a + i b\\) and \\(y = c + i d \\) and \\(a,b,c,d\\) are four arbitrary real numbers. Then we can use distributivity to write out \\(x * y\\):
+
+$$ x * y = (a + i b) * (c + id) $$
+
+applying the distributivity rule again gives:
+
+$$ ac + ibc + aid + i^2 bd$$
+
+And remembering that \\(i^2 = -1\\), we can now gather up the real numbers on the left and the imaginary ones on the right:
+
+$$ (ac - bd) + i(ad + bc)$$
+
+The above formula is useful for calculation, but that was a bunch of tedious algebra that didn't reveal the beautiful geometry lurking beneath the surface. Complex number addition turned out to be a nice parallelogram shape, does multiplication have any geometric interpretation?
+
+Not in cartesian coordinates, but in polar coordinates, there is simple rule for multiplying complex numbers. The choice of coordinate system doesn't change the underlying geometry.
+
+<canvas id="example-2" class="polar-plot"
+        data-rmax="4" 
+        data-point-blue='{"r": 1, "theta": 0.3}'>
+</canvas>
+
 
 
 ## Fractals
