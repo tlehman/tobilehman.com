@@ -10,6 +10,7 @@ ex1.onclick = function(e) {
   renderPlot2D(this);
 }
 
+// Example cartesian parameterization of complex plane
 var exAdd = document.getElementById("example-add");
 var exBlue = document.getElementById("ex-add-blue"); // the constant point
 var exRed = document.getElementById("ex-add-red"); // the configurable point
@@ -32,3 +33,23 @@ exAdd.onclick = function(e) {
   }
   renderPlot2D(this);
 } 
+
+// Example polar parameterization of complex plane
+var pxMult = document.getElementById("example-2");
+var pxBlue = document.getElementById("px-mult-blue");
+var pxRed = document.getElementById("px-mult-red");
+var pxPurple = document.getElementById("px-mult-purple");
+
+pxMult.onclick = function(e) {
+  var re = Math.round(untransform(e.offsetX) * 10)/10;
+  var im = Math.round(-untransform(e.offsetY) * 10)/10;
+  var a = {r: Math.sqrt(re*re + im*im), theta: Math.atan(im/re)}; // blue
+  var b = JSON.parse(pxMult.dataset.pointRed);
+  var c = mult(a, b); // red * blue = purple
+  console.log(c);
+  pxMult.dataset.pointBlue = JSON.stringify(a);
+  pxMult.dataset.pointPurple = JSON.stringify(c);
+  pxBlue.innerHTML = "a = " + pointToComplex(a);
+  pxPurple.innerHTML = "c = a * b = " + pointToComplex(c);
+  renderPolarPlot(this);
+};

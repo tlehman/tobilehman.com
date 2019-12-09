@@ -70,6 +70,12 @@ function transformPoint(p) {
   return {x: transform(p.x, min, max, w), y: transform(-  p.y, min, max,w)};
 }
 
+function polarToCartesian(polarPoint) {
+  var r = polarPoint.r;
+  var theta = polarPoint.theta;
+  return {x: r * Math.cos(theta), y: r * Math.sin(theta) };
+}
+
 function pointFromComplex(z) {
   var regexComplex = /(-?\d+(\.\d+)?) ([\+|\-]) (\d(\.\d+)?)i/;
   var m = z.match(regexComplex);
@@ -80,27 +86,47 @@ function pointFromComplex(z) {
   return {x: re, y: im};
 }
 
+function isCartesian(point) {
+  return !!(point.x && point.y);
+}
+function isPolar(point) {
+  return !!(point.r && point.theta);
+}
+
 function pointToComplex(p) {
-  var re = Math.round(p.x * 10)/10;
-  var im = Math.round(p.y * 10)/10;
-  z = "";
-  if(re == 0) {
-    z += (im > 0) ? "" : "-"; // only show if im is negative and re is zero
+  if(isPolar(p)) {
+    var r = Math.round(p.r * 10)/10;
+    var theta = Math.round(p.theta * 10)/10;
+    var z = r.toString() + "e";
+    z += "<sup>i" + theta + "</sup>";
+    return z;
   } else {
-    z += re.toString();
-    z += (im < 0) ? " - " : " + "; // operation
+    z = "";
+    var re = Math.round(p.x * 10)/10;
+    var im = Math.round(p.y * 10)/10;
+    if(re == 0) {
+      z += (im > 0) ? "" : "-"; // only show if im is negative and re is zero
+    } else {
+      z += re.toString();
+      z += (im < 0) ? " - " : " + "; // operation
+    }
+    
+    if(Math.abs(im) == 1) {
+      z += "i";
+    } else {
+      z += Math.abs(im).toString() + "i";
+    }
+    return z;
   }
-  
-  if(Math.abs(im) == 1) {
-    z += "i";
-  } else {
-    z += Math.abs(im).toString() + "i";
-  }
-  return z;
 }
 
 function add(a, b) {
   return {x: a.x + b.x, y: a.y + b.y};
+}
+
+// multiple a and b as complex numbers
+function mult(a, b) {
+  return {r: a.r * b.r, theta: a.theta + b.theta};
 }
 
 function renderPlot2D(canvas) {
@@ -222,6 +248,17 @@ function renderPolarPlot(canvas) {
     ctx.stroke();
   }
 
+  // Polar points
+
+  var blue = JSON.parse(canvas.dataset.pointBlue);
+  var red = JSON.parse(canvas.dataset.pointRed);
+  var purple = JSON.parse(canvas.dataset.pointPurple);
+  var blueFinal = transformPoint(polarToCartesian(blue));
+  var redFinal = transformPoint(polarToCartesian(red));
+  var purpleFinal = transformPoint(polarToCartesian(purple));
+  drawPoint(canvas, blueFinal.x, blueFinal.y, 4, 'blue');
+  drawPoint(canvas, redFinal.x, redFinal.y, 4, 'red');
+  drawPoint(canvas, purpleFinal.x, purpleFinal.y, 4, 'purple');
 }
 
 function renderPlots1D() {
@@ -235,7 +272,6 @@ function renderPlots1D() {
 
     min = parseInt(canvas.dataset.min);
     max = parseInt(canvas.dataset.max);
-    var points = canvas.dataset.points;
     var startRightArrowPoint = {x: w-arrowHeight/2, y: h/2};
     var endRightArrowPoint = {x: w-arrowHeight, y: h/2};
     var startLeftArrowPoint = {x: arrowHeight, y: h/2};

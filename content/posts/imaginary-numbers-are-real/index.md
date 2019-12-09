@@ -14,8 +14,7 @@ Natural number equations give rise to a solution space that looks like this:
 When we learn how to subtract, we learn how to solve equations like \\( x + 1 = 0 \\), and
 when we learn to divide, we learn to solve equations like \\( x * 3 = 1 \\).
 
-By this point we are familiar with \\(\mathbb{R}\\), the Real Number Line, the solution space
-we all learn in high school:
+By this point we are familiar with \\(\mathbb{R}\\), the Real Number Line, the solution space we all learn in high school:
 
 <canvas class="plot-1d" data-min="-3" data-max="3"></canvas>
 
@@ -24,17 +23,19 @@ is unfortunate. If you spend any time doing electrical engineering problems, or 
 
 The above equation can have real, practical applications, but the solution is not on the real line. In order to solve it, you have to posit a number that has this property: \\(x^2 = -1\\), conventionally, \\(x\\) is called \\(i\\), The number is called \\(i\\) because it stands for "imaginary".
 
+The real numbers and the imaginary numbers are taken together as an enlarged number system, called the complex numbers. These complex numbers solve more equations than the reals.
+
 ## Slippery slope?
 
 But wait a minute, if you introduce a new type of number to solve an equation, won't you have new equations that can't be solved in your expanded system, and you'll have to invent **even more new kinds of number to solve _those_ equations**?
 
 TL;DR: No, Carl Freidrich Gauss solved this in 1799 [1]
 
-What Gauss' Fundamental Theorem of Algebra shows is that the set complex numbers
+What Gauss' Fundamental Theorem of Algebra shows is that the set of complex numbers is **algebraically complete**, meaning any polynomial equation with complex coefficients (the \\(a_i\\)s):
 
-is **algebraically complete**, meaning any polynomial equation with complex coefficients (the \\(a_i\\)s):
-
+<div class="sidescroll">
 $$ a_n x^n + ... + a_1 x + a_0 = 0$$
+</div>
 
 will have \\(n\\) complex solutions. So the set of all complex numbers is "complete" in the sense that every algebraic equation can be 
 solved by a complex number.
@@ -94,23 +95,85 @@ And remembering that \\(i^2 = -1\\), we can now gather up the real numbers on th
 
 $$ (ac - bd) + i(ad + bc)$$
 
-The above formula is useful for calculation, but that was a bunch of tedious algebra that didn't reveal the beautiful geometry lurking beneath the surface. Complex number addition turned out to be a nice parallelogram shape, does multiplication have any geometric interpretation?
+The above formula is useful for calculation, but that was a bunch of tedious algebra that didn't reveal the beautiful geometry lurking beneath the surface. Complex number addition turned out to be a nice parallelogram shape, does multiplication have any geometric interpretation? It does! But it's not obvious if we keep using our familiar Cartesian coordinate system. We need to change our coordinate system from Cartesian to Polar.
 
-Not in cartesian coordinates, but in polar coordinates, there is simple rule for multiplying complex numbers. The choice of coordinate system doesn't change the underlying geometry.
+### Polar coordinates
+A point in polar coordinates is described by a radius \\(r\\) and an angle \\(\theta\\) (theta). If we start with a point \\(x + iy\\), we can calculate the radius using the Pythagorean theorem: \\(r = \sqrt{x^2 + y^2} \\), and the angle can be recovered using trig functions: \\(\theta = \cos^{-1}(x/r)\\).
+
+Now before we get to geometric multiplication, it's worth going over [The Most Beautiful Equation Ever](https://en.wikipedia.org/wiki/Euler%27s_identity), Euler's identity. The number \\(e = 2.71828..\\), called **Euler's constant** shows up _everywhere_. Seriously, everywhere. Even in finance. 
+When computing compound interest, let \\(P\\) be the principal invested, \\(r\\) be your interest rate, \\(n\\) be the number of times you compound per year, 
+then \\(P(1 + \frac{r}{n})^n\\) is the value of your investment after a year. If you increase \\(n\\) to \\(\infty\\), the value of your investment converges to \\(Pe^r\\). That's called continuously compounded interest.
+
+Another place \\(e\\) shows up is in trigonometry, and it will be useful for us writing complex numbers in polar coordinates. To understand The Most Beautiful Equation Ever: \\( e^{i \pi} + 1 = 0 \\), we have to study \\(e^z\\), where \\(z\\) is a complex number. The [Taylor series](https://en.wikipedia.org/wiki/Taylor+series)
+expansion for the function \\(e^z\\) is:
+
+<div class="sidescroll">
+$$ e^z = 1 + z + \frac{z^2}{2!} + \frac{z^3}{3!} + \frac{z^4}{4!} + ... $$
+</div>
+
+Note: the notation 3! means 3 * 2 * 1, it's pronounced "three factorial".
+
+If you expand out the sine and cosine functions in the same way, you get these equations:
+
+<div class="sidescroll">
+$$ \sin(z) = z - \frac{z^3}{3!} + \frac{z^5}{5!} - \frac{z^7}{7!} + - ... $$
+</div>
+
+<div class="sidescroll">
+$$ \cos(z) = 1 - \frac{z^2}{2!} + \frac{z^4}{4!} - \frac{z^6}{6!} + - ... $$
+</div>
+
+Then, compute \\(e^{ix}\\), remembering that \\(i^2 = -1\\)
+
+<div class="sidescroll">
+$$ e^{ix} = 1 + ix + \frac{(ix)^2}{2!} + \frac{(ix)^3}{3!} + \frac{(ix)^4}{4!} + ... $$
+</div>
+
+<div class="sidescroll">
+$$ e^{ix} = 1 + ix - \frac{x^2}{2!} - i\frac{x^3}{3!} + \frac{x^4}{4!} + - ... $$
+</div>
+
+Notice the alternating pattern of imaginary numbers? Take every other term and group it together:
+
+<div class="sidescroll">
+$$ e^{ix} = \left(1 - \frac{x^2}{2!} + \frac{x^4}{4!} - + ...\right) + \left(ix - i\frac{x^3}{3!} + - \right) $$ 
+</div>
+
+<div class="sidescroll">
+$$ e^{ix} = \left(1 - \frac{x^2}{2!} + \frac{x^4}{4!} - + ...\right) + i\left(x - \frac{x^3}{3!} + - \right) $$ 
+</div>
+
+<div class="sidescroll">
+$$ e^{ix} = \cos(x) + i\sin(x) $$
+</div>
+
+And there it is, don't worry if you didn't follow all the algebraic details, I have to admit, when I first worked this out in calculus III, it seemed really bizarre that these things fit together so beautifully. 
+
+To go from this equation to The Most Beautiful Equation Ever, just set x = &pi; and calculate the result. It all collapses to -1, like all those infinitely many terms and alternating signs just vanished into hyperspace. 
+
+This is so beautiful it must be true.
+
+## Polar multiplication of complex numbers
+
+Okay, now that we know what \\(e^{ix}\\) means, we are ready to write down complex numbers in polar form and see what multiplication looks like.
+
+
+Given two complex numbers 
+<span style="color: blue" id="px-mult-blue">a = 0.5e<sup>0.3i</sup></span> and 
+<span style="color: red" id="px-mult-red">b = 2.2e<sup>-0.3i</sup></span>, the product is
+<span style="color: purple" id="px-mult-purple">c = 1.1e<sup>0</sup></span>
+
+Click or tap below to move the blue point, pay attention to the blue number above also, since it has the radius and angle information in it. The way to read this presentation of complex numbers is: `radius` * e<sup>i`angle`</sup>
 
 <canvas id="example-2" class="polar-plot"
         data-rmax="4" 
-        data-point-blue='{"r": 1, "theta": 0.3}'>
+        data-point-red='{"r": 2.2, "theta": -0.3}'
+        data-point-blue='{"r": 0.5, "theta": 0.3}'
+        data-point-purple='{"r": 1.1, "theta": 0.0}'
+        >
 </canvas>
 
-
-
-## Fractals
-This is where it gets _weird_. These Euclidean points have a nice predictable algebraic structure, but lurking 
-beneath this facade of simplicity is an infinite abyss of chaos and seeming randomness. Let's see how easy it 
-is to fall into this abyss. 
-
-Start with a point z, the square it, z^2, 
+After playing around with a bunch of values, can you guess the rule? The geometric rule for multiplying complex numbers is multiply the radiuses and add the angles. This kind of beauty is lurking underneath all that old high school homework, obscured by rote memorization and inadequate tools for teachers. There's a whole flat world out there that makes Euclidean geometry computable with symbols in such an elegant way. I just had to share that, imaginary numbers are not some arbitrary contrivance, they are _real_.
 
 
 {{<script "examples.js">}}

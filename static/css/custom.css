@@ -6,3 +6,13 @@
   overflow-x: scroll;
   overflow-y: hidden;
 }
+
+.sidescroll {
+  width: auto;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  white-space: nowrap;
+}
+.sidescroll > span {
+  display: inline-block;
+}
