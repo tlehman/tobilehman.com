@@ -8,7 +8,7 @@ I recently started learning to play the [piano, and wrote a piano program](/post
 
 To explore the form of sound waves, we have to study the wave equation. Imagine a string tied between two points distance L apart. Pick a tiny segment between the two ends and zoom in.
 
-
+{{<img "img/zoom_wave_eqn.gif">}}
 To derive the equation of motion of this piece of string, we need to account for all the forces acting on it. The big ones are tension in the string and gravity. And gravity is usually way less than tension, so we can start our approximation by ignoring gravity. At each point, the tension points along the string, along a tangent line:
 
 
