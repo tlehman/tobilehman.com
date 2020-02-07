@@ -7,6 +7,15 @@
   overflow-y: hidden;
 }
 
+.yellow-note-noscroll {
+  padding: 1em;
+  border-style: solid;
+  border-color: lightgray;
+  background-color: lightyellow;
+  overflow-x: scroll;
+  overflow-y: hidden;
+}
+
 .sidescroll {
   width: auto;
   overflow-x: scroll;
