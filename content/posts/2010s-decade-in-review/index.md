@@ -8,7 +8,7 @@ I think New Year is the best holiday, for two reasons. First, everyone celebrate
 
 As a bit of background, I really lucked out by entering college in late 2007, since I was completely sheltered from the financial crisis, I took 2006 to work for a year after high school, and learned how to write code while working for a small company in Oregon that sold leads to insurance agents. Working before going to college was a great choice for me, because it made me appreciate the protective bubble of academia much more than someone who jumped straight from high school to college. After freshman year I switched from computer science to mathematics, and spent a bunch of time blissfully thinking about math instead of doing something useful.
 
-My first post of the year 2010 was about energy conservation, I was struggling with a question about whether it was fundamental or whether it was just an observational fact: [Conservation Confusion Clarified](https://web.archive.org/web/20100608193437/http://www.axiomaticdoubt.com/?m=201001).
+My first post of the year 2010 was about energy conservation, I was struggling with a question about whether it was fundamental or whether it was just an observational fact: [Conservation Confusion Clarified](/posts/conservation-confusion-clarified).
 
 The one image I remember from New Year 2010 was this: 
 
