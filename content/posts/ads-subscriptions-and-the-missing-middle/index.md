@@ -1,7 +1,7 @@
 +++
 title = "Ads, Subscriptions, and the Missing Middle"
 date = 2020-02-17T20:21:15-08:00
-tags = ["economics", "the-web", "finance", "business"]
+tags = ["economics", "adtech", "finance", "business"]
 +++
 
 Publishers need to make a living. Journalists, video producers, musicians, and bloggers all have to pay their bills.
