@@ -70,9 +70,7 @@ So what would this look like in practice?
 
 {{<img "img/web-pay.gif">}}
 
-The thing that shows up in your browser is called the *payment sheet*. It is a configurable part of your browser that 
-
-A big advantage to the Web Payments API is that your credit card is saved a the browser level, not in some account with a password. Oh, that reminds me, this doesn't require a password, you could just pay for what you want, and then not bother to log in, because the transaction is over.
+The thing that shows up in your browser is called the *payment sheet*, it is a central part of the Web Payments API. A big advantage to the Web Payments API is that your credit card is saved a the browser level, not in some account with a password. Oh, that reminds me, this doesn't require a password, you could just pay for what you want, and then not bother to log in, because the transaction is over.
 
 # The long term
 
