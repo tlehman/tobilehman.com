@@ -22,7 +22,7 @@
     <div style="text-align: left">
       <h3>Recent posts</h3>
       <ul>
-        {{ range (.Paginator 5).Pages }}
+        {{ range where (.Paginator 6).Pages "Section" "==" "posts" }}
         <li style="display: block">
           <span>{{ .Date.Format (.Site.Params.dateFormat | default "2006-January-2" ) }}</span>
           <a href="{{ .URL }}" style="text-transform: none;">{{ .Title }}</a>

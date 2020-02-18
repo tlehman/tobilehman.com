@@ -14,7 +14,6 @@ pygmentscodefencesguesssyntax = true
     info = "Programmer, optimist, math nerd."
     bio = """Hi, I'm Tobi, this is my site.
 
-
 I'm a computer programmer and amateur mathematician.
 
 By day I work for Amazon Web Services and by night I read about 
@@ -24,8 +23,8 @@ the past, think about the future and enjoy the present.
     keywords = "blog,developer,personal"
     avatarurl = "images/avatar.jpg"
 
-    favicon_32 = "/img/favicon-32x32.png"
-    favicon_16 = "/img/favicon-16x16.png"
+    favicon_32 = "/favicon-32x32.png"
+    favicon_16 = "/favicon-16x16.png"
 
     footercontent = ""
 
@@ -64,3 +63,7 @@ the past, think about the future and enjoy the present.
     name = "Posts"
     weight = 1
     url  = "/posts/"
+[[menu.main]]
+    name = "Thanks"
+    weight = 2
+    url  = "/thanks/"

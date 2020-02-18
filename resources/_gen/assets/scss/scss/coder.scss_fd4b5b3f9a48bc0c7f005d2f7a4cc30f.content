@@ -182,7 +182,7 @@ img {
   margin-top: 1.6rem;
   margin-bottom: 3.2rem; }
   .content article header {
-    margin-top: 6.4rem;
+    margin-top: 2.0rem;
     margin-bottom: 3.2rem; }
     .content article header h1 {
       font-size: 4.2rem;

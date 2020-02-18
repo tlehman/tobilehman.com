@@ -2,6 +2,7 @@
 title = "Wave Equation and Musical Notes"
 date = 2020-02-03T20:46:39-08:00
 tags = ["digital-audio", "math", "differential-equations", "physics"]
+draft = true
 +++
 
 I recently started learning to play the [piano, and wrote a piano program](/posts/piano) using the Web Audio API and SVG graphics, but this post will focus on the math behind audio generation. Namely, what is a musical note?
