@@ -22,7 +22,6 @@
             </span>
           </div>
           {{ with .Page.Params.Categories }}{{ partial "taxonomy/categories" . }}{{ end }}
-          {{ with .Page.Params.Tags }}{{ partial "taxonomy/tags" . }}{{ end }}
         </div>
       </header>
 
@@ -31,6 +30,7 @@
       </div>
 
       <footer>
+        {{ with .Page.Params.Tags }}{{ partial "taxonomy/tags" . }}{{ end }}
         {{ partial "posts/disqus" . }}
       </footer>
     </article>
