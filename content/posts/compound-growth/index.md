@@ -1,7 +1,7 @@
 +++
 title = "Compound Growth 📈 "
 date = 2020-02-25T22:19:55-08:00
-tags = ["mathematics", "economics", "future"]
+tags = ["math", "economics", "future"]
 draft = false
 +++
 
@@ -19,17 +19,17 @@ $$(1.02)^{365} = 1377.40$$
 
 Even though it takes a year, and 2% seems small, the end result is being 1,377 times richer, instead of only 1,000, the downside is that it takes patience.
 
-The act of multiplying that 1.02 each time compounds the growth, and each compounding raises the exponent, so another term for this is **exponential growth**. Here is the exponential curve 1.02^x for x between 1 and 300:
+The act of multiplying that 1.02 each time compounds the growth, and each compounding raises the exponent, so another term for this is **exponential growth**. Here is the exponential curve 1.02<sup>x</sup> for x between 1 and 300:
 
 {{<img "img/Untitled.gif">}}
 
-Let’s plot this 1.02^x curve on a l[ogarithmic](https://en.wikipedia.org/wiki/Logarithm) chart to see what exponential growth looks like in logspace:
+Let’s plot this 1.02<sup>x</sup> curve on a [logarithmic](https://en.wikipedia.org/wiki/Logarithm) chart to see what exponential growth looks like in logspace:
 
 {{<img "img/Untitled 1.gif">}}
 
-Straight line with a slope of 2, this generalizes too, so 5^x has a slope of 5 in logspace, etc.
+Straight line with a slope of 2, this generalizes too, so 1.05<sup>x</sup> has a slope of 5 in logspace, etc.
 
-Thinking exponentially turns out be pretty easy, once you transform your curve into logspace, you can work linearly, and then transform back to get the right answer. For example, how long does it take 1.02^x to double? That is, if you are getting 2% richer each day, how many days does it take to double your wealth?
+Thinking exponentially turns out be pretty easy, once you transform your curve into logspace, you can work linearly, and then transform back to get the right answer. For example, how long does it take 1.02<sup>x</sup>to double? That is, if you are getting 2% richer each day, how many days does it take to double your wealth?
 
 ## Doubling period
 

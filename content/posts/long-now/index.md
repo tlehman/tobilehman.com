@@ -1,7 +1,7 @@
 +++
 title = "The Long Now Foundation"
 date = 2018-12-30T19:24:22-08:00
-tags = ["time", "history", "long-now"]
+tags = ["time", "future", "history", "long-now"]
 +++
 
 The world is changing fast, the last 100 years saw the creation of a global network of airplanes, computers, the internet, 
