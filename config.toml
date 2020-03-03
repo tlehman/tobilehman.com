@@ -15,9 +15,6 @@ pygmentscodefencesguesssyntax = true
     bio = """Hi, I'm Tobi, this is my site.
 
 I'm a computer programmer and amateur mathematician.
-
-By day I work for Amazon Web Services and by night I read about 
-the past, think about the future and enjoy the present.
 """
     description = "Tobi Lehman"
     keywords = "blog,developer,personal"

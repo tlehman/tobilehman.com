@@ -5,7 +5,12 @@
       <div class="avatar"><img src="{{ . }}" alt="avatar"></div>
     {{ end }}
       
-    <p>{{ .Site.Params.bio }}</p>
+    <p>{{ .Site.Params.bio }}
+
+By day I work for <a href="https://aws.amazon.com">Amazon Web Services</a> and by night I read about 
+the past, think about the future and enjoy the present. Any opinions on this website are my own, not those of my employer.
+
+    </p>
     {{ with .Site.Params.social }}
     <ul>
       {{ range sort .}}
