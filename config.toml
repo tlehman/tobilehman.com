@@ -3,7 +3,8 @@ languageCode = "en-us"
 title = "Tobi Lehman"
 theme = "hugo-code"
 paginate = 20
-canonifyurls = true
+canonifyurls = false
+relativeURLS = true
 
 pygmentsstyle = "bw"
 pygmentscodefences = true
@@ -18,7 +19,7 @@ I'm a computer programmer and amateur mathematician.
 """
     description = "Tobi Lehman"
     keywords = "blog,developer,personal"
-    avatarurl = "images/avatar.jpg"
+    avatarurl = "images/cartoon-mask-avatar.png"
 
     favicon_32 = "/favicon-32x32.png"
     favicon_16 = "/favicon-16x16.png"
