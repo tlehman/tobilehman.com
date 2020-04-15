@@ -6,7 +6,7 @@ clean:
 publish: hugo sync
 
 sync:
-	aws s3 sync --delete public s3://tobilehman.com
+	aws2 s3 sync --delete public s3://tobilehman.com
 
 hugo:
 	hugo
