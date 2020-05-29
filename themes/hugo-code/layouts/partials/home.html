@@ -2,11 +2,7 @@
   <div class="about">
 
 
-  <div class="alert alert-info">
-  <h3>COVID-19 Update 😷  🦠</h3> 
-
-  If you run a small business and don't have a way to serve your customers online, I can help: <a href="mailto:tobi.lehman@gmail.com">tobi.lehman@gmail.com</a>. I have 15 years of experience in web development and general software engineering. We will get through this together, for our customers.
-  </div>
+    {{ partial "updates.html" . }}
 
     {{ with .Site.Params.avatarurl }}
       <div class="avatar"><img src="{{ . }}" alt="avatar"></div>
