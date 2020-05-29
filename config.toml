@@ -65,8 +65,3 @@ I'm a computer programmer and amateur mathematician.
     name = "Thanks"
     weight = 2
     url  = "/thanks/"
-
-[markup]
-  [markup.goldmark]
-    [markup.goldmark.renderer]
-      unsafe = true
