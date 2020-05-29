@@ -19,6 +19,9 @@ a[href*='mailto']::after {
     background-image: url("/images/icons/mail.svg");
 }
 
+a[href*='spacex.com']::after {
+    background-image: url("/images/icons/spacex.svg");
+}
 a[href*='amazon.com']::after {
     background-image: url("/images/icons/amazon.svg");
 }
