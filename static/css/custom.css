@@ -23,11 +23,24 @@ a[href*='mailto']::after {
 a[href*='nature.com']::after {
     background-image: url("/images/icons/nature.svg");
 }
+a[href*='youtube.com']::after {
+    background-image: url("/images/icons/youtube.ico");
+}
 a[href*='spacex.com']::after {
     background-image: url("/images/icons/spacex.ico");
 }
 a[href*='amazon.com']::after {
     background-image: url("/images/icons/amazon.svg");
+}
+a[href*='archive.org']::after {
+    background-image: url("/images/icons/archive.svg");
+}
+a[href*='github.com']::after {
+    background-image: url("/images/icons/github.ico");
+}
+/* hack to get my front github profile link to not have this background image  */
+a[href*='https://github.com/tlehman/']::after {
+    background-image: none;
 }
 a[href*='wikipedia.org']::after {
     background-image: url("/images/icons/wikipedia.svg");
