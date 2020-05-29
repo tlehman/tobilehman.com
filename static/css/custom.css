@@ -19,8 +19,13 @@ a[href*='mailto']::after {
     background-image: url("/images/icons/mail.svg");
 }
 
+a[href*='nature.com']::after {
+    background-image: url("/images/icons/nature.svg");
+    background-size: 16px;
+}
 a[href*='spacex.com']::after {
-    background-image: url("/images/icons/spacex.svg");
+    background-image: url("/images/icons/spacex.ico");
+    background-size: 16px;
 }
 a[href*='amazon.com']::after {
     background-image: url("/images/icons/amazon.svg");
