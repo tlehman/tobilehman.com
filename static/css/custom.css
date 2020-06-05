@@ -16,30 +16,25 @@ a::after {
     text-decoration: underline;
 }
 
-a[href*='mailto']::after {
-    background-image: url("/images/icons/mail.svg");
-}
+a[href*='mailto']::after { background-image: url("/images/icons/mail.svg"); }
+a[href*='nber.org']::after { background-image: url("/images/icons/nber.ico"); }
+a[href*='nih.gov']::after { background-image: url("/images/icons/nih.ico"); }
+a[href*='nature.com']::after { background-image: url("/images/icons/nature.svg"); }
+a[href*='spacex.com']::after { background-image: url("/images/icons/spacex.ico"); }
+a[href*='amazon.com']::after { background-image: url("/images/icons/amazon.svg"); }
+a[href*='wikipedia.org']::after { background-image: url("/images/icons/wikipedia.svg"); }
+a[href*='wolfram.com']::after { background-image: url("/images/icons/mathematica.svg"); }
 
-a[href*='nature.com']::after {
-    background-image: url("/images/icons/nature.svg");
-}
-a[href*='spacex.com']::after {
-    background-image: url("/images/icons/spacex.ico");
-}
-a[href*='amazon.com']::after {
-    background-image: url("/images/icons/amazon.svg");
-}
-a[href*='wikipedia.org']::after {
-    background-image: url("/images/icons/wikipedia.svg");
-    /*background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2NDAgNTEyIj48cGF0aCBkPSJNNjQwIDUxLjJsLS4zIDEyLjJjLTI4LjEuOC00NSAxNS44LTU1LjggNDAuMy0yNSA1Ny44LTEwMy4zIDI0MC0xNTUuMyAzNTguNkg0MTVsLTgxLjktMTkzLjFjLTMyLjUgNjMuNi02OC4zIDEzMC05OS4yIDE5My4xLS4zLjMtMTUgMC0xNS0uM0MxNzIgMzUyLjMgMTIyLjggMjQzLjQgNzUuOCAxMzMuNCA2NC40IDEwNi43IDI2LjQgNjMuNC4yIDYzLjdjMC0zLjEtLjMtMTAtLjMtMTQuMmgxNjEuOXYxMy45Yy0xOS4yIDEuMS01Mi44IDEzLjMtNDMuMyAzNC4yIDIxLjkgNDkuNyAxMDMuNiAyNDAuMyAxMjUuNiAyODguNiAxNS0yOS43IDU3LjgtMTA5LjIgNzUuMy0xNDIuOC0xMy45LTI4LjMtNTguNi0xMzMuOS03Mi44LTE2MC05LjctMTcuOC0zNi4xLTE5LjQtNTUuOC0xOS43VjQ5LjhsMTQyLjUuM3YxMy4xYy0xOS40LjYtMzguMSA3LjgtMjkuNCAyNi4xIDE4LjkgNDAgMzAuNiA2OC4xIDQ4LjEgMTA0LjcgNS42LTEwLjggMzQuNy02OS40IDQ4LjEtMTAwLjggOC45LTIwLjYtMy45LTI4LjYtMzguNi0yOS40LjMtMy42IDAtMTAuMy4zLTEzLjYgNDQuNC0uMyAxMTEuMS0uMyAxMjMuMS0uNnYxMy42Yy0yMi41LjgtNDUuOCAxMi44LTU4LjEgMzEuN2wtNTkuMiAxMjIuOGM2LjQgMTYuMSA2My4zIDE0Mi44IDY5LjIgMTU2LjdMNTU5LjIgOTEuOGMtOC42LTIzLjEtMzYuNC0yOC4xLTQ3LjItMjguM1Y0OS42bDEyNy44IDEuMS4yLjV6Ii8+PC9zdmc+');*/
-}
-a[href*='wolfram.com']::after {
-    background-image: url("/images/icons/mathematica.svg");
-}
-a[href*='../../']::after {
-    background-image: url("/favicon.ico");
-    /*background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2NDAgNTEyIj48cGF0aCBkPSJNNjQwIDUxLjJsLS4zIDEyLjJjLTI4LjEuOC00NSAxNS44LTU1LjggNDAuMy0yNSA1Ny44LTEwMy4zIDI0MC0xNTUuMyAzNTguNkg0MTVsLTgxLjktMTkzLjFjLTMyLjUgNjMuNi02OC4zIDEzMC05OS4yIDE5My4xLS4zLjMtMTUgMC0xNS0uM0MxNzIgMzUyLjMgMTIyLjggMjQzLjQgNzUuOCAxMzMuNCA2NC40IDEwNi43IDI2LjQgNjMuNC4yIDYzLjdjMC0zLjEtLjMtMTAtLjMtMTQuMmgxNjEuOXYxMy45Yy0xOS4yIDEuMS01Mi44IDEzLjMtNDMuMyAzNC4yIDIxLjkgNDkuNyAxMDMuNiAyNDAuMyAxMjUuNiAyODguNiAxNS0yOS43IDU3LjgtMTA5LjIgNzUuMy0xNDIuOC0xMy45LTI4LjMtNTguNi0xMzMuOS03Mi44LTE2MC05LjctMTcuOC0zNi4xLTE5LjQtNTUuOC0xOS43VjQ5LjhsMTQyLjUuM3YxMy4xYy0xOS40LjYtMzguMSA3LjgtMjkuNCAyNi4xIDE4LjkgNDAgMzAuNiA2OC4xIDQ4LjEgMTA0LjcgNS42LTEwLjggMzQuNy02OS40IDQ4LjEtMTAwLjggOC45LTIwLjYtMy45LTI4LjYtMzguNi0yOS40LjMtMy42IDAtMTAuMy4zLTEzLjYgNDQuNC0uMyAxMTEuMS0uMyAxMjMuMS0uNnYxMy42Yy0yMi41LjgtNDUuOCAxMi44LTU4LjEgMzEuN2wtNTkuMiAxMjIuOGM2LjQgMTYuMSA2My4zIDE0Mi44IDY5LjIgMTU2LjdMNTU5LjIgOTEuOGMtOC42LTIzLjEtMzYuNC0yOC4xLTQ3LjItMjguM1Y0OS42bDEyNy44IDEuMS4yLjV6Ii8+PC9zdmc+');*/
-}
+a[href*='../../']::after { background-image: url("/favicon.ico"); }
+a[href*='theguardian.com']::after { background-image: url("/images/icons/theguardian.ico"); }
+a[href*='theatlantic.com']::after { background-image: url("/images/icons/theatlantic.ico"); }
+a[href*='housing.wiki']::after { background-image: url("/images/icons/housewiki.png"); }
+a[href*='reason.com']::after { background-image: url("/images/icons/reason.png"); }
+a[href*='naacp.org']::after { background-image: url("/images/icons/naacp.ico"); }
+a[href*='aclu.org']::after { background-image: url("/images/icons/aclu.png"); }
+a[href*='theappeal.org']::after { background-image: url("/images/icons/theappeal.png"); }
+a[href*='joincampaignzero.org']::after { background-image: url("/images/icons/joincampaignzero.ico"); }
+a[href*='supportblackowned.com']::after { background-image: url("/images/icons/sbo.png"); }
 /** annotated links end */
 
 .yellow-note {
