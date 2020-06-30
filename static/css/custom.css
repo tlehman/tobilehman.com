@@ -25,7 +25,7 @@ a[href*='amazon.com']::after { background-image: url("/images/icons/amazon.svg")
 a[href*='wikipedia.org']::after { background-image: url("/images/icons/wikipedia.svg"); }
 a[href*='wolfram.com']::after { background-image: url("/images/icons/mathematica.svg"); }
 
-a[href*='../../']::after { background-image: url("/favicon.ico"); }
+/*a[href*='../../']::after { background-image: url("/favicon.ico"); }*/
 a[href*='nytimes.com']::after { background-image: url("/images/icons/nyt.ico"); }
 a[href*='washingtonpost.com']::after { background-image: url("/images/icons/wapo.png"); }
 a[href*='theguardian.com']::after { background-image: url("/images/icons/theguardian.ico"); }

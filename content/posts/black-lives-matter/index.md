@@ -43,3 +43,5 @@ Reducing the total number and complexity of laws should be a guiding goal for an
 - **Decriminalize** drugs like **cannabis**, remove reasons for non-violent people to be locked up.
 - Continue educating yourself, and your friends and family, your co-workers. This is a multi-generational project, but keep **engaging with people you care about but disagree with**. Don't cut people off over their racism, try to point it out with empathy and constructive engagement. It's hard, and uncomfortable, but necessary.
 - **Defeat Donald Trump in 2020**. Some of the recent police brutality we see in 2020 was [enabled by Donald Trump](https://www.theatlantic.com/ideas/archive/2020/06/chauvin-did-what-trump-asked-him-do/612574/).
+
+UPDATE (2020-06-30) A reader pointed my attention to FinImpact and it's list of ways to support Black-owned small businesses, it also includes practical advice for how to thrive in the current business environment. Here is [the link](https://www.finimpact.com/blacklivesmatter-support-black-owned-small-businesses/)
