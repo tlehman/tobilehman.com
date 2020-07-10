@@ -62,9 +62,14 @@ I'm a computer programmer and amateur mathematician.
     weight = 1
     url  = "/posts/"
 [[menu.main]]
+    name = "Throwforward Friday"
+    weight = 1
+    url  = "/throwforwardfriday/"
+[[menu.main]]
     name = "Thanks"
     weight = 2
     url  = "/thanks/"
+
 
 [markup]
   [markup.goldmark]
