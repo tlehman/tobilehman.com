@@ -6,6 +6,7 @@ date: 2020-02-14T12:44:38-08:00
 Instead of writing a dry and formal list of acknowledgements, I want to thank the many people and communities that built the tools I use to make this website.
 
 ## Thank you to:
+ - to [RoyaltyFreeTube](https://www.youtube.com/channel/UCDyoFl3axaufRwkpBA38-1w) for the synthwave graphics on [Throw-Forward Friday]
  - the [Hugo static website framework](https://gohugo.io/) 
  - the [Go Programming Language](https://golang.org/)
  - [@luizdepra](https://github.com/luizdepra)'s "Coder" theme for Hugo

@@ -62,7 +62,7 @@ I'm a computer programmer and amateur mathematician.
     weight = 1
     url  = "/posts/"
 [[menu.main]]
-    name = "Throwforward Friday"
+    name = "Throw-Forward Friday"
     weight = 1
     url  = "/throwforwardfriday/"
 [[menu.main]]
