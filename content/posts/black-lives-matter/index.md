@@ -44,4 +44,15 @@ Reducing the total number and complexity of laws should be a guiding goal for an
 - Continue educating yourself, and your friends and family, your co-workers. This is a multi-generational project, but keep **engaging with people you care about but disagree with**. Don't cut people off over their racism, try to point it out with empathy and constructive engagement. It's hard, and uncomfortable, but necessary.
 - **Defeat Donald Trump in 2020**. Some of the recent police brutality we see in 2020 was [enabled by Donald Trump](https://www.theatlantic.com/ideas/archive/2020/06/chauvin-did-what-trump-asked-him-do/612574/).
 
-UPDATE (2020-06-30) A reader pointed my attention to FinImpact and it's list of ways to support Black-owned small businesses, it also includes practical advice for how to thrive in the current business environment. Here is [the link](https://www.finimpact.com/blacklivesmatter-support-black-owned-small-businesses/)
+<style>
+a[href*='finimpact.com']::after { background-image: url("https://www.finimpact.com/wp-content/uploads/2018/01/cropped-finimpact-favicon.png.webp") }
+a[href*='fivefifths.co']::after { background-image: url("https://149452217.v2.pressablecdn.com/wp-content/uploads/2020/06/cropped-5_5-2-32x32.png") }
+</style>
+
+<div class="green-note">
+UPDATE (2020-06-30) A reader pointed my attention to FinImpact and it's list of ways to support Black-owned small businesses, it also includes practical advice for how to thrive in the current business environment. Here is <a href="https://www.finimpact.com/blacklivesmatter-support-black-owned-small-businesses/">the link</a>.
+</div> 
+
+<div class="green-note">
+UPDATE (2020-07-15) The founder of a website <a href="https://fivefifths.co/">FiveFifths</a> pointed me to this new directory of Black-owned businesses, news and interviews. It's an eawesome project! I love the name too, provocative and proud, I am bookmarking it.
+</div>

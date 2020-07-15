@@ -44,6 +44,15 @@ a[href*='joincampaignzero.org']::after { background-image: url("/images/icons/jo
 a[href*='supportblackowned.com']::after { background-image: url("/images/icons/sbo.png"); }
 /** annotated links end */
 
+.green-note {
+  padding: 1em;
+  border-style: solid;
+  border-color: lightgray;
+  background-color: lightgreen;
+  overflow-x: scroll;
+  overflow-y: hidden;
+}
+
 .yellow-note {
   padding: 1em;
   border-style: solid;
