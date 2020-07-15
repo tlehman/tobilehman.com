@@ -54,5 +54,5 @@ UPDATE (2020-06-30) A reader pointed my attention to FinImpact and it's list of 
 </div> 
 
 <div class="green-note">
-UPDATE (2020-07-15) The founder of a website <a href="https://fivefifths.co/">FiveFifths</a> pointed me to this new directory of Black-owned businesses, news and interviews. It's an eawesome project! I love the name too, provocative and proud, I am bookmarking it.
+UPDATE (2020-07-15) The founder of a website <a href="https://fivefifths.co/">FiveFifths</a> pointed me to this new directory of Black-owned businesses, news and interviews. It's an awesome project! I love the name too, provocative and proud. I am bookmarking it.
 </div>
