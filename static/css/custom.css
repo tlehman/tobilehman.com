@@ -29,6 +29,8 @@ a[href*='spacex.com']::after { background-image: url("/images/icons/spacex.ico")
 a[href*='amazon.com']::after { background-image: url("/images/icons/amazon.svg"); }
 a[href*='wikipedia.org']::after { background-image: url("/images/icons/wikipedia.svg"); }
 a[href*='wolfram.com']::after { background-image: url("/images/icons/mathematica.svg"); }
+a[href*='medrxiv.org']::after { background-image: url("/images/icons/medrxiv.ico");}
+a[href*='npr.org']::after { background-image: url("/images/icons/npr.png");}
 
 /*a[href*='../../']::after { background-image: url("/favicon.ico"); }*/
 a[href*='nytimes.com']::after { background-image: url("/images/icons/nyt.ico"); }
