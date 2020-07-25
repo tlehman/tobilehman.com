@@ -7,6 +7,7 @@ tags = ["news", "covid-19", "medicine"]
 This paper: [A community-deployable SARS-CoV-2 screening test using raw saliva with 45 minutes sample-to-results turnaround](https://www.medrxiv.org/content/10.1101/2020.07.16.20150250v1), claims that there is a **45-minute test for COVID-19 that doesn't use a swab**.
 
 From the abstract:
+
 > Here, we describe an RT-LAMP test for SARS-CoV-2 in raw saliva that takes about 45 minutes from sample to answer and requires only simple equipment (pipettes and a heating source). The assay has a limit of detection of 100 virions per microliter, and targets two separate regions of the SARS-CoV-2 genome. By combining rapid sample-to-answer turnaround time with the use of saliva, our RT-LAMP assay provides a low-complexity, portable, and robust system for real-time community screening.
 
 This is super exciting, because if this works, it can be scaled up and deployed quickly. Right now COVID-19 tests require a nasal swab and can take 3-5 days to get results. The reason we can't open up all schools and businesses is because around 70% of people infected with the virus don't have symptoms, so they can spread it around just by being close to other people. The reason we can't test everyone is that the nasal swab tests were expensive to produce, because there was because of a [shortage of cotton swabs](https://www.npr.org/2020/05/12/853930147/despite-early-warnings-u-s-took-months-to-expand-swab-production-for-covid-19-te).
