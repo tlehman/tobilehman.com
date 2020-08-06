@@ -12,6 +12,7 @@ During the 1990s, the web went commerical, and a new economy was born. It's grow
 
 In 1997, EFF Founder John Perry Barlow [declared the independence of Cyberspace](https://www.eff.org/cyberspace-independence).
 In his words:
+
 > Governments derive their just powers from the consent of the governed. You have neither solicited nor received ours. We did not invite you. You do not know us, nor do you know our world. Cyberspace does not lie within your borders.
 
 Then in the 21st century, three big things happened: the NASDAQ tech bubble burst, al-Qaida carried out the 2001-Sep-11 attacks, and the PRC (People's Republic of China 🇨🇳) joined World Trade Organziation.
