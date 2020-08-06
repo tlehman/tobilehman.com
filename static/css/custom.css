@@ -24,6 +24,7 @@ a::after {
 a[href*='mailto']::after { background-image: url("/images/icons/mail.svg"); }
 a[href*='nber.org']::after { background-image: url("/images/icons/nber.ico"); }
 a[href*='nih.gov']::after { background-image: url("/images/icons/nih.ico"); }
+a[href*='state.gov']::after { background-image: url("/images/icons/stategov.png"); }
 a[href*='nature.com']::after { background-image: url("/images/icons/nature.svg"); }
 a[href*='spacex.com']::after { background-image: url("/images/icons/spacex.ico"); }
 a[href*='amazon.com']::after { background-image: url("/images/icons/amazon.svg"); }
@@ -31,6 +32,9 @@ a[href*='wikipedia.org']::after { background-image: url("/images/icons/wikipedia
 a[href*='wolfram.com']::after { background-image: url("/images/icons/mathematica.svg"); }
 a[href*='medrxiv.org']::after { background-image: url("/images/icons/medrxiv.ico");}
 a[href*='npr.org']::after { background-image: url("/images/icons/npr.png");}
+a[href*='eff.org']::after { background-image: url("/images/icons/eff.ico");}
+a[href*='cern.ch']::after { background-image: url("/images/icons/cern.ico");}
+a[href*='techdirt.com']::after { background-image: url("/images/icons/techdirt.ico");}
 
 /*a[href*='../../']::after { background-image: url("/favicon.ico"); }*/
 a[href*='nytimes.com']::after { background-image: url("/images/icons/nyt.ico"); }
