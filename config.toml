@@ -1,77 +1,83 @@
-baseURL = "https://tobilehman.com/"
+baseURL = "https://tobilehman.com"
 languageCode = "en-us"
-title = "Tobi Lehman"
-theme = "hugo-code"
-paginate = 20
-canonifyurls = false
-relativeURLS = true
+title = "Tobi's web blog"
+theme = "minimal-bootstrap-hugo-theme"
 
-pygmentsstyle = "bw"
-pygmentscodefences = true
-pygmentscodefencesguesssyntax = true
+[taxonomies]
+  tag = "tags"
+
+[permalinks]
+  post = "/:filename/"
 
 [params]
-    author = "Tobi Lehman"
-    info = "Programmer, optimist, math nerd."
-    bio = """Hi, I'm Tobi, this is my site.
+  description = ""
+  contentBackgroundColor = "#fff"
+  contentTextColor = "#212529"
+  contentLinkColor = "#007bff"
+  contentLinkHoverColor = "#0056b3"
+  navbarBackgroundColor = "#212529"
+  navbarLinkColor = "rgba(255, 255, 255, 0.75)"
+  navbarLinkHoverColor = "rgba(255, 255, 255, 1)"
+  wrapperMaxWidth = "800px"
+  customDateFormat = "Jan 2, 2006"
+  customCodeStyle = true
+  customBlockquoteStyle = true
+  showPostSummary = false
+  googleAnalytics = "UA-123456789-1"
+  cookieConsent = true
+  includeBootstrapJs = false
+  faviconSafariPinnedTabColor = "#5bbad5"
+  faviconMsApplicationTileColor = "#da532c"
+  faviconThemeColor = "#ffffff"
+  favicon_32 = "/favicon-32x32.png"
+  favicon_24 = "/favicon-24x24.png"
+  favicon_16 = "/favicon-16x16.png"
 
-I'm a computer programmer and amateur mathematician.
-"""
-    description = "Tobi Lehman"
-    keywords = "blog,developer,personal"
-    avatarurl = "images/cartoon-mask-avatar.png"
-
-    favicon_32 = "/favicon-32x32.png"
-    favicon_16 = "/favicon-16x16.png"
-
-    footercontent = ""
-
-    hidecredits = false
-    hidecopyright = false
-
-    rtl = false
-
-    math = true
-    custom_css = ["css/custom.css"]
-
-# Social links
-[[params.social]]
-    name = "Github"
-    icon = "fab fa-github fa-2x"
-    weight = 1
-    url = "https://github.com/tlehman/"
-[[params.social]]
-    name = "LinkedIn"
-    icon = "fab fa-linkedin fa-2x"
-    weight = 3
-    url = "https://www.linkedin.com/in/tobilehman/"
-[[params.social]]
-    name = "Twitter"
-    icon = "fab fa-twitter fa-2x"
-    weight = 3
-    url = "https://twitter.com/tobi_lehman"
-[[params.social]]
-    name = "Keybase"
-    icon = "fab fa-keybase fa-2x"
-    weight = 3
-    url = "https://keybase.io/tlehman"
-
-# Menu links
-[[menu.main]]
-    name = "Posts"
-    weight = 1
-    url  = "/posts/"
-[[menu.main]]
-    name = "Throw-Forward Friday"
-    weight = 1
-    url  = "/throwforwardfriday/"
-[[menu.main]]
-    name = "Thanks"
-    weight = 2
-    url  = "/thanks/"
-
+[menu]
+  [[menu.nav]]
+  name = "Posts"
+  url = "/"
+  weight = 1
+  [[menu.nav]]
+  name = "Tags"
+  url = "/tags/"
+  weight = 2
+  [[menu.nav]]
+  name = "About"
+  url = "/about/"
+  weight = 3
+  [[menu.nav]]
+  name = "RSS"
+  url = "/index.xml"
+  weight = 4
 
 [markup]
+  defaultMarkdownHandler = "goldmark"
   [markup.goldmark]
+    [markup.goldmark.extensions]
+      definitionList = true
+      footnote = true
+      linkify = true
+      strikethrough = true
+      table = true
+      taskList = true
+      typographer = true
+    [markup.goldmark.parser]
+      attribute = true
+      autoHeadingID = true
     [markup.goldmark.renderer]
+      hardWraps = false
       unsafe = true
+      xHTML = false
+  [markup.highlight]
+    codeFences = true
+    hl_Lines = ""
+    lineNoStart = 1
+    lineNos = false
+    lineNumbersInTable = true
+    noClasses = true
+    style = "monokai"
+    tabWidth = 4
+  [markup.tableOfContents]
+    endLevel = 6
+    startLevel = 2

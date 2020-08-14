@@ -21,13 +21,26 @@ a::after {
     text-decoration: underline;
 }
 
+a[href*='tobilehman.com']::after {
+  background-image: none
+}
+a[href*='localhost:1313']::after {
+    background-size: 0px;
+    background-repeat: no-repeat;
+    background-position: bottom center;
+    width: 0em;
+    margin: 0;
+    opacity: 0.60;
+}
 a[href*='mailto']::after { background-image: url("/images/icons/mail.svg"); }
 a[href*='nber.org']::after { background-image: url("/images/icons/nber.ico"); }
 a[href*='nih.gov']::after { background-image: url("/images/icons/nih.ico"); }
 a[href*='state.gov']::after { background-image: url("/images/icons/stategov.png"); }
 a[href*='nature.com']::after { background-image: url("/images/icons/nature.svg"); }
 a[href*='spacex.com']::after { background-image: url("/images/icons/spacex.ico"); }
-a[href*='amazon.com']::after { background-image: url("/images/icons/amazon.svg"); }
+a[href*='aboutamazon.com']::after { background-image: url("https://blog.aboutamazon.com/favicon-32x32.png"); }
+a[href*='www.amazon.com']::after { background-image: url("/images/icons/amazon.svg"); }
+a[href*='mozilla.org']::after { background-image: url("/images/icons/mozilla.png"); }
 a[href*='youtube.com']::after { background-image: url("/images/icons/youtube.ico"); }
 a[href*='twitter.com']::after { background-image: url("/images/icons/twitter.ico"); }
 a[href*='github.com']::after { background-image: url("/images/icons/github.svg"); }
