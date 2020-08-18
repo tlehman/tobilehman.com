@@ -1,7 +1,9 @@
 baseURL = "https://tobilehman.com"
 languageCode = "en-us"
-title = "Tobi's web blog"
+title = "tobi's website"
 theme = "minimal-bootstrap-hugo-theme"
+copyright = "Copyright 2018-{year} Tobi Lehman. All rights reserved."
+
 
 [taxonomies]
   tag = "tags"
@@ -35,21 +37,25 @@ theme = "minimal-bootstrap-hugo-theme"
 
 [menu]
   [[menu.nav]]
-  name = "Posts"
+  name = "Home"
   url = "/"
   weight = 1
   [[menu.nav]]
+  name = "Posts"
+  url = "/posts"
+  weight = 2
+  [[menu.nav]]
   name = "Tags"
   url = "/tags/"
-  weight = 2
+  weight = 3
   [[menu.nav]]
   name = "About"
   url = "/about/"
-  weight = 3
+  weight = 4
   [[menu.nav]]
   name = "RSS"
   url = "/index.xml"
-  weight = 4
+  weight = 5
 
 [markup]
   defaultMarkdownHandler = "goldmark"

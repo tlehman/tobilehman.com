@@ -1,7 +1,7 @@
 +++
 title = "Conway's Game of Life"
 date = 2020-04-14T19:42:32-07:00
-tags = ["math", "cellular-automata", "web-programming"]
+tags = ["math", "cellular-automata", "programming"]
 +++
 
 [John H. Conway](https://en.wikipedia.org/wiki/John_Horton_Conway) has passed away, his contributions to math are too numerous for me to list in this post. What I wanted to explore in this post is one of his "recreational math" contributions: The Game of Life. 

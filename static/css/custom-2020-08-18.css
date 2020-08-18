@@ -3,6 +3,10 @@ html, body {
         margin: 0px;
 }
 
+div.card {
+    margin: 10px;
+}
+
 /** annotated links start */
 a {
     text-decoration: underline;
@@ -21,18 +25,6 @@ a::after {
     text-decoration: underline;
 }
 
-a[href*='tobilehman.com']::after {
-  background-image: none
-}
-a[href*='localhost:1313']::after {
-    background-size: 0px;
-    background-repeat: no-repeat;
-    background-position: bottom center;
-    width: 0em;
-    margin: 0;
-    opacity: 0.60;
-}
-a[href*='mailto']::after { background-image: url("/images/icons/mail.svg"); }
 a[href*='nber.org']::after { background-image: url("/images/icons/nber.ico"); }
 a[href*='nih.gov']::after { background-image: url("/images/icons/nih.ico"); }
 a[href*='state.gov']::after { background-image: url("/images/icons/stategov.png"); }
@@ -51,6 +43,22 @@ a[href*='npr.org']::after { background-image: url("/images/icons/npr.png");}
 a[href*='eff.org']::after { background-image: url("/images/icons/eff.ico");}
 a[href*='cern.ch']::after { background-image: url("/images/icons/cern.ico");}
 a[href*='techdirt.com']::after { background-image: url("/images/icons/techdirt.ico");}
+
+/* internal link styles */
+a[href*='tobilehman.com']::after { background-image: url("/favicon-16x16.png") }
+
+a[href*='tobilehman.com/about']::after { width: 0em; }
+a[href*='tobilehman.com/index.xml']::after { width: 0em; }
+a[href*='tobilehman.com/posts']::after { width: 0em; }
+a[href*='tobilehman.com/tags']::after {  width: 0em; }
+
+a[href*='/about']::after { width: 0em; }
+a[href*='/index.xml']::after { width: 0em; }
+a[href*='/posts']::after { width: 0em; }
+a[href*='/tags']::after {  width: 0em; }
+
+
+a[href*='mailto']::after { background-image: url("/images/icons/mail.svg"); }
 
 /*a[href*='../../']::after { background-image: url("/favicon.ico"); }*/
 a[href*='nytimes.com']::after { background-image: url("/images/icons/nyt.ico"); }

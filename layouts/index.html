@@ -1,0 +1,29 @@
+{{- define "main" -}}
+<div class="jumbotron">
+  <p class="lead">Welcome to my site, <a href="https://tobilehman.com">tobilehman.com</a>. For more about me, go to <a href="/about">/about</a> </p>
+  <hr>
+  <p class="lead">Below is some of my writing. I enjoy writing about <a href="/tags/math">math</a>, <a href="/tags/programming">programming</a>, and <a href="/tags/history">history</a> </p>
+</div>
+
+<p class="lead"><h3>Recent posts</h3></p>
+<div style="text-align: left">
+  {{ range where (.Paginator 6).Pages "Section" "==" "posts" }}
+  <p>
+  <a href="{{ .Permalink }}">{{ .Title | markdownify }}</a>
+  {{ $customDateFormat := "January 2, 2006" }}
+  {{ with .Site.Params.customDateFormat }}{{ $customDateFormat = . }}{{ end }}
+  <br>
+  <small class="text-secondary">{{ .PublishDate.Format $customDateFormat }}</small>
+  {{ partial "tags" . }}
+  {{ if eq .Site.Params.showPostSummary true }}
+  <br>
+  {{ .Summary }}
+  {{ end }}
+  </p>
+  {{ end }}
+  <a href="/posts">All posts</a>
+</div>
+
+
+
+{{- end -}}
