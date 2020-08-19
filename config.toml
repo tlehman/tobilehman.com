@@ -45,10 +45,6 @@ copyright = "Copyright 2018-{year} Tobi Lehman. All rights reserved."
   url = "/posts"
   weight = 2
   [[menu.nav]]
-  name = "Tags"
-  url = "/tags/"
-  weight = 3
-  [[menu.nav]]
   name = "About"
   url = "/about/"
   weight = 4
