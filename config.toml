@@ -48,10 +48,6 @@ copyright = "Copyright 2018-{year} Tobi Lehman. All rights reserved."
   name = "About"
   url = "/about/"
   weight = 4
-  [[menu.nav]]
-  name = "RSS"
-  url = "/index.xml"
-  weight = 5
 
 [markup]
   defaultMarkdownHandler = "goldmark"

@@ -121,3 +121,11 @@ a[href*='supportblackowned.com']::after { background-image: url("/images/icons/s
   margin-bottom: 2em;
 }
 
+.float-vertical-align {
+  border: 1px solid red;
+
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+}
