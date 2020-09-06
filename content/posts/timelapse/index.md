@@ -25,7 +25,7 @@ get the `created_at` date from the file. After copying the files to a temporary 
 turn the jpegs into frames of a video.
 
 Here is a sample from October 2018 to September 2020:
-<video src="timelapse-tree.mov"></video>
+<video width="100%" src="timelapse-tree.mp4"></video>
 
 The music is by Hans Zimmer, it was edited in iMovie for iOS, and I couldn't be happier with the result. It conveys 
 the feeling of growth, change, and rebirth.
