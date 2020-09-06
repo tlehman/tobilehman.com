@@ -11,11 +11,11 @@ prior, my dad and I built an overhang that provides shade.
 
 I used a pillar supporting the overhang to 
 point this [timelapse camera](https://www.amazon.com/gp/product/B01FJZQONW/) at the tree. I bought that 
-camera because of it's low battery usage, and how it uses standard JPEGS on a standard SD card. That gives 
+camera because of it's low battery usage, and how it uses standard JPEGs on a standard SD card. That gives 
 me raw material to compress a large amount of time into a nice video.
 
 Trees are reminders of different time scales. They are our ambassadors to the [Long Now](/posts/long-now/).
-The raw emotion of seeing two years fly by in a few seconds is a good approximation of the experience of 
+The raw emotion of seeing two years fly by in a few seconds is a decent approximation of the experience of 
 seeing your child grow up. It's a good reminder of the finitness of your life. It's call to action to do those 
 things you have been putting off. Time is finite. It's the only thing that can't be manufactured.
 
@@ -27,8 +27,10 @@ turn the jpegs into frames of a video.
 Here is a sample from October 2018 to September 2020:
 <video controls width="100%"><source src="/posts/timelapse/timelapse-tree.mp4" type="video/mp4" /></video>
 
-The music is by Hans Zimmer, it was edited in iMovie for iOS, and I couldn't be happier with the result. It conveys 
-the feeling of growth, change, and rebirth.
+The music is by Hans Zimmer, it was edited in iMovie for iOS, and I am happy with the result. It conveys 
+the feeling of growth, change, and rebirth. But I also can't help but feel it's incompleteness. This is only 
+day 1 of this tree's life. This tree is just getting started. It will cast a shadow for people I don't know, 
+and for people who don't exist yet. It is my connection to the future.
 
 I always appreciate feedback on my code, or videos, or posts. Mail your comments to <a href="mailto:mail@tobilehman.com">mail@tobilehman.com</a>
 
