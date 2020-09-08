@@ -48,7 +48,7 @@ Now, working backwards from all the possible outputs, you can enumerate all 8 su
     //        5♣  10♥  5♥  | 111  |
 ```
 
-Well, it's only 8 if you count the empty set. Since my code is a janky little C program, you need to compile it and run it at the command line. But thanks to a glorious new technology called [WebAssembly](https://developer.mozilla.org/en-US/docs/WebAssembly), you can compile C programs to an assembly language that runs natively in a browser, and then call into it with JavaScript.
+Well, it's 8 if you count the empty set. Since my code is a janky little C program, you need to compile it and run it at the command line. But thanks to a glorious new technology called [WebAssembly](https://developer.mozilla.org/en-US/docs/WebAssembly), you can compile C programs to an assembly language that runs natively in a browser, and then call into it with JavaScript.
 
 WebAssembly, or wasm, can be emitted by first installing emscripten, and then changing the makefile like so:
 
