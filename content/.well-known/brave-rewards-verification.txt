@@ -1,4 +1,4 @@
 This is a Brave Rewards publisher verification file.
 
 Domain: tobilehman.com
-Token: b449776f287b3e18a39f77055b008dc13a2289dbb829695ef5703a03fdeb14a8 
+Token: 11cae50a7d4acef0fae4a1d08a24f7e7e228f1a80fab55f682ae5d2546222426
