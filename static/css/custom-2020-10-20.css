@@ -45,6 +45,7 @@ a[href*='eff.org']::after { background-image: url("/images/icons/eff.ico");}
 a[href*='archive.org']::after { background-image: url("/images/icons/archive.jpg");}
 a[href*='cern.ch']::after { background-image: url("/images/icons/cern.ico");}
 a[href*='techdirt.com']::after { background-image: url("/images/icons/techdirt.ico");}
+a[href*='wiringpi.com']::after { background-image: url("/images/icons/wiringpi.png");}
 
 /* internal link styles */
 a[href*='tobilehman.com']::after { background-image: url("/favicon-16x16.png") }

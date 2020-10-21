@@ -56,7 +56,6 @@ Later in my career, I spent years maintaining code I didn't write, and wasn't in
 Back to the book, maintenance is the Hard Problem, because no one wants to do it. Once written, distributing code has zero [marginal cost](https://www.investopedia.com/terms/m/marginalcostofproduction.asp), because copying code is free. However, the attention of maintainers is a scarce resource. So the normal analytical tools of economics are useful here. Maintenance has positive [marginal cost](https://www.investopedia.com/terms/m/marginalcostofproduction.asp).
 
 {{<favicon "brookings.edu" "https://www.brookings.edu/wp-content/themes/brookings/favicon.ico">}}
-{{<favicon "wiringpi.com" "http://wiringpi.com/wp-includes/images/w-logo-blue-white-bg.png">}}
 {{<favicon "golang.org" "https://golang.org/favicon.ico">}}
 {{<favicon "git-scm.com" "https://git-scm.com/favicon.ico">}}
 {{<favicon "gnu.org" "https://www.gnu.org/graphics/gnu-head-mini.png">}}
