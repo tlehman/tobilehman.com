@@ -37,10 +37,12 @@ a[href*='youtube.com']::after { background-image: url("/images/icons/youtube.ico
 a[href*='twitter.com']::after { background-image: url("/images/icons/twitter.ico"); }
 a[href*='github.com']::after { background-image: url("/images/icons/github.svg"); }
 a[href*='wikipedia.org']::after { background-image: url("/images/icons/wikipedia.svg"); }
+a[href*='investopedia.com']::after { background-image: url("/images/icons/investopedia.ico"); }
 a[href*='wolfram.com']::after { background-image: url("/images/icons/mathematica.svg"); }
 a[href*='medrxiv.org']::after { background-image: url("/images/icons/medrxiv.ico");}
 a[href*='npr.org']::after { background-image: url("/images/icons/npr.png");}
 a[href*='eff.org']::after { background-image: url("/images/icons/eff.ico");}
+a[href*='archive.org']::after { background-image: url("/images/icons/archive.jpg");}
 a[href*='cern.ch']::after { background-image: url("/images/icons/cern.ico");}
 a[href*='techdirt.com']::after { background-image: url("/images/icons/techdirt.ico");}
 
