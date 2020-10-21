@@ -4,7 +4,7 @@ date = 2020-10-20T21:22:39-07:00
 tags = ["programming", "open-source", "history", "economics", "stewardship", "review", "books"]
 +++
 
-The story of open source software most of us believe is wrong. The production of open source software isn't like some egalitarian commune, it's driven mostly by a few individuals. Through analyzing git commit frequency distributions and interviewing prominent open source contributors and maintainers, Nadia Eghbal captures the living history of open source software.
+The story of open source software most of us believe is wrong. The production of open source software isn't like some egalitarian commune, it's driven mostly by a few individuals. Through analyzing git commit frequency distributions and interviewing prominent open source contributors and maintainers, [Nadia Eghbal](https://www.amazon.com/Nadia-Eghbal/e/B08BDZQ7XJ/ref=dp_byline_cont_pop_book_1) captures the living history of open source software.
 
 In addition, she also analyses the main problems of maintenance that threaten the long term sustainability of open source software. As an example of the importance of individuals, look at the command line tool `curl`:
 
@@ -17,7 +17,7 @@ curl % git log --pretty="%an" | sort | uniq -c | sort -n | tail -5
 15073 Daniel Stenberg
 ```
 
-This is one of several representative examples the author gives. The driving force behind open source projects is a small number of individuals. Initially, people tend to be intrinsically motivated, and then many will carry on with maintenance out of a sense of duty, but that is rarely sustainable. Later in the book, Working in Public dives deep into issues around maintenance.
+This is one of several representative examples the author gives. The driving force behind open source projects is a small number of individuals. Initially, people tend to be intrinsically motivated, and then many will carry on with maintenance out of a sense of duty, but that is rarely sustainable. Later in the book, [Working in Public](https://www.amazon.com/gp/product/B08BDGXVK9/ref=dbs_a_def_rwt_hsch_vapi_tkin_p1_i0) dives deep into issues around maintenance.
 
 ## The four quadrant model of open source projects
 To add more precision to the analysis, the book introduces a four-part categorization of open source project types. The two dimensions are contributor growth and user growth.
