@@ -24,3 +24,26 @@ fn sum2_to_2020_mult_test() {
 }
 ```
 
+After writing this test, I can run `cargo test` and know when I'm done implementing `sum2_to_2020_mult`. The main idea in my implementation is to iterate over a single [slice](https://doc.rust-lang.org/std/slice/index.html) with two indepentently floating indicies, `i` and `j`.
+
+This caused the above test to pass:
+
+```rust
+fn sum2_to_2020_mult(input: &[i32]) -> i64 {
+    for i in 0..input.len()-1 {
+        for j in 0..i {
+            let x = input[i];
+            let y = input[j];
+            if x + y  == 2020 {
+                // to avoid integer overflow
+                return (x as i64) * (y as i64);
+            }
+        }
+    }
+    return 0;
+}
+```
+
+After solving this problem, I was given a new problem, taking the same list, but looking at triples. I ran through the same process to find the answer, wrote a test, wrote the function, earned my stars. Here's the code for full context: https://github.com/tlehman/advent-2020/blob/mainline/src/day1.rs
+
+The second day (today) is more interesting, because it involves strings and password cracking.
