@@ -41,6 +41,7 @@ a[href*='investopedia.com']::after { background-image: url("/images/icons/invest
 a[href*='wolfram.com']::after { background-image: url("/images/icons/mathematica.svg"); }
 a[href*='medrxiv.org']::after { background-image: url("/images/icons/medrxiv.ico");}
 a[href*='npr.org']::after { background-image: url("/images/icons/npr.png");}
+a[href*='rust-lang.org']::after { background-image: url("/images/icons/rust.svg"); }
 a[href*='eff.org']::after { background-image: url("/images/icons/eff.ico");}
 a[href*='archive.org']::after { background-image: url("/images/icons/archive.jpg");}
 a[href*='cern.ch']::after { background-image: url("/images/icons/cern.ico");}

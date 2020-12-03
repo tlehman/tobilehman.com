@@ -1,0 +1,26 @@
++++
+title = "Advent of Code 2020 🎄"
+date = 2020-12-02T19:48:49-08:00
+tags = ["programming", "rust", "puzzles", "rust"]
++++
+
+{{<favicon "adventofcode.com" "https://adventofcode.com/favicon.ico">}}
+
+[Advent of Code](https://adventofcode.com/) is an annual programming puzzle contest that is structured like an [Advent Calendar](https://en.wikipedia.org/wiki/Advent_calendar). This year I wanted to learn the [Rust Programming Language](https://rust-lang.org), and this is the perfect excuse to do so. In this post, I want to document the thought process I went through to get to a working solution.
+
+Day 1 gave a list of expenses, encoded as integers, and asked the programmer to find the pair of expenses that adds up to 2020, and then multiply them together. As an example, they give this list:
+
+
+```
+[1721, 979, 366, 299, 675, 1456]
+```
+
+The problem description highlights the solution: `1721 + 299 = 2020`, so the answer is `1721 * 299 = 514579`. To the astute [TDD](https://en.wikipedia.org/wiki/Test-driven_development) practitioner, this smells like a unit test! From here I wrote the test, before any code that made it pass:
+
+```rust
+fn sum2_to_2020_mult_test() {
+    let input: &[i32] = &[1721, 979, 366, 299, 675, 1456];
+    assert_eq!(514579, sum2_to_2020_mult(input));
+}
+```
+
