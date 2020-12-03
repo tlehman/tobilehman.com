@@ -46,4 +46,16 @@ fn sum2_to_2020_mult(input: &[i32]) -> i64 {
 
 After solving this problem, I was given a new problem, taking the same list, but looking at triples. I ran through the same process to find the answer, wrote a test, wrote the function, earned my stars. Here's the code for full context: https://github.com/tlehman/advent-2020/blob/mainline/src/day1.rs
 
-The second day (today) is more interesting, because it involves strings and password cracking.
+Day 2 (today) is more interesting, because it involves strings and password cracking.
+
+They give this sample input:
+
+```
+1-3 a: abcde
+1-3 b: cdefg
+2-9 c: ccccccccc
+```
+
+The string to the left of the `:` is the rule, and the right side is the password.
+
+The first place we should start is **the simplest non-trivial function that can parse `1-3 a `** as `Rule { min: 1, max: 3, letter: 'a'}`
