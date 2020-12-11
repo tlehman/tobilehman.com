@@ -1,7 +1,7 @@
 +++
 title = "The Twenty-Tens, a decade in review"
 date = 2019-12-30T08:14:33-08:00
-tags = ["history", "review"]
+tags = ["history", "review", "goats"]
 +++
 
 I think New Year is the best holiday, for two reasons. First, everyone celebrates it, and second, I love clocks rolling over. Something about numbers going up is really satisfying too (2020, it's the _highest year ever_!). This New Year is also the start of a new decade, so I'm feeling more like reminiscing and want to wrap up the last decade into something like a sensible story I can file away in my memory. Closure is good because it lets us focus on the future.
