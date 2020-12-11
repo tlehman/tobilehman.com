@@ -1,7 +1,7 @@
 baseURL = "https://tobilehman.com"
 languageCode = "en-us"
 title = "tobi's website"
-theme = "silhouette-hugo"
+theme = "hugo-notepadium"
 copyright = "Copyright 2010-2020 Tobi Lehman. All rights reserved."
 
 

@@ -1,6 +1,0 @@
-<div class="tags">
-  <i class="fas fa-tag"></i>
-  {{- range $index, $el := . -}}
-    <a href="{{ ( printf "tags/%s/" ( . | urlize ) ) | relLangURL }}">#{{ . }}</a>
-  {{- end -}}
-</div>
