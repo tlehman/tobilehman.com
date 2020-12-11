@@ -2,6 +2,7 @@
 title = "Advent of Code 2020 🎄"
 date = 2020-12-02T19:48:49-08:00
 tags = ["programming", "rust", "puzzles", "rust"]
+draft = true
 +++
 
 {{<favicon "adventofcode.com" "https://adventofcode.com/favicon.ico">}}
