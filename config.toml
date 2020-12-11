@@ -7,6 +7,7 @@ copyright = "Copyright 2010-2020 Tobi Lehman. All rights reserved."
 
 [taxonomies]
   tag = "tags"
+  project = "projects"
 
 [permalinks]
   post = "/:filename/"
