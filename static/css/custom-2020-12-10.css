@@ -137,3 +137,9 @@ a[href*='supportblackowned.com']::after { background-image: url("/images/icons/s
 img {
   max-width: 100%;
 }
+
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
