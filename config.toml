@@ -12,7 +12,7 @@ copyright = "Copyright 2010-2020 Tobi Lehman. All rights reserved."
   post = "/:filename/"
 
 [params]
-  slogan = "death, taxes and software updates"
+  slogan = "🔐 tobilehman.com"
   description = ""
   contentBackgroundColor = "#fff"
   contentTextColor = "#212529"
