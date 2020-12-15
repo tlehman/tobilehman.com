@@ -1,6 +1,6 @@
 baseURL = "https://tobilehman.com"
 languageCode = "en-us"
-title = "@tobi"
+title = "~/tobi"
 theme = "habitmelon"
 copyright = "Copyright 2010-2020 Tobi Lehman. All rights reserved."
 
