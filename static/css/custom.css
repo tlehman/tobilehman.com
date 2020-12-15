@@ -1,10 +1,5 @@
 html, body {
-        height: 100%;
         margin: 0px;
-}
-
-div.card {
-    margin: 10px;
 }
 
 /** annotated links start */
@@ -30,6 +25,7 @@ a[href*='nih.gov']::after { background-image: url("/images/icons/nih.ico"); }
 a[href*='state.gov']::after { background-image: url("/images/icons/stategov.png"); }
 a[href*='nature.com']::after { background-image: url("/images/icons/nature.svg"); }
 a[href*='spacex.com']::after { background-image: url("/images/icons/spacex.ico"); }
+a[href*='lesswrong.org']::after { background-image: url("/images/icons/lesswrong.ico"); }
 a[href*='amazon.com']::after { background-image: url("/images/icons/amazon.svg"); }
 a[href*='blog.aboutamazon.com']::after { background-image: url("https://blog.aboutamazon.com/favicon-32x32.png"); }
 a[href*='mozilla.org']::after { background-image: url("/images/icons/mozilla.png"); }
@@ -53,11 +49,13 @@ a[href*='tobilehman.com']::after { background-image: url("/favicon-16x16.png") }
 
 a[href*='tobilehman.com/about']::after { width: 0em; }
 a[href*='tobilehman.com/index.xml']::after { width: 0em; }
+a[href*='tobilehman.com/projects']::after { width: 0em; }
 a[href*='tobilehman.com/posts']::after { width: 0em; }
 a[href*='tobilehman.com/tags']::after {  width: 0em; }
 
 a[href*='/about']::after { width: 0em; }
 a[href*='/index.xml']::after { width: 0em; }
+a[href*='/projects']::after { width: 0em; }
 a[href*='/posts']::after { width: 0em; }
 a[href*='/tags']::after {  width: 0em; }
 
@@ -132,12 +130,4 @@ a[href*='supportblackowned.com']::after { background-image: url("/images/icons/s
   top: 50%;
   right: 0;
   transform: translateY(-50%);
-}
-
-img {
-  max-width: 100%;
-}
-
-footer {
-  text-align: center;
 }

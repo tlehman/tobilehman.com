@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  {{- partial "head.html" . -}}
+  <body>
+    {{- partial "header.html" . -}}
+    <div id="content">
+      {{- block "main" . }}{{- end }}
+      {{ if .IsHome }}
+      <div class="row">
+        <div class="col-2"></div>
+        <div class="col-8">
+          Welcome to <a href="https://tobilehman.com">tobilehman.com</a>. 
+
+          (Yes the terminal is real)
+          <p>
+          This site has my <a href="/posts">blog</a>, 
+          the <a href="/projects">projects</a> I've been working on, and 
+          a section <a href="/about">about me</a> if anyone is interested.
+          </p>
+
+
+        </div>
+        <div class="col-2"></div>
+      </div>
+      {{ end }}
+    </div>
+    {{- partial "footer.html" . -}}
+  </body>
+</html>
