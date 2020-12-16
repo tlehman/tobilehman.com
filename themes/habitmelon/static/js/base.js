@@ -1,15 +1,19 @@
 
+/* Begin Dark Mode */
 function activateDarkMode() {
     document.getElementsByTagName("body")[0].setAttribute("class", "dark-theme");
+    document.cookie = "theme=dark";
 }
 function activateLightMode() {
     document.getElementsByTagName("body")[0].setAttribute("class", "light-theme");
+    localStorage.setItem("color-scheme", "light");
+    document.cookie = "theme=light";
 }
 
-window.matchMedia("(prefers-color-scheme: dark)").addListener(
-    e => e.matches && activateDarkMode()
-);
-
-window.matchMedia("(prefers-color-scheme: light)").addListener(
-    e => e.matches && activateLightMode()
-);
+window.onload = function() {
+    if (document.cookie.match(/theme=dark/)) {
+        activateDarkMode();
+    } else {
+        activateLightMode();
+    }
+}

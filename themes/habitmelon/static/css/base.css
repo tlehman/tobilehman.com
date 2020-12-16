@@ -110,6 +110,7 @@ pre {
     opacity: 0;
 }
 
+
 /* dark theme and light theme */
 
 body.dark-theme { background-color: rgb(53, 53, 53); color: white; }
