@@ -109,3 +109,16 @@ pre {
     height: 0px;
     opacity: 0;
 }
+
+/* dark theme and light theme */
+
+body.dark-theme { background-color: rgb(53, 53, 53); color: white; }
+body.dark-theme a { color: lightblue; }
+body.dark-theme a:visited { color: lightblue; }
+body.dark-theme a:hover { color: white; }
+
+body.light-theme {
+    background-color: white;
+    color: black;
+}
+

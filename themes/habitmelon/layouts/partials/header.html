@@ -6,17 +6,18 @@
                 {{- if $logo -}}
                 <img class="site logo" src="{{- $logo | relURL -}}" alt />
                 {{- end -}}
-                <span class="site name">{{- site.Title | safeHTML -}}</span> % ls <br />
-                <nav>
-                    <a href="/about">About</a>
-                    <a href="/posts">Posts</a>
-                    <a href="/projects">Projects</a>
-                    <a href="/tags">Tags</a>
-                    <a href="/tags/math">\( \hat{\text{mathposts}} \in \mathbb{R}^n \)</a>
-                </nav>
-                <textarea id="command" style="width:0;height:0" onkeyup="command(this)"></textarea>
-                <br />
                 <div id="terminal-lines">
+                    <div class="terminal-line">
+                        <span class="site name">{{- site.Title | safeHTML -}}</span> % ls <br />
+                        <nav>
+                            <a href="/about">about</a>
+                            <a href="/posts">posts</a>
+                            <a href="/projects">projects</a>
+                            <a href="/tags">tags</a>
+                            <a href="/tags/math">\( \hat{\text{mathposts}} \in \mathbb{R}^n \)</a>
+                        </nav>
+                        <textarea id="command" style="width:0;height:0" onkeyup="command(this)"></textarea>
+                    </div>
                     <div class="terminal-line">
                         <span id="prompt">{{- site.Title | safeHTML -}}&nbsp;%</span>
                         <span id="commandVisible"></span>
