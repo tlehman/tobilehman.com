@@ -41,6 +41,8 @@
     color: white;
     font-family: 'Courier New', Courier, monospace;
     height: 8em;
+    overflow-y: hidden;
+    overflow-y: scroll;
 }
 #blink {
     font-size: 20px;
@@ -99,4 +101,11 @@ article {
 pre {
     overflow-x: hidden;
     overflow-x: scroll;
+}
+
+/* the textarea that holds the commands typed in the terminal centerpiece */
+#command {
+    width: 0px;
+    height: 0px;
+    opacity: 0;
 }

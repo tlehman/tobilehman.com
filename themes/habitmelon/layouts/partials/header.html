@@ -1,6 +1,6 @@
 <div class="row">
     <div class="col-3"></div>
-    <div class="col-6 centerpiece" >
+    <div id="terminal" class="col-6 centerpiece" onclick="terminalOnClick()">
             <div>
                 {{- $logo := site.Params.logo -}}
                 {{- if $logo -}}
@@ -14,9 +14,15 @@
                     <a href="/tags">Tags</a>
                     <a href="/tags/math">\( \hat{\text{mathposts}} \in \mathbb{R}^n \)</a>
                 </nav>
-                <span class="site name">{{- site.Title | safeHTML -}}</span> % 
-                <span id="command"></span>
-                <span id="blink">&#9646;</span>
+                <textarea id="command" style="width:0;height:0" onkeyup="command(this)"></textarea>
+                <br />
+                <div id="terminal-lines">
+                    <div class="terminal-line">
+                        <span id="prompt">{{- site.Title | safeHTML -}}&nbsp;%</span>
+                        <span id="commandVisible"></span>
+                        <span id="blink">&#9646;</span>
+                    </div>
+                </div>
                 <br />
             </div>
     </div>
