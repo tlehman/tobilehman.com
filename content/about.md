@@ -2,7 +2,7 @@
 title: "About Tobi"
 ---
 
-I am a self-taught computer programmer living in the Pacific Northwest 🌲.
+I am a self-taught computer programmer living in the Pacific Northwest.
 
 {{<favicon "pdx.edu" "https://www.pdx.edu/themes/custom/pdxd8/favicon.ico">}}
 I studied mathematics at [PSU](https://pdx.edu) and went right back to programming after graduating.

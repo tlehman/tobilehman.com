@@ -7,7 +7,6 @@ tags = ["followup", "optimism"]
 [Earlier this year](/posts/fast-covid19-testing) I got excited about a faster way to do COVID-19 testing using RT-LAMP instead of PCR. It's been over two months, and I wanted to follow up on this exciting result.
 
 
-{{<favicon "sciencedirect.com" "https://sdfestaticassets-us-east-1.sciencedirectassets.com/shared-assets/13/images/favSD.ico">}}
 
 This recent [mini review](https://www.sciencedirect.com/science/article/pii/S266605392030014X) said it's still not here.
 
@@ -19,3 +18,5 @@ Also, my [3D printed sliding door](/posts/diy-sliding-door-fix/) fix still didn'
 
 Usually I am an optimist, but I want to make sure I stay transparent when I get overly optimistic.
 
+
+{{<favicon "sciencedirect.com" "https://sdfestaticassets-us-east-1.sciencedirectassets.com/shared-assets/13/images/favSD.ico">}}

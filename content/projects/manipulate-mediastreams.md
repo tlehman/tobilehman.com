@@ -1,12 +1,14 @@
-+++
-title = "Manipulate MediaStream objects"
-project_url = "https://github.com/tlehman/manipulate-mediastream"
-tags = ["programming", "webrtc", "javascript", "video"]
-+++
+---
+title: "Manipulate MediaStream objects"
+project_url: "https://github.com/tlehman/manipulate-mediastream"
+tags: ["programming", "webrtc", "javascript", "video"]
+draft: false
+---
 
-This is a working example of manipulating a video stream using HTML5 <video> elements, the getUserMedia method which returns a Promise<MediaStream> object.
+This is a working example of manipulating a video stream using HTML5 &lt;video&gt; elements, the `getUserMedia` method which returns a Promise&lt;MediaStream&gt; object.
 
-[https://github.com/tlehman/manipulate-mediastream](https://github.com/tlehman/manipulate-mediastream)
+
+[manipulate-mediastream](https://github.com/tlehman/manipulate-mediastream)
 
 
 ![mediastream manip](https://raw.githubusercontent.com/tlehman/manipulate-mediastream/mainline/screenshot.png)

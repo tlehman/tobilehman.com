@@ -1,5 +1,5 @@
 +++
-title = "Wildfire West 🔥"
+title = "Wildfire West"
 date = 2020-09-10T15:55:50-07:00
 tags = ["climate", "disaster", "causality", "zoning", "economics", "goats"]
 +++
@@ -7,8 +7,6 @@ tags = ["climate", "disaster", "causality", "zoning", "economics", "goats"]
 The [West Coast is on fire](https://www.nytimes.com/2020/09/10/us/wildfires-live-updates.html)
 
 This post is addressing the question of causality. When reading social media, I noticed three patterns:
-
-{{<favicon "kgw.com" "https://www.kgw.com/assets/favicons/KGW.png?ver=2.4.9.1">}}
 
 1. arguing about climate change and causality (e.g. _climate change caused this_ and _no-it-didn't_ back and forth)
 1. rumors about the whole thing being caused by Antifa or Boog arsonists ([multiple police departments have debunked this](https://www.kgw.com/article/news/verify/did-antifa-set-fires-in-oregon-wildfires-medford-douglas-county-verify/283-9d0f6f88-6b49-4e8e-bb31-982b904c5545))
@@ -34,3 +32,5 @@ Oregon's Governor, Kate Brown recently said:
 That fact, of the total acreage being burnt being more than twice the historical average, contradicts the claim that this is just natural and normal. It's not normal, and it's a problem that we need to solve. Let's get to work.
 
 <div class="alert alert-info">Email me at <a href="mailto:mail@tobilehman.com">mail@tobilehman.com</a> to coordinate on solutions. We need climate change action, zoning reform, electric infrastructure renovation, and possibly goats. Lots of goats. </div>
+
+{{<favicon "kgw.com" "https://www.kgw.com/assets/favicons/KGW.png?ver=2.4.9.1">}}

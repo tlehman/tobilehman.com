@@ -91,3 +91,12 @@ body {
     line-height: 1.4;
 }
 /* End Typography */
+
+article {
+    max-width: 700px;
+}
+
+pre {
+    overflow-x: hidden;
+    overflow-x: scroll;
+}
