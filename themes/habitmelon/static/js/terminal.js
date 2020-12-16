@@ -21,7 +21,7 @@ function command(target) {
         } else if(input.match(/light/)) {
             activateLightMode();
         } else if(input.match(/cd (.*)/)) {
-            window.location.pathname = input.split(/\s/)[1];
+            window.location.pathname = input.match(/cd (.*)\/?\n?/)[1];
         }
     } else {
         document.getElementById("commandVisible").innerText = target.value;
