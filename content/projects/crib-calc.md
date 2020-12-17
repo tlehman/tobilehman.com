@@ -3,6 +3,7 @@ title: "Crib Calc"
 project_url: "https://github.com/tlehman/crib-calc"
 tags: ["programming", "games", "javascript", "react-js"]
 draft: false
+projects: "Cribbage Calculator"
 ---
 
 Calculate the value of a hand in the game of Cribbage 
