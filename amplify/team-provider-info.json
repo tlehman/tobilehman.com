@@ -1,0 +1,20 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-tobilehmancom-dev-93536-authRole",
+      "UnauthRoleArn": "arn:aws:iam::876971204961:role/amplify-tobilehmancom-dev-93536-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::876971204961:role/amplify-tobilehmancom-dev-93536-authRole",
+      "Region": "us-west-2",
+      "DeploymentBucketName": "amplify-tobilehmancom-dev-93536-deployment",
+      "UnauthRoleName": "amplify-tobilehmancom-dev-93536-unauthRole",
+      "StackName": "amplify-tobilehmancom-dev-93536",
+      "StackId": "arn:aws:cloudformation:us-west-2:876971204961:stack/amplify-tobilehmancom-dev-93536/1d0b9e60-3fc5-11eb-9342-0607a6d3bb77",
+      "AmplifyAppId": "d3ruu6xfm8i6q4"
+    },
+    "categories": {
+      "auth": {
+        "tobilehmancom72e7b190": {}
+      }
+    }
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "auth": {
+    "tobilehmancom72e7b190": {
+      "service": "Cognito",
+      "providerPlugin": "awscloudformation",
+      "dependsOn": [],
+      "customAuth": false
+    }
+  }
+}
