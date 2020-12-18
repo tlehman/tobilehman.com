@@ -8,9 +8,9 @@ Since a deadly virus appears to be spreading across the globe, I thought it woul
 
 The simplest model of disease spreading starts by breaking a population up into compartments:
 
- - S (Susceptible 🙂)
- - I (Infected 😷)
- - R (Removed ⚰️)
+ - S (Susceptible)
+ - I (Infected)
+ - R (Removed️)
 
 Then, the model describes the flow between these compartments. 
 
