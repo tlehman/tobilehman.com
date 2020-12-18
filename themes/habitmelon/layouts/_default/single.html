@@ -1,6 +1,9 @@
 {{ define "main" }}
 <article class="post">
     <h1>{{ .Title }}</h1>
+
+    <div class="post-meta">{{ .Date.Format "Mon, Jan 2, 2006" }} - {{ .FuzzyWordCount }} Words </div>
+
     {{.Content}}
 </article>
 {{ end }}

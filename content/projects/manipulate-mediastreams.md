@@ -1,9 +1,8 @@
 ---
-title: "Manipulate MediaStream objects"
+title: "Manipulate MediaStreams"
 project_url: "https://github.com/tlehman/manipulate-mediastream"
 tags: ["programming", "webrtc", "javascript", "video"]
 draft: false
-projects: "Manipulate MediaStream objects"
 ---
 
 This is a working example of manipulating a video stream using HTML5 &lt;video&gt; elements, the `getUserMedia` method which returns a Promise&lt;MediaStream&gt; object.
