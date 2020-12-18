@@ -1,3 +1,53 @@
+// fs is the "file system" of the website, it roughly maps 
+// onto the directory structure of the website
+// format
+function rand() { return Math.floor(Math.random() * 256)}
+const fs = {
+    "/": [],
+    "/etc": {
+        "fstab": "/dev/brain     /           ext4    defaults,noatime  1   1"
+    },
+    "/dev": {
+        "null": null,
+        "random": function(size) { const bytes = new Uint8Array(size); for(var i=0; i < size; i++) { bytes[i] = rand(); } return bytes },
+        "brain": "&#129504;"
+    },
+    "/lib": {
+        "terminal.js": "/js/terminal.js",
+        "math-canvas.js": "/js/math-canvas.js",
+        "stl_viewer.min.js": "/js/stl_viewer.min.js",
+        "three.min.js": "/js/three.min.js",
+        "webgl_detector.js": "/js/webgl_detector.js",
+    },
+    "/mnt": {
+
+    },
+    "/home/tobilehman.com": {
+        "about": [],
+        "tags": [],
+        "posts": [],
+        "projects": []
+    },
+    "/tmp/": { }, // User-editable :)
+    "/var": {
+        "log": {
+            "b.log": "/posts",
+            "stats": "I don't collect any stats yet"
+        }
+    }
+};
+var pwd = "/";
+// valid commands people can type in 
+const commands = {
+    "ls": function(args) { },
+    "cd": function(args) { },
+    "cat": function(path) { },
+    "clear": function(args) { },
+    "uname": function(args) { return (args === "a") ? "TobiOS tobilehman.com SMP Friday, May 27, 1988" : "TobiOS"; },
+    "whomami": function(args) { return "tobi" },
+    "man": function(args) { },
+};
+
 function terminalOnClick(event) {
     document.getElementById("command").focus();
     console.log("focusing invisible textarea");
@@ -46,10 +96,6 @@ function enter() {
     let terminal = document.getElementById("terminal");
     document.getElementById("terminal").scroll(0, terminal.scrollHeight);
 }
-
-const commands = {
-    "uname": "TobiOS"
-};
 
 window.onkeyup = function (event) {
     const cmd = document.getElementById("command");

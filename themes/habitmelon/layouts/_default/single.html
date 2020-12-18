@@ -2,7 +2,9 @@
 <article class="post">
     <h1>{{ .Title }}</h1>
 
+    {{ if eq .Section "posts" }}
     <div class="post-meta">{{ .Date.Format "Mon, Jan 2, 2006" }} - {{ .FuzzyWordCount }} Words </div>
+    {{ end }}
 
     {{.Content}}
 </article>

@@ -123,3 +123,11 @@ body.light-theme {
     color: black;
 }
 
+/* Begin Taxonomy Styling */
+.series-header {
+    padding: 10px;
+    border: 1px;
+    border-color: gray;
+    border-style: solid;
+}
+/* End Taxonomy Styling */

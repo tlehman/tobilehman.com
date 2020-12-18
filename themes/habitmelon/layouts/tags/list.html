@@ -25,9 +25,7 @@
     {{ end }}
 
     <!-- display pages matching the tag -->
-    {{ if not (eq .Params.tags "") }}
-        {{ range where .Pages "tag" .Params.tags }}
-            {{ .Render "summary" }}
-        {{ end }}
+    {{ range where .Pages "tag" .Params.tags }}
+        {{ .Render "summary" }}
     {{ end }}
 {{ end }}
