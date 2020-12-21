@@ -2,7 +2,7 @@
 title = "Time in Physics"
 date = 2020-12-17T21:34:14-08:00
 tags = ["physics", "math", "time"]
-draft = false
+draft = true
 +++
 
 In 1666, when the Plague was ripping through England, Isaac Newton went into quarantine outside the city and developed calculus. Calculus is an application of Euclid's geometry to problems involving time. Geometry models space, calculus models space and time.
