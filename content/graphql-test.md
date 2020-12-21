@@ -10,4 +10,4 @@ date: 2020-12-21T08:31:18-08:00
     <div id="SubscriptionResult"></div>
 </div>
 
-<script src="src/main.bundle.js"></script>
+<script src="/js/amplify/main.bundle.js"></script>
