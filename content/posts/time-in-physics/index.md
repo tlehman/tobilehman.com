@@ -23,6 +23,8 @@ In the diagram above, try to imagine that each 2-dimensional plane is really a 3
 
 Each of the planes is a 'now' where all points out to infinity exist simultaneously. Time can be visualized as a plane moving up
 
+{{<img "img/newton-time-binary.gif">}}
+
 In this model, it's possible to define simultaneity between any two points in space, no matter how far apart.
 
 In 1750, less than 100 years later, Benjamin Franklin discovers that lightning is made of electricity, and invents the lightning rod. Soon after, a man named Hans Christian &Oslash;rsted discovered that electricity can create magnetic fields. Throughout the 18th and 19th centuries, people tinkered with electricity and magnetism, building on &Oslash;rsted's discoveries, and discovered the rules that govern those two intertwined forces. The Scotsman James Clerk Maxwell was like Euclid, a unifier who took the existing body of knowledge that existed scattered around and summarized it all in a set of four equations:
@@ -44,7 +46,9 @@ For example, using Maxwell's equations, you can show that any observer should me
 
 {{[[TODO]]}} Insert picture of travelers measuring light as a different relative speed.
 
-One of the things Einstein was excellent at was taking simple ideas seriously, and then rigorously exploring their consequences. By 1905, he had found a solution, but it involved changing the assumptions about how time worked. in software terms, Einstein tried to merge Newtonian mechanics and Maxwellian dynamics, but there was a merge conflict, and it was resolved by deleting the idea of a universal "now".
+One of the things Einstein was excellent at was taking simple ideas seriously, and then rigorously exploring their consequences. By 1905, he had found a solution, but it involved changing the assumptions about how time worked. In order for the speed of light to be the same for all observers, time had to be relative. It was no longer possible to imagine that there was a well-defined notion of "now" for all points in our 3-dimensional space.
+
+In software terms, Einstein tried to merge Newtonian mechanics and Maxwellian dynamics, but there was a merge conflict, and it was resolved by deleting the idea of a universal "now".
 
 If the speed of light is the same for all observers, then it logically follows that time has to be relative. This is the central idea of relativity. Newtonian mechanics has the speed of light as relative, and time as absolute, but relativity has the speed of light as absolute, and time as relative.
 
