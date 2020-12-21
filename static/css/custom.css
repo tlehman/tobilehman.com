@@ -99,8 +99,6 @@ a[href*='supportblackowned.com']::after { background-image: url("/images/icons/s
   border-style: solid;
   border-color: lightgray;
   background-color: lightyellow;
-  overflow-x: scroll;
-  overflow-y: hidden;
 }
 
 .sidescroll {

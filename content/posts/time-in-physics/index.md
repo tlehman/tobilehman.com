@@ -2,34 +2,30 @@
 title = "Time in Physics"
 date = 2020-12-17T21:34:14-08:00
 tags = ["physics", "math", "time"]
-draft = true
+draft = false
 +++
 
 In 1666, when the Plague was ripping through England, Isaac Newton went into quarantine outside the city and developed calculus. Calculus is an application of Euclid's geometry to problems involving time. Geometry models space, calculus models space and time.
 
 The reason the ancient Greeks didn't develop calculus is because of tools. The ancient Greeks had rulers and compasses but not reliable clocks. They used the rulers and compasses to do geometry, and discovered many eternal truths about space and shape.
 
-The first precise clock was invented by Dutch mathematician Christiaan Huygens in 1656, it used a pendulum. And it reduced the loss of time by clocks from about 15 minutes per day to about 15 seconds per day. That's a 60x improvement in accuracy.
+The first precise clock was invented by Dutch mathematician [Christiaan Huygens](https://en.wikipedia.org/wiki/Christiaan_Huygens) in 1656, it used a pendulum. And it reduced the loss of time by clocks from about 15 minutes per day to about 15 seconds per day. That's a 60x improvement in accuracy.
 
 Given that small intervals of time could be practically measured, the technological environment in Europe became ripe for someone to develop calculus. It's no surprise that both Leibniz and Newton both arrived at equivalent new mathematics! 
 
-In Newton's theory of gravity and motion, he models time as a universal sequence of "nows". In his model, it is as if God has a clock that defined a single now for all points in space. The way to visualize this is to imagine a universe with a binary star system.
+In Newton's theory of gravity and motion, he models time as a universal sequence of "nows". In his model, it is as if God has a clock that defined a single now for all points in space. The way to visualize this is to imagine a universe with a binary star system. The stars orbit around each other in space, tracing out a double helix in spacetime:
 
-<script src="/js/three.min.js"></script>
-<script>
-const scene = new THREE.Scene();
-const camera = new THREE.PerspectiveCamera( 75, window.innerWidth / window.innerHeight, 0.1, 1000 );
+{{<img "img/newton-binary.png">}}
 
-const renderer = new THREE.WebGLRenderer();
-renderer.setSize( window.innerWidth, window.innerHeight );
-document.body.appendChild( renderer.domElement );
-</script>
+<div class='yellow-note-noscroll'>The symbol \( \mathbb{R}^3 \) denotes the 3-dimensional space that we use to model our universe in most physics problems.
+In the diagram above, try to imagine that each 2-dimensional plane is really a 3-dimensional space. 
+</div>
 
-
+Each of the planes is a 'now' where all points out to infinity exist simultaneously. Time can be visualized as a plane moving up
 
 In this model, it's possible to define simultaneity between any two points in space, no matter how far apart.
 
-In 1750, less than 100 years later, Benjamin Franklin discovers that lightning is made of electricity, and invents the lightning rod. Soon after, a man named Hans Christian Ørsted discovered that electricity can create magnetic fields. Throughout the 18th and 19th centuries, people tinkered with electricity and magnetism, building on Ørsted's discoveries, and discovered the rules that govern those two intertwined forces. The Scotsman James Clerk Maxwell was like Euclid, a unifier who took the existing body of knowledge that existed scattered around and summarized it all in a set of four equations:
+In 1750, less than 100 years later, Benjamin Franklin discovers that lightning is made of electricity, and invents the lightning rod. Soon after, a man named Hans Christian &Oslash;rsted discovered that electricity can create magnetic fields. Throughout the 18th and 19th centuries, people tinkered with electricity and magnetism, building on &Oslash;rsted's discoveries, and discovered the rules that govern those two intertwined forces. The Scotsman James Clerk Maxwell was like Euclid, a unifier who took the existing body of knowledge that existed scattered around and summarized it all in a set of four equations:
 1. Gauss's Law ([deep-dive explanation](/posts/gauss-law))
  $$\nabla \cdot \boldsymbol{e} = 4 \pi \rho$$
 
