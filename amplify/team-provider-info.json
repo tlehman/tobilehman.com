@@ -10,11 +10,6 @@
       "StackName": "amplify-tobilehmancom-dev-93536",
       "StackId": "arn:aws:cloudformation:us-west-2:876971204961:stack/amplify-tobilehmancom-dev-93536/1d0b9e60-3fc5-11eb-9342-0607a6d3bb77",
       "AmplifyAppId": "d3ruu6xfm8i6q4"
-    },
-    "categories": {
-      "auth": {
-        "tobilehmancom72e7b190": {}
-      }
     }
   }
 }
