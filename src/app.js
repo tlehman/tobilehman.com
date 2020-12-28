@@ -17,18 +17,15 @@ const MutationResult = document.getElementById('MutationResult');
 const QueryResult = document.getElementById('QueryResult');
 
 MutationButton.addEventListener('click', (evt) => {
-  MutationResult.innerHTML = `MUTATION RESULTS:`;
   createNewTodo().then( (evt) => {
-    MutationResult.innerHTML += `<p>${evt.data.createTodo.name} - ${evt.data.createTodo.description}</p>`
+      getData();
   })
 });
 
 async function getData() {
-  QueryResult.innerHTML = `QUERY RESULTS`;
+  QueryResult.innerHTML = `Likes: `;
   API.graphql(graphqlOperation(listTodos)).then((evt) => {
-    evt.data.listTodos.items.map((todo, i) =>
-    QueryResult.innerHTML += `<p>${todo.name} - ${todo.description}</p>`
-    );
+    QueryResult.innerHTML += evt.data.listTodos.items.length;
   })
 }
 

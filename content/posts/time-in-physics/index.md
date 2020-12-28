@@ -38,23 +38,50 @@ In 1750, less than 100 years later, Benjamin Franklin discovers that lightning i
 $$\nabla \times \boldsymbol{E} = -\frac{1}{c}\frac{\partial\boldsymbol{B}}{\partial t}$$
 
 4. Ampere's circuital Law ([deep-dive explanation](/posts/ampere-law)):
- $$\nabla \times \boldsymbol{B} = -\frac{1}{c}(4\pi\boldsymbol{J} +\frac{\partial\boldsymbol{E}}{\partial t})$$
+ $$\nabla \times \boldsymbol{B} = -\frac{1}{c}\left(4\pi\boldsymbol{J} +\frac{\partial\boldsymbol{E}}{\partial t}\right)$$
 
-In the early 1900s, a young patent clerk named Albert Einstein had known all of this, and was struggling with trying to reconcile Maxwell's theory of electro-magnetism and old Newton's theory of gravity. Both were correct, within their respective domains, but they gave contradictory answers to certain basic physical questions.
+In the early 1900s, a young patent clerk named Albert Einstein had known all of this, and was struggling with trying to reconcile Maxwell's theory and Newton's theory of gravity. Both were correct, within their respective domains, but they gave contradictory answers to certain basic physical questions.
 
-For example, using Maxwell's equations, you can show that any observer should measure the speed of light as the same number: 299,792,458 m/s. But in Newton's model, if an observer is traveling at half the speed of light in the direction of a light beam, they should measure the relative speed of the light as only half that.
+For example, using Maxwell's equations, you can show that any observer should measure the speed of light as the same number: c = 299,792,458 m/s. But in Newton's model, if an observer is traveling at half the speed of light in the direction of a light beam, they should measure the relative speed of the light as only half that.
 
-{{[[TODO]]}} Insert picture of travelers measuring light as a different relative speed.
+As a thought experiment to illustrate what absolute c really means, imagine two physicists in a spaceship. For simplicity, the spaceship is not accelerating, and the physicists feel no gravity. 
 
-One of the things Einstein was excellent at was taking simple ideas seriously, and then rigorously exploring their consequences. By 1905, he had found a solution, but it involved changing the assumptions about how time worked. In order for the speed of light to be the same for all observers, time had to be relative. It was no longer possible to imagine that there was a well-defined notion of "now" for all points in our 3-dimensional space.
+The first physicist, Dr. Flashlight has a flashlight and points it at the mirrored roof of the spaceship. 
 
-In software terms, Einstein tried to merge Newtonian mechanics and Maxwellian dynamics, but there was a merge conflict, and it was resolved by deleting the idea of a universal "now".
+The one with a jetpack is traveling c/2. Both physicists are traveling at a constant 
+velocity relative to each other, and relative to the walls of the ship. Each thinks 
+of themselves as "at rest".
 
-If the speed of light is the same for all observers, then it logically follows that time has to be relative. This is the central idea of relativity. Newtonian mechanics has the speed of light as relative, and time as absolute, but relativity has the speed of light as absolute, and time as relative.
+{{<img "img/flashlight.gif">}}
 
-One way to visualize the universe in Einstein's model is to imagine a cone of light in spacetime
+Dr. Flashlight measures light going 10 meters in 33.35 nanoseconds, that comes out to 299,792,458 m/s or just c.
 
-- {{[[TODO]]}} Insert picture of spacetime in relativity 
+Now from Dr. Jetpack's point of view:
+
+{{<img "img/jetpack.gif">}}
+
+From the perspective of Dr. Flashlight, Dr. Jetpack should only see the light traveling 5m away from him, since his Jetpack goes c/2. In Newton's model, **Dr. Jetpack should measure light going c/2, but Maxwell's theory says it will always be c**. 
+
+This paradox is one that Einstein worked on, and arrived at a solution to. The solution is to treat space and time as part of a single 4-dimensional spacetime, and then measure **distance between points** using this equation:
+
+$$ \sqrt{ (x_1 - x_2)^2 + (y_1 - y_2)^2 + (z_1 - z_2)^2 - c^2(t_1 - t_2)^2 }$$
+
+In ordinary 3-dimensional space, we measure the distance between points with a formula based on the [Pythagorean theorem](https://en.wikipedia.org/wiki/Pythagorean_theorem). The only difference with Einstein's metric (the formula above) is that the time component is subtracted instead of added. Notice that the c<sup>2</sup> coefficient, that makes all the units work out.
+
+This leads to some weird conclusions, first being that the distance between any two points on a ray of light, from the light's perspective, is 0. So **from the light's perspective, no time passes**.
+
+To see why, look at c(t<sub>1</sub> - t<sub>2</sub>), by definition 
+
+
+
+The amount of time, measured from the jetpack perspective is t. 
+Because the speed of light is the same in all reference frames, that means that
+$$ c = \frac{h}{t} = \frac{10\text{ m}}{33.35\text{ ns}}$$
+
+In order for both physicists to measure the same value for the speed of light, they will have to each measure space and time differently. In this way, "1 meter" for the jetpack guy will not equal "1 meter" for the flashlight guy. Maxwell's theory has c as a real physical constant. When you hold one thing constant, something else has to give. This is why Einstein's theory is called relativity. Space and time only have meaning _relative_ to the observer.
+
+If time is relative, then it means it's possible for two observers to disagree about which two events are simulatenous. But if that's true, then it should be possible for some observer A to see events X and Y as simultaneous, but observer B flying by on her spaceship sees X as happening before Y. Also, an alien C zips by and sees Y happening before Y.    
+
 - {{[[TODO]]}} Talk about Einstein's definition of simultaneity and [[H. Putnam]]'s transitive argument that leads to the conclusion that time is an illusion 
 - {{[[TODO]]}} expand on how this line of thinking leads to the [[Block Universe]]
 - Segue into [[Lee Smolin]]'s idea of "physics in a box", and his approach which takes time as primitive and real, and define Presentism vs Eternalism
