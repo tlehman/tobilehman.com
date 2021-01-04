@@ -91,24 +91,25 @@ Here's an animation to visualize how the light cone is constant, but the hypersu
 
 {{<img "img/Relativity_of_Simultaneity_Animation.gif">}}
 
-{{<favicon "weebly.com" "http://283403168925209589.weebly.com/favicon.ico" >}}
+{{<favicon "weebly.com" "https://283403168925209589.weebly.com/favicon.ico" >}}
 
 Einstein's realization that time is relative leads to an interesting line of thought. If an observer Alice sees events X and Y as simultanous, but observes Y happening before Z, then it will be possible to find an observer Bob who sees Y and Z as simultaneous, but not X. If you keep iterating this, then it becomes possible to show that there is no unambiguous notion of now, and the idea that "the only thing that is real is now" dissolves under the acid of relativity and transitivity. The formal argument is in [Hilary Putnam's paper Time and Physical Geometry](http://283403168925209589.weebly.com/uploads/9/3/3/0/9330952/putnam_1967.pdf). 
 
 This line of thought concludes in a view called Eternalism. Eternalism posits that time is not fundamentally real. The main alternative to this is the view called Presentism. Presentism holds that time is real, and that "now" is well defined.
 
 {{<favicon "maths.org" "https://plus.maths.org/content/sites/plus.maths.org/themes/bootplus/favicon.ico">}}
-Eternalism leads to this idea of the [Block Universe](https://plus.maths.org/content/what-block-time)
+Eternalism leads to this idea of the [Block Universe](https://plus.maths.org/content/what-block-time). The block universe is the idea that the universe is a single unchanging structure, and time only appears to flow. One way to think about the block universe is to imagine that binary star system above: it's a double helix in the block universe.
 
-So far, physicists have gotten more productivity by assuming a version of Eternalism. 
+Physicist Lee Smolin rejects the block universe, and starts by assuming that time is real, and attempts to re-found physics. In his book [Time Reborn](https://www.amazon.com/Time-Reborn-Crisis-Physics-Universe-ebook/dp/B009JWCQMK/ref=sr_1_2?dchild=1&hvadid=78340273050258&hvbmt=be&hvdev=c&hvqmt=e&keywords=time+reborn&qid=1609735790&s=digital-text&sr=1-2&tag=mh0b-20) he doesn't acheive this, but he comes up with a good beginning framework for what such a theory would look like.
 
-Eternalists ditch the idea of now, and take all points in spacetime as equally real, defining the whole of spacetime as a single static "block" universe. The block universe is the idea that the universe is a single unchanging structure, and time only appears to flow. One way to think about the block universe is to imagine that binary star system above: it's a double helix in the block universe.
+The physicist Carlo Rovelli published a paper called [Neither Presentism nor Eternalism](https://arxiv.org/abs/1910.02474) where he argues for a form of centrism between Presentism and Eternalism. In it he doesn't assume a single now, but a bunch of "here-nows" that are well defined for the observers and all their close neighbors. By weakening the requirement that my here-now and some alien's here-now in a distant galaxy are directly comparable, he recovers a notion of time that flows, but with timelines that can't all be reconciled into a single universal line. It's more like a cosmic textile, where some timelines are woven together and inseparable, and some are far away and never interact.
 
-Physicist Lee Smolin rejects the block universe, and starts by assuming that time is real, and attempts to re-found physics.
+Rovelli makes his idea precise by defining close neighbors using the diamond-present from a light cone of an observer:
+{{<img "img/diamond-present.png">}}
 
-In his book [Time Reborn](https://www.amazon.com/Time-Reborn-Crisis-Physics-Universe-ebook/dp/B009JWCQMK/ref=sr_1_2?dchild=1&hvadid=78340273050258&hvbmt=be&hvdev=c&hvqmt=e&keywords=time+reborn&qid=1609735790&s=digital-text&sr=1-2&tag=mh0b-20) he doesn't acheive this, but he comes up with a good beginning framework for what such a theory would look like.
+Going back to Hilary Putnam's argument, I think we need to define a continuous function `asRealAs(diamondPresent1, diamondPresent2): float` that goes from 0 to 1. If one diamond present is contained in the other, or they are equal, then it outputs 1, if there's no overlap, then it outputs 0. If there's some overlap, then they can interact, and it's some number strictly between 0 and 1. This continuity allows us to escape Putnman's transitive collapse of all of spacetime into a single block of equally-real points.
 
-The physicist Carlo Rovelli published a paper called [Neither Presentism nor Eternalism](https://arxiv.org/abs/1910.02474) where he argues for a form of centrism between Presentism and Eternalism. Honestly, I am not satisfied. If he's right, then Putnam's argument would have to use a different definition of "as real as". If the transitivity breaks down as you get father away in spacetime, I can see some sort of continuous function that quantifies __how__ real something is. I suspect the resolution to this disagreement is in some modified notion of "mutually real" that uses real numbers and not booleans.
+**To summarize**: Rovelli defines diamond events, and I define a continuous function that allows for more distant diamond events to be less mututually real than closer diamond events. This allows us to reject Hilary Putnam's argument that leans heavily on transitivity, and escape the conclusion that points in the distant future and the distant past are all equally real.
 
-This has been a fun exploration of two major ideas about time in physics, next is to dig into the analogues of these ideas in distributed systems. Stay tuned
+The picture of the universe that emerges is of a bunch of independent here-nows that communicate with light signals in a cosmic network. This is very similar to way time is modeled in some distributed systems. Here I discuss how these ideas about time influence thinking about [time in distributed systems](/posts/time-in-distributed-systems).
 
