@@ -2,7 +2,6 @@
 title = "Time in Physics"
 date = 2020-12-17T21:34:14-08:00
 tags = ["physics", "math", "time"]
-draft = true
 +++
 
 In 1666, when the Plague was ripping through England, Isaac Newton went into quarantine outside the city and developed calculus. Calculus is an application of Euclid's geometry to problems involving time. Geometry models space, calculus models space and time.
@@ -66,24 +65,46 @@ This paradox is one that Einstein worked on, and arrived at a solution to. The s
 
 $$ \sqrt{ (x_1 - x_2)^2 + (y_1 - y_2)^2 + (z_1 - z_2)^2 - c^2(t_1 - t_2)^2 }$$
 
-In ordinary 3-dimensional space, we measure the distance between points with a formula based on the [Pythagorean theorem](https://en.wikipedia.org/wiki/Pythagorean_theorem). The only difference with Einstein's metric (the formula above) is that the time component is subtracted instead of added. Notice that the c<sup>2</sup> coefficient, that makes all the units work out.
+In ordinary 3-dimensional space, we measure the distance between points with a formula based on the [Pythagorean theorem](https://en.wikipedia.org/wiki/Pythagorean_theorem). Any formula used to measure distance between points is called a **metric**.
+The only difference with Einstein's metric above is that the time component is subtracted instead of added. Notice that the c<sup>2</sup> coefficient, that makes all the units work out.
 
 This leads to some weird conclusions, first being that the distance between any two points on a ray of light, from the light's perspective, is 0. So **from the light's perspective, no time passes**.
 
-To see why, look at c(t<sub>1</sub> - t<sub>2</sub>), by definition 
+To see why, look at c(t<sub>1</sub> - t<sub>2</sub>), since c is absolute, this will 
+equal the distance that light travels through space: 
 
+$$ \sqrt{ (x_1 - x_2)^2 + (y_1 - y_2)^2 + (z_1 - z_2)^2} = c(t_1 - t_2) $$
 
+So when you subtract the right side from the left side, you always get 0.
 
-The amount of time, measured from the jetpack perspective is t. 
-Because the speed of light is the same in all reference frames, that means that
-$$ c = \frac{h}{t} = \frac{10\text{ m}}{33.35\text{ ns}}$$
+This property of light being absolute leads to a this idea of a **light cone**. In relativity, you can't unambiguously define a single, simultaneous "now" for all points in space, but you can sweep out a cone of possible past and future events that can communicate, and partition them from events that can never possibly communicate.
 
-In order for both physicists to measure the same value for the speed of light, they will have to each measure space and time differently. In this way, "1 meter" for the jetpack guy will not equal "1 meter" for the flashlight guy. Maxwell's theory has c as a real physical constant. When you hold one thing constant, something else has to give. This is why Einstein's theory is called relativity. Space and time only have meaning _relative_ to the observer.
+{{<img "img/light-cone.png">}}
 
-If time is relative, then it means it's possible for two observers to disagree about which two events are simulatenous. But if that's true, then it should be possible for some observer A to see events X and Y as simultaneous, but observer B flying by on her spaceship sees X as happening before Y. Also, an alien C zips by and sees Y happening before Y.    
+That "hypersurface of the present" above defines all the points that would be simultaneous with the center of the cone. However, two different oberservers can disagree about which events are simultaneous. 
 
-- {{[[TODO]]}} Talk about Einstein's definition of simultaneity and [[H. Putnam]]'s transitive argument that leads to the conclusion that time is an illusion 
-- {{[[TODO]]}} expand on how this line of thinking leads to the [[Block Universe]]
-- Segue into [[Lee Smolin]]'s idea of "physics in a box", and his approach which takes time as primitive and real, and define Presentism vs Eternalism
-- {{[[TODO]]}}  Briefly discuss [[Carlo Rovelli]]'s "End with [[Carlo Rovelli]]'s arXiv paper about "Neither Presentism nor Eternalism""
-- 
+Here's an animation to visualize how the light cone is constant, but the hypersurface of the present can tilt depending on relativity velocities of observers:
+
+{{<img "img/Relativity_of_Simultaneity_Animation.gif">}}
+
+{{<favicon "weebly.com" "http://283403168925209589.weebly.com/favicon.ico" >}}
+
+Einstein's realization that time is relative leads to an interesting line of thought. If an observer Alice sees events X and Y as simultanous, but observes Y happening before Z, then it will be possible to find an observer Bob who sees Y and Z as simultaneous, but not X. If you keep iterating this, then it becomes possible to show that there is no unambiguous notion of now, and the idea that "the only thing that is real is now" dissolves under the acid of relativity and transitivity. The formal argument is in [Hilary Putnam's paper Time and Physical Geometry](http://283403168925209589.weebly.com/uploads/9/3/3/0/9330952/putnam_1967.pdf). 
+
+This line of thought concludes in a view called Eternalism. Eternalism posits that time is not fundamentally real. The main alternative to this is the view called Presentism. Presentism holds that time is real, and that "now" is well defined.
+
+{{<favicon "maths.org" "https://plus.maths.org/content/sites/plus.maths.org/themes/bootplus/favicon.ico">}}
+Eternalism leads to this idea of the [Block Universe](https://plus.maths.org/content/what-block-time)
+
+So far, physicists have gotten more productivity by assuming a version of Eternalism. 
+
+Eternalists ditch the idea of now, and take all points in spacetime as equally real, defining the whole of spacetime as a single static "block" universe. The block universe is the idea that the universe is a single unchanging structure, and time only appears to flow. One way to think about the block universe is to imagine that binary star system above: it's a double helix in the block universe.
+
+Physicist Lee Smolin rejects the block universe, and starts by assuming that time is real, and attempts to re-found physics.
+
+In his book [Time Reborn](https://www.amazon.com/Time-Reborn-Crisis-Physics-Universe-ebook/dp/B009JWCQMK/ref=sr_1_2?dchild=1&hvadid=78340273050258&hvbmt=be&hvdev=c&hvqmt=e&keywords=time+reborn&qid=1609735790&s=digital-text&sr=1-2&tag=mh0b-20) he doesn't acheive this, but he comes up with a good beginning framework for what such a theory would look like.
+
+The physicist Carlo Rovelli published a paper called [Neither Presentism nor Eternalism](https://arxiv.org/abs/1910.02474) where he argues for a form of centrism between Presentism and Eternalism. Honestly, I am not satisfied. If he's right, then Putnam's argument would have to use a different definition of "as real as". If the transitivity breaks down as you get father away in spacetime, I can see some sort of continuous function that quantifies __how__ real something is. I suspect the resolution to this disagreement is in some modified notion of "mutually real" that uses real numbers and not booleans.
+
+This has been a fun exploration of two major ideas about time in physics, next is to dig into the analogues of these ideas in distributed systems. Stay tuned
+
