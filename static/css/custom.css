@@ -96,6 +96,7 @@ a[href*='supportblackowned.com']::after { background-image: url("/images/icons/s
 }
 
 .yellow-note-noscroll {
+  color: darkgray;
   padding: 1em;
   border-style: solid;
   border-color: lightgray;

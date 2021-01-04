@@ -63,7 +63,9 @@ From the perspective of Dr. Flashlight, Dr. Jetpack should only see the light tr
 
 This paradox is one that Einstein worked on, and arrived at a solution to. The solution is to treat space and time as part of a single 4-dimensional spacetime, and then measure **distance between points** using this equation:
 
+<div class="sidescroll">
 $$ \sqrt{ (x_1 - x_2)^2 + (y_1 - y_2)^2 + (z_1 - z_2)^2 - c^2(t_1 - t_2)^2 }$$
+</div>
 
 In ordinary 3-dimensional space, we measure the distance between points with a formula based on the [Pythagorean theorem](https://en.wikipedia.org/wiki/Pythagorean_theorem). Any formula used to measure distance between points is called a **metric**.
 The only difference with Einstein's metric above is that the time component is subtracted instead of added. Notice that the c<sup>2</sup> coefficient, that makes all the units work out.
@@ -73,7 +75,9 @@ This leads to some weird conclusions, first being that the distance between any 
 To see why, look at c(t<sub>1</sub> - t<sub>2</sub>), since c is absolute, this will 
 equal the distance that light travels through space: 
 
+<div class="sidescroll">
 $$ \sqrt{ (x_1 - x_2)^2 + (y_1 - y_2)^2 + (z_1 - z_2)^2} = c(t_1 - t_2) $$
+</div>
 
 So when you subtract the right side from the left side, you always get 0.
 
