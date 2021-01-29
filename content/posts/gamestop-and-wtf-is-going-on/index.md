@@ -68,7 +68,7 @@ The outrage right now has to do with the [CEO of Nasdaq](https://www.reddit.com/
 
 From the outside, it really looks like Wall Street, the financial news companies, and the exchanges are all colluding to protect mega-rich institutional gamblers like Melvin Capital.
 
-So, if this story is correct, then there is a network of people protecting some market manipulators, the Hedge Funds, but not an open forum of market manipulators.
+So, if this story is correct, it would mean there is a network of people protecting some market manipulators, the Hedge Funds, but not an open forum of market manipulators made up of ordinary people without fancy Ivy League MBAs or friends in high places. It would mean that if rich institutional gamblers got more rich at the expense of GameStop, that's fine. But if a bunch of millenials on Reddit are getting rich at the expense of Hedge Funds, then it Absolutely Must Be Stopped.
 
 # Conclusion
 
@@ -76,4 +76,4 @@ We don't have all the facts yet, and it's totally possible Robinhood had a good 
 
 I don't usually condone the sort of mob mentality that is going on here, but if the mob is right, then power to them, and screw the institutional gamblers and their media shills. 
 
-The financial industry has a privileged position, but in return for that privilege and power should come a great responsbility: **to allocate capital in a way that maximizes economic growth**. If instead they playing games and acting like predators, then they deserve to have that power and privilege taken away.
+The financial industry has a privileged position, but in return for that privilege and power should come a great responsbility: **to allocate capital in a way that maximizes economic growth**. If instead they are playing games and acting like predators, then they deserve to have that power and privilege taken away.
