@@ -20,6 +20,10 @@ a::after {
     text-decoration: underline;
 }
 
+a[href*='bitcoin:']::after { background-image: url("/images/icons/bitcoin.ico"); }
+a[href*='bitcoin.org']::after { background-image: url("/images/icons/bitcoin.ico"); }
+a[href*='brave.com']::after { background-image: url("/images/icons/brave.png"); }
+a[href*='basicattentiontoken.org']::after { background-image: url("/images/icons/bat.png"); }
 a[href*='nber.org']::after { background-image: url("/images/icons/nber.ico"); }
 a[href*='arxiv.org']::after { background-image: url("/images/icons/arxiv.ico"); }
 a[href*='nih.gov']::after { background-image: url("/images/icons/nih.ico"); }
