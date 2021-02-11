@@ -47,6 +47,7 @@ Reducing the total number and complexity of laws should be a guiding goal for an
 <style>
 a[href*='finimpact.com']::after { background-image: url("https://www.finimpact.com/wp-content/uploads/2018/01/cropped-finimpact-favicon.png.webp") }
 a[href*='fivefifths.co']::after { background-image: url("https://149452217.v2.pressablecdn.com/wp-content/uploads/2020/06/cropped-5_5-2-32x32.png") }
+a[href*='mymove.com']::after { background-image: url("https://www.mymove.com/wp-content/uploads/2020/05/cropped-favicon-32x32.png") }
 </style>
 
 <div class="green-note">
@@ -55,4 +56,8 @@ UPDATE (2020-06-30) A reader pointed my attention to FinImpact and it's list of 
 
 <div class="green-note">
 UPDATE (2020-07-15) The founder of a website <a href="https://fivefifths.co/">FiveFifths</a> pointed me to this new directory of Black-owned businesses, news and interviews. It's an awesome project! I love the name too, it's evocative and proud. I am bookmarking it.
+</div>
+
+<div class="green-note">
+UPDATE (2021-02-10) Alexis Curls of MyMove shared this <a href="https://www.mymove.com/home-inspiration/decoration-design-ideas/black-owned-home-decor/">great list</a> of 25 Black-owned home decor businesses.
 </div>
