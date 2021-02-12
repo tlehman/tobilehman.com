@@ -1,15 +1,5 @@
-# 🚀 Welcome to your new awesome project!
+# tobilehman.com
 
-This project has been created using **webpack scaffold**, you can now run
+Static site containing my blog, my web presence, and biographical information about me.
 
-```
-npm run build
-```
-
-or
-
-```
-yarn build
-```
-
-to bundle your application
+Currently deploying to AWS using Amplify.
