@@ -1,0 +1,82 @@
+baseURL = "https://tobilehman.com"
+languageCode = "en-us"
+title = "~/tobi"
+theme = "habitmelon"
+copyright = "Copyright 2010-2021 Tobi Lehman. All rights reserved."
+
+[taxonomies]
+  tag = "tags"
+  series = "series"
+
+[permalinks]
+  post = "/:filename/"
+
+[params]
+  slogan = ""
+  description = ""
+  contentBackgroundColor = "#fff"
+  contentTextColor = "#212529"
+  contentLinkColor = "#007bff"
+  contentLinkHoverColor = "#0056b3"
+  navbarBackgroundColor = "#212529"
+  navbarLinkColor = "rgba(255, 255, 255, 0.75)"
+  navbarLinkHoverColor = "rgba(255, 255, 255, 1)"
+  wrapperMaxWidth = "800px"
+  customDateFormat = "Jan 2, 2006"
+  customCodeStyle = true
+  customBlockquoteStyle = true
+  showPostSummary = false
+  googleAnalytics = "UA-123456789-1"
+  cookieConsent = true
+  includeBootstrapJs = false
+  faviconSafariPinnedTabColor = "#5bbad5"
+  faviconMsApplicationTileColor = "#da532c"
+  faviconThemeColor = "#ffffff"
+  favicon_32 = "/favicon-32x32.png"
+  favicon_24 = "/favicon-24x24.png"
+  favicon_16 = "/favicon-16x16.png"
+
+[menu]
+  [[menu.nav]]
+  name = "Home"
+  url = "/"
+  weight = 1
+  [[menu.nav]]
+  name = "Posts"
+  url = "/posts"
+  weight = 2
+  [[menu.nav]]
+  name = "About"
+  url = "/about/"
+  weight = 4
+
+[markup]
+  defaultMarkdownHandler = "goldmark"
+  [markup.goldmark]
+    [markup.goldmark.extensions]
+      definitionList = true
+      footnote = true
+      linkify = true
+      strikethrough = true
+      table = true
+      taskList = true
+      typographer = true
+    [markup.goldmark.parser]
+      attribute = true
+      autoHeadingID = true
+    [markup.goldmark.renderer]
+      hardWraps = false
+      unsafe = true
+      xHTML = false
+  [markup.highlight]
+    codeFences = true
+    hl_Lines = ""
+    lineNoStart = 1
+    lineNos = false
+    lineNumbersInTable = true
+    noClasses = true
+    style = "monokai"
+    tabWidth = 4
+  [markup.tableOfContents]
+    endLevel = 6
+    startLevel = 2

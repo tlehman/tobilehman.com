@@ -1,0 +1,31 @@
+<div class="row">
+    <div class="col-3"></div>
+    <div id="terminal" class="col-6 centerpiece" onclick="terminalOnClick()">
+            <div>
+                {{- $logo := site.Params.logo -}}
+                {{- if $logo -}}
+                <img class="site logo" src="{{- $logo | relURL -}}" alt />
+                {{- end -}}
+                <div id="terminal-lines">
+                    <div class="terminal-line">
+                        <span class="site name">{{- site.Title | safeHTML -}}</span> % ls <br />
+                        <nav>
+                            <a href="/about">about</a>
+                            <a href="/posts">posts</a>
+                            <a href="/projects">projects</a>
+                            <a href="/tags">tags</a>
+                            <a href="/tags/math">\( \hat{\text{mathposts}} \in \mathbb{R}^n \)</a>
+                        </nav>
+                        <textarea id="command" style="width:0;height:0" onkeyup="command(this)"></textarea>
+                    </div>
+                    <div class="terminal-line">
+                        <span id="prompt">{{- site.Title | safeHTML -}}&nbsp;%</span>
+                        <span id="commandVisible"></span>
+                        <span id="blink">&#9646;</span>
+                    </div>
+                </div>
+                <br />
+            </div>
+    </div>
+    <div class="col-3"></div>
+</div>

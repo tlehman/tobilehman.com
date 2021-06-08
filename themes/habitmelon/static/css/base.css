@@ -1,0 +1,133 @@
+
+* {
+    box-sizing: border-box; /* makes the width: property include the margin+padding */
+}
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+[class*="col-"] {
+    float: left;
+    padding: 15px;
+    /*border: 1px solid red;*/
+}
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    [class*="col-"] {
+      width: 100%;
+    }
+    /* get rid of spacer col-3's when snapping to mobile */
+    /* For mobile phones: */
+    .col-3 {
+        display: none;
+    }
+}
+/* Centerpiece navigation element */
+.centerpiece {
+    background-color: rgb(103, 103, 109);
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    height: 8em;
+    overflow-y: hidden;
+    overflow-y: scroll;
+}
+#blink {
+    font-size: 20px;
+    animation: blink-animation 1.5s steps(5, start) infinite;
+    -webkit-animation: blink-animation 1.5s steps(5, start) infinite;
+}
+@keyframes blink-animation {
+    to {
+      visibility: hidden;
+    }
+}
+@-webkit-keyframes blink-animation {
+    to {
+      visibility: hidden;
+    }
+}
+nav {
+    display: block;
+}
+a:hover {
+    color: darkcyan;
+}
+nav > a {
+    color: lightblue;
+}
+nav > a:visited {
+    color: lightblue;
+}
+nav > a:hover {
+    color: darkcyan;
+}
+@media only screen and (max-width: 600px) {
+    .centerpiece {
+        width: 100%;
+    }
+}
+
+/* Each row should be wrapped in a <div>. The number of columns inside a row should always add up to 12 */
+
+img { 
+    max-width: 100%;
+}
+
+/* Start Typography */
+body { 
+    font-size: 18px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    line-height: 1.4;
+}
+/* End Typography */
+
+article {
+    max-width: 700px;
+}
+
+pre {
+    overflow-x: hidden;
+    overflow-x: scroll;
+}
+
+/* the textarea that holds the commands typed in the terminal centerpiece */
+#command {
+    width: 0px;
+    height: 0px;
+    opacity: 0;
+}
+
+
+/* dark theme and light theme */
+
+body.dark-theme { background-color: rgb(53, 53, 53); color: white; }
+body.dark-theme a { color: lightblue; }
+body.dark-theme a:visited { color: lightblue; }
+body.dark-theme a:hover { color: white; }
+
+body.light-theme {
+    background-color: white;
+    color: black;
+}
+
+/* Begin Taxonomy Styling */
+.series-header {
+    padding: 10px;
+    border: 1px;
+    border-color: gray;
+    border-style: solid;
+}
+/* End Taxonomy Styling */

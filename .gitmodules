@@ -1,0 +1,9 @@
+[submodule "themes/minimal-bootstrap-hugo-theme"]
+	path = themes/minimal-bootstrap-hugo-theme
+	url = https://github.com/zwbetz-gh/minimal-bootstrap-hugo-theme.git
+[submodule "themes/researcher"]
+	path = themes/researcher
+	url = https://github.com/ojroques/hugo-researcher.git
+[submodule "themes/hugo-notepadium"]
+	path = themes/hugo-notepadium
+	url = https://github.com/cntrump/hugo-notepadium.git
