@@ -1,57 +1,9 @@
 <div class="row">
     <div class="col-3"></div>
-    <div id="terminal">
-            <div>
-                {{- $logo := site.Params.logo -}}
-                {{- if $logo -}}
-                <img class="site logo" src="{{- $logo | relURL -}}" alt />
-                {{- end -}}
-            </div>
+    <div class="col-6 centered" style="max-width: 100%; padding: 0">
+        <div id="terminal" style="max-width: 100%; overflow-x: hidden;"></div>
     </div>
     <div class="col-3"></div>
 </div>
 
-<script>
-var term = new Terminal({
-    cursorBlink: "block"
-});
-var entries = [];
-var curr_line = "";
-term.open(document.getElementById("terminal"));
-term.write("Welcome to tobilehman.com $ ");
-const pages = [
-    {path: "posts"},
-    {path: "projects"},
-    {path: "about"},
-];
-function prompt() {
-    term.write("\r\n");
-    console.log("curr_line = " +  curr_line);
-    console.log(JSON.stringify(entries));
-    if(curr_line.match(/clear$/)) {
-        curr_line = "$ ";
-        term.clear();
-    } else if(curr_line.match(/uname/)) {
-        term.write("Tobi OS 33.5\r\n");
-        curr_line = "$ ";
-    } else if(curr_line.match(/ls/)) {
-        for(var i = 0; i < pages.length; i++) {
-            term.write(pages[i].path);
-            term.write("\t");
-        }
-        term.write("\r\n");
-        curr_line = "$ ";
-    }
-    term.write(curr_line);
-}
-
-term.on("key", function(key, ev) {
-    if(ev.keyCode === 13) {
-        entries.push(curr_line);
-        prompt();
-    } else {
-        curr_line += key;
-        term.write(key);
-    }
-});
-</script>
+<script src="/js/tobishell.js"></script>
