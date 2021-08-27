@@ -103,14 +103,6 @@ pre {
     overflow-x: scroll;
 }
 
-/* the textarea that holds the commands typed in the terminal centerpiece */
-#command {
-    width: 0px;
-    height: 0px;
-    opacity: 0;
-}
-
-
 /* dark theme and light theme */
 
 body.dark-theme { background-color: rgb(53, 53, 53); color: white; }
