@@ -1,6 +1,6 @@
 baseURL = "https://tobilehman.com"
 languageCode = "en-us"
-title = "~/tobi"
+title = "tobilehman.com:~"
 theme = "habitmelon"
 copyright = "Copyright 2010-2021 Tobi Lehman. All rights reserved."
 
@@ -38,15 +38,15 @@ copyright = "Copyright 2010-2021 Tobi Lehman. All rights reserved."
 
 [menu]
   [[menu.nav]]
-  name = "Home"
+  name = "home"
   url = "/"
   weight = 1
   [[menu.nav]]
-  name = "Posts"
+  name = "posts"
   url = "/posts"
   weight = 2
   [[menu.nav]]
-  name = "About"
+  name = "about"
   url = "/about/"
   weight = 4
 

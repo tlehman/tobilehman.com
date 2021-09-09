@@ -1,5 +1,5 @@
 ---
-title: "About Tobi"
+title: "about"
 ---
 
 I am a self-taught computer programmer living in the Pacific Northwest.

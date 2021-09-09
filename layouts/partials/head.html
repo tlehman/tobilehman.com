@@ -9,9 +9,16 @@
         {{ end }}
     </title>
 
-    <!-- hack to make my compiled ES6 for AWS Amplify work -->
-    <script>var exports = {};</script>
 
+    {{ if .IsHome }}
+    <script>
+        var pwd = "/home/tobi";
+    </script>
+    {{ else }}
+    <script>
+        var pwd = "/home/tobi/" + window.location.href.split("/")[3];
+    </script>
+    {{ end }}
     <script src="/js/base.js"></script>
     <script src="/js/xterm.min.js"></script>
     <link rel="stylesheet" href="/css/xterm.css"></link>
