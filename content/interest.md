@@ -1,7 +1,7 @@
 ---
-description: "Notes on interest rates"
-title: "interest"
+title: "Notes on interest rates"
 date: 2021-09-09T14:55:11-07:00
+image: "/images/complex-interest-rates.gif"
 ---
 
 {{<favicon "cnbc.com" "https://www.cnbc.com/favicon.ico">}}

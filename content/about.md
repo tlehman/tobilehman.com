@@ -1,5 +1,5 @@
 ---
-title: "about"
+title: "About Me"
 ---
 
 I am a self-taught computer programmer living in the Pacific Northwest.
