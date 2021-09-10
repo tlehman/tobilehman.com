@@ -78,7 +78,7 @@ One way to see it is to convert the complex number to polar coordinates, then ra
 
 
 <div class="yellow-note-noscroll">
-If any central bank governors are reading this, feel free to experiment with complex interest rates if negative rates are doing what you need them to.
+If any central bank governors are reading this, feel free to experiment with complex interest rates if negative rates are not doing what you need them to.
 </div>
 
 <a id="eth"></a>
