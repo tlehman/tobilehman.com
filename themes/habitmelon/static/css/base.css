@@ -24,7 +24,7 @@
     clear: both;
     display: table;
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 800px) {
     /* For mobile phones: */
     [class*="col-"] {
       width: 100%;
@@ -34,6 +34,25 @@
     .col-3 {
         display: none;
     }
+
+    nav ul {
+        list-style-type: none;
+    }
+
+    nav li {
+        float: left;
+    }
+
+    nav li a {
+        display: block;
+        text-align: center;
+        padding-left: 6px;
+        padding-right: 6px;
+        padding-top: 1px;
+        padding-bottom: 1px;
+        text-decoration: none;
+    }
+
 }
 /* Centerpiece navigation element */
 .centerpiece {

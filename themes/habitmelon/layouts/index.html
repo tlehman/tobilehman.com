@@ -7,7 +7,9 @@
       {{- block "main" . }}{{- end }}
       {{ if .IsHome }}
       <div class="row">
-        <div class="col-2"></div>
+        <div class="col-2">
+          {{- partial "nav.html" . -}}
+        </div>
         <div class="col-8">
           Welcome to <a href="https://tobilehman.com">tobilehman.com</a>. 
 
@@ -20,6 +22,10 @@
         
           <p>
           My ethereum domain name: <a href='https://app.ens.domains/name/tobilehman.eth'>tobilehman.eth</a>
+          </p>
+
+          <p>
+            <a href="/interest">Notes on interest rates %</a>
           </p>
 
 

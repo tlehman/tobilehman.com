@@ -21,6 +21,9 @@ blockquote:before {
 a {
     text-decoration: underline;
 }
+a:visited {
+  color: blue;
+}
 a::after {
     content: "";
     display: inline-block;
@@ -49,6 +52,7 @@ a[href*='nature.com']::after { background-image: url("/images/icons/nature.svg")
 a[href*='spacex.com']::after { background-image: url("/images/icons/spacex.ico"); }
 a[href*='lesswrong.org']::after { background-image: url("/images/icons/lesswrong.ico"); }
 a[href*='stlouisfed.org']::after { background-image: url("/images/icons/fred.ico"); }
+a[href*='federalreserve.gov']::after { background-image: url("/images/icons/frb.ico"); }
 a[href*='reddit.com']::after { background-image: url("/images/icons/reddit.ico"); }
 a[href*='amazon.com']::after { background-image: url("/images/icons/amazon.svg"); }
 a[href*='blog.aboutamazon.com']::after { background-image: url("https://blog.aboutamazon.com/favicon-32x32.png"); }
@@ -119,7 +123,6 @@ a[href*='supportblackowned.com']::after { background-image: url("/images/icons/s
 }
 
 .yellow-note-noscroll {
-  color: darkgray;
   padding: 1em;
   border-style: solid;
   border-color: lightgray;
