@@ -13,7 +13,7 @@ Where \\(C_k\\) can't be started until \\(C_{k-1}\\) is complete.
 
 The types of problems best suited to GPUs look like this:
 $$ \begin{aligned} G_1 & \\\\ G_2 & \\\\ ... \\\\ G_n \end{aligned} $$
-Where \\(G_i\\) can be computed independently of all other \\(C_j\\)
+Where \\(G_i\\) can be computed independently of all other \\(G_j\\)
 
 The Mandelbrot set fractal has the property of being **embarrasingly parallel**. That's another way of saying that each subproblem can be solved independently of all the other subproblems. The reason for this is that they <mark>depend only on the coordinates of a point</mark> in the [complex plane](https://tobilehman.com/posts/imaginary-numbers-are-real). For the Mandelbrot set, you take a point $$z_0 = x + i y$$ and then send it to $$z_1 = z_0^2 + z_0$$
 
