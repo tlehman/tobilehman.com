@@ -33,5 +33,4 @@ developing robots to deliver packages, and joined the team to help them make it 
 {{<favicon "pdx.edu" "https://www.pdx.edu/themes/custom/pdxd8/favicon.ico">}}
 {{<favicon "goldstar.com" "https://i.gse.io/favicon-32.png">}}
 {{<favicon "flightstats.com" "https://static.flightstats.com/v2/favicon.ico">}}
-{{<favicon "nvidia.com" "https://developer.nvidia.com/sites/all/themes/cuda/favicon.ico">}}
 {{<favicon "elemental.com" "https://www.elemental.com/favicon/index.ico">}}
