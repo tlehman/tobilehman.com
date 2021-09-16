@@ -5,7 +5,7 @@
         {{ if .IsHome }}
             {{ .Site.Title }}
         {{ else }}
-            {{ .Site.Title }}/{{ replace (replace (replace (replace .Permalink "https://tobilehman.com" "") "http://localhost:1313/" "" ) "index.md" "") ".md" "" }}
+            {{ .Site.Title }}{{ replace (replace (replace (replace .Permalink "https://tobilehman.com" "") "http://localhost:1313" "" ) "index.md" "") ".md" "" }}
         {{ end }}
     </title>
 

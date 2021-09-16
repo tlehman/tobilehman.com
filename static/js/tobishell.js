@@ -13,13 +13,8 @@ term.open(document.getElementById("terminal"));
 term.write("Welcome to tobilehman.com\r\n");
 var PS1 = () => `${shortPwd()}$ `;
 term.write(PS1());
-const pages = [
-    {path: "about"},
-    {path: "posts"},
-    {path: "projects"},
-];
 const fs = {
-    "/home/tobi": [".", "..", "about", "contact", "projects", "posts"],
+    "/home/tobi": [".", "..", "about", "contact", "gpus", "interest", "projects", "posts"],
     "/home/tobi/projects": [".", ".."],
     "/home/tobi/contact": [".", ".."],
     "/home/tobi/posts": [".", ".."],
