@@ -19,7 +19,7 @@ const fs = {
     "/home/tobi/contact": [".", ".."],
     "/home/tobi/posts": [".", ".."],
     "/home/tobi/about": [".", ".."],
-    "/home/tobi/about": [".", "..", "hgttg.mp3"]
+    "/home/tobi/archive": [".", "..", "hgttg.mp3"]
 };
 function prompt() {
     term.write("\r\n");
