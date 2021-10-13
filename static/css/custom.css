@@ -38,6 +38,7 @@ a::after {
     text-decoration: underline;
 }
 
+a[href*='.pdf']::after { background-image: url("/images/icons/pdf.png"); }
 a[href*='bitcoin:']::after { background-image: url("/images/icons/bitcoin.ico"); }
 a[href*='bitcoin.org']::after { background-image: url("/images/icons/bitcoin.ico"); }
 a[href*='.eth']::after { background-image: url("/images/icons/ethereum.png"); }

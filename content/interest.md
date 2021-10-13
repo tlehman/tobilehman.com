@@ -6,7 +6,7 @@ image: "/images/complex-interest-rates.gif"
 
 {{<favicon "cnbc.com" "https://www.cnbc.com/favicon.ico">}}
 
-This page is about interest rates, negative interest rates, and something I invented called <mark>complex interest rates</mark>.
+This page is about interest rates, negative interest rates, and <mark>complex interest rates</mark>.
 I think interest rates are interesting because they represent the value of [time](/tags/time/). 
 
 ## Table of Contents
@@ -59,7 +59,7 @@ So, \\(r\\) can be any real number, negative, positive or zero. What about compl
 
 (For a primer on imaginary and complex numbers, see my post [Imaginary Numbers are Real](/posts/imaginary-numbers-are-real))
 
-<a id="complex-interest"></a>
+<a id="complex"></a>
 # Complex interest rates
 
 What would a complex interest rate mean? If you are comfortable with math, you might bust out the compound interest formula and just change them from being real variables to being complex variables. So, assume \\(P, r \in \mathbb{C}\\), the set of complex numbers. Then \\(P = A + iB\\) and \\(r = c + id\\), where \\( A, B, c, d \in \mathbb{R} \\).
@@ -76,10 +76,14 @@ One way to see it is to convert the complex number to polar coordinates, then ra
 
 ![complex exponentiation spiral](/images/complex-interest-rates.gif)
 
+__Update from 2021-10-12__:
+When I wrote the first draft on 2021-09-09, I was unaware of any other attempt to define complex rates of return. I thought I had invented it, but I was wrong. Here's a paper from 2010 called "The Simple Meaning of Complex Rates of Return":
 
-<div class="yellow-note-noscroll">
-If any central bank governors are reading this, feel free to experiment with complex interest rates if negative rates are not doing what you need them to.
-</div>
+[Pierru, Axel. (2010). The Simple Meaning of Complex Rates of Return. Engineering Economist. 55. 10.1080/00137911003775081.](/pdf/2010-Pierru-ComplexInterest.pdf)
+
+In Pierru 2010, the paper talks about the real and imaginary components representing two assets, A and B, with their own distinct rates of interest, &rho;<sub>A</sub> and &rho;<sub>B</sub>, and the imaginary unit i is interpreted as an exchange operator, exchanging some of A for B, or vice versa.
+
+Then the paper defines a complex rate of return in terms of &rho;<sub>A</sub> and &rho;<sub>B</sub>, where the period over which the interest is accrued is followed by an exchange between asset A and B.
 
 <a id="eth"></a>
 

@@ -1,5 +1,5 @@
 ---
-title: "projects"
+title: "Projects"
 ---
 
 I wrote [pdf2png](https://github.com/tlehman/pdf2png) to make a fast PDF to PNG converter, uses C.
