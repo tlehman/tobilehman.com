@@ -14,11 +14,12 @@ term.write("Welcome to tobilehman.com\r\n");
 var PS1 = () => `${shortPwd()}$ `;
 term.write(PS1());
 const fs = {
-    "/home/tobi": [".", "..", "about", "contact", "gpus", "interest", "projects", "posts"],
+    "/home/tobi": [".", "..", "archive", "about", "contact", "gpus", "interest", "projects", "posts"],
     "/home/tobi/projects": [".", ".."],
     "/home/tobi/contact": [".", ".."],
     "/home/tobi/posts": [".", ".."],
-    "/home/tobi/about": [".", ".."]
+    "/home/tobi/about": [".", ".."],
+    "/home/tobi/about": [".", "..", "hgttg.mp3"]
 };
 function prompt() {
     term.write("\r\n");
