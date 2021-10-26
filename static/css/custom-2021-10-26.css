@@ -54,6 +54,7 @@ a[href*='spacex.com']::after { background-image: url("/images/icons/spacex.ico")
 a[href*='lesswrong.org']::after { background-image: url("/images/icons/lesswrong.ico"); }
 a[href*='stlouisfed.org']::after { background-image: url("/images/icons/fred.ico"); }
 a[href*='federalreserve.gov']::after { background-image: url("/images/icons/frb.ico"); }
+a[href*='jamesclear.com']::after { background-image: url("/images/icons/jc.png"); }
 a[href*='reddit.com']::after { background-image: url("/images/icons/reddit.ico"); }
 a[href*='amazon.com']::after { background-image: url("/images/icons/amazon.svg"); }
 a[href*='blog.aboutamazon.com']::after { background-image: url("https://blog.aboutamazon.com/favicon-32x32.png"); }
