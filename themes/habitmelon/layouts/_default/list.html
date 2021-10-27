@@ -1,5 +1,14 @@
 {{ define "main" }}
   {{ range .Pages }}
-    "{{ .Path }}",
+    {{ .Render "summary" }}
   {{ end }}
+
+<script>
+  const listItems = [
+  {{ range .Pages }}
+    {{ .URL }} ,
+  {{ end }}
+];
+</script>
 {{ end }}
+

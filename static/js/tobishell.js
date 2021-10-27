@@ -6,10 +6,11 @@ var term = new Terminal({
 var entries = [];
 var curr_line = "";
 function shortPwd() {
-    var path = pwd.replace("/home/tobi", "~");
-    return path + "/";
+    return pwd.replace("/home/tobi", "~") + "/";
 }
+var delimiter = "\t";
 term.open(document.getElementById("terminal"));
+term.focus();
 term.write("Welcome to tobilehman.com\r\n");
 var PS1 = () => `${shortPwd()}$ `;
 term.write(PS1());
@@ -52,24 +53,41 @@ function prompt() {
         case "ls":
             const path = args.startsWith("-") || args == "" ? pwd : args;
             const items = fs[path];
+            // ls -1 shows each item on new line
+            if(curr_line.match(/\-1/)) {
+                delimiter = "\r\n";
+            } else {
+                delimiter = "\t";
+            }
             // If there are items in the "filesystem". Otherwise just spoof it
             if(!items && curr_line.match(/\-a/)) {
                 term.write(".");
-                term.write("\t");
+                term.write(delimiter);
                 term.write("..");
             }
             // Assuming there are items in the "filesystem"
             for(var i = 0; items && i < items.length; i++) {
                 if(!items[i].startsWith(".")) {
                     term.write(items[i]);
-                    term.write("\t");
+                    term.write(delimiter);
                 } else {
                     if(curr_line.match(/\-a/)) {
                         term.write(items[i]);
-                        term.write("\t");
+                        term.write(delimiter);
                     }
                 }
             }
+            // Special case, if path == "posts", then show the blog posts:
+            if(path === "/home/tobi/posts") {
+                // Display all hugo-generated listItems (see habitmelon/layouts/_default/list.html)
+                for(var i = 0; i < listItems.length; i++) {
+                    if(listItems[i].split("/").length >= 3) {
+                        term.write(listItems[i].split("/")[2]);
+                        term.write(delimiter);
+                    }
+                }
+            }
+
             entries.push(curr_line);
             curr_line = "";
             term.write("\r\n");
