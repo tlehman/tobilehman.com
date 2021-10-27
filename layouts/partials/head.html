@@ -16,7 +16,16 @@
     </script>
     {{ else }}
     <script>
-        var pwd = "/home/tobi/" + window.location.href.split("/")[3];
+        var breadcrumbs = window.location.href.split("/");
+        var path = "";
+        for(var i = 3; i < breadcrumbs.length; i++) {
+            if(i > 3 && i < breadcrumbs.length-1) {
+                path += "/";
+            }
+            path += breadcrumbs[i];
+        }
+
+        var pwd = "/home/tobi/" + path;
     </script>
     {{ end }}
     <script src="/js/base.js"></script>

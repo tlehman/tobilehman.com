@@ -52,6 +52,13 @@ function prompt() {
         case "ls":
             const path = args.startsWith("-") || args == "" ? pwd : args;
             const items = fs[path];
+            // If there are items in the "filesystem". Otherwise just spoof it
+            if(!items && curr_line.match(/\-a/)) {
+                term.write(".");
+                term.write("\t");
+                term.write("..");
+            }
+            // Assuming there are items in the "filesystem"
             for(var i = 0; items && i < items.length; i++) {
                 if(!items[i].startsWith(".")) {
                     term.write(items[i]);

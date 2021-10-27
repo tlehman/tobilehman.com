@@ -79,6 +79,9 @@ a[href*='/gpus']::after { background-image: url("/images/icons/nvidia.ico");}
 
 /* internal link styles */
 a[href*='tobilehman.com']::after { background-image: url("/favicon-16x16.png") }
+/* S3 bucket archive link styles */
+a[href*='amazonaws.com']::after { background-image: url("/images/icons/amazon.svg") }
+
 
 a[href*='tobilehman.com/about']::after { width: 0em; }
 a[href*='tobilehman.com/index.xml']::after { width: 0em; }
