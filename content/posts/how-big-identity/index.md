@@ -2,7 +2,7 @@
 title = "How big should your identity be?"
 date = 2021-10-26T13:51:17-07:00
 draft = false
-tags = ["self", "identity", "scale"]
+tags = ["self", "identity", "scale", "habits"]
 +++
 
 {{<img "img/identity-scale.png">}}
