@@ -2,7 +2,7 @@
 title = "How big should your identity be?"
 date = 2021-10-26T13:51:17-07:00
 draft = false
-card= "posts/how-big-identity/img/identity-scale.png"
+card= "https://tobilehman.com/posts/how-big-identity/img/identity-scale.png"
 tags = ["self", "identity", "scale", "habits"]
 +++
 

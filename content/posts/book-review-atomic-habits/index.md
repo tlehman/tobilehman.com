@@ -2,6 +2,7 @@
 title = "Book Review: Atomic Habits"
 date = 2021-10-30T14:19:20-07:00
 card= "img/atomic-habits.jpg"
+card= "https://tobilehman.com/posts/book-review-atomic-habits/img/atomic-habits.jpg"
 tags = ["habits", "book-review", "programming"]
 +++
 
