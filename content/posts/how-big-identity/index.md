@@ -2,6 +2,7 @@
 title = "How big should your identity be?"
 date = 2021-10-26T13:51:17-07:00
 draft = false
+card= "img/identity-scale.png"
 tags = ["self", "identity", "scale", "habits"]
 +++
 
