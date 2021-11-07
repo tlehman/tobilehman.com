@@ -87,4 +87,4 @@ Then the paper defines a complex rate of return in terms of &rho;<sub>A</sub> an
 
 <a id="eth"></a>
 
-TODO: Implement an [Ethereum](https://ethereum.org) smart contract that allows one to hold complex-valued money and earn interest on it.
+[Ethereum](https://ethereum.org) smart contract implementing complex money: [ComplexMoney on Repl.it](https://replit.com/@tlehman/ComplexMoney#contract.sol)
