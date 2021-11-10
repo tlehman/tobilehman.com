@@ -27,3 +27,4 @@ This is an experiment in protocol governance that pays open source contributors 
 {{<favicon "cnet.com" "https://www.cnet.com/a/fly/bundles/cnetcss/images/core/icon/favicon-16.png">}}
 {{<favicon "ens.domains" "https://claim.ens.domains/favicon-16x16.png">}}
 
+{{<tweet>}}
