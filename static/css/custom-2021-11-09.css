@@ -77,6 +77,8 @@ a[href*='nvidia.com']::after { background-image: url("/images/icons/nvidia.ico")
 a[href*='replit.com']::after { background-image: url("/images/icons/replit.png");}
 a[href*='repl.it']::after { background-image: url("/images/icons/replit.png");}
 a[href*='/gpus']::after { background-image: url("/images/icons/nvidia.ico");}
+a[href*='wyoleg.gov']::after { background-image: url("/images/icons/wyoming.png");}
+a[href*='icann.org']::after { background-image: url("/images/icons/icann.ico");}
 
 
 /* internal link styles */
