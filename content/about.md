@@ -1,35 +1,23 @@
 ---
-title: "About Me"
+title: "About Tobi"
 ---
 
-I am a self-taught computer programmer living in the Pacific Northwest.
-
+<div style="float: right; max-width: 200px">
+<img src="/images/avatar.jpg">
+</div>
+I am an experienced software engineer with a background in math.
 {{<favicon "pdx.edu" "https://www.pdx.edu/themes/custom/pdxd8/favicon.ico">}}
-I studied mathematics at [PSU](https://pdx.edu) and went right back to programming after graduating.
 
-My professional life has been centered around backend web development, real-time data processing and streaming video. I am currently doing web development to support the [Amazon Scout](https://www.aboutamazon.com/news/transportation/whats-next-for-amazon-scout) delivery robots.
 
-{{<favicon "colorado.edu" "https://www.colorado.edu/ecee/profiles/express/themes/cuspirit/favicon.ico">}}
+I studied mathematics and computer science at [PSU](https://pdx.edu). 
 
-I am also studying electrical engineering online through [University of Colorado Boulder](https://www.colorado.edu/ecee/academics/online-programs/master-science-electrical-engineering) to deepen my understanding of robotics.
-<hr />
+I currently work at [Amazon Scout](https://www.aboutamazon.com/news/transportation/whats-next-for-amazon-scout), developing teleoperations software to drive the robots.
 
-![avatar](/images/avatar.jpg)
 
-This portrait was lovingly made for me by the artists working for the Ruby on Ales 2016 Conference. Here's [the talk I gave on simulating orbits](https://www.youtube.com/watch?v=IaSPcs8Y6gc&feature=emb_title)
+### Past achievements
+- I built the network recovery software for the [AWS Elemental Link](https://aws.amazon.com/medialive/features/link/).
 
-<hr />
+- I was the sole winner of the 2011 Putnam Mathematical Competition at PSU. [Picture of plaque for proof](/images/putnam-2011.jpg)
+ 
 
-[Full backstory](/backstory)
 
-<hr />
-
-[My Influences](/influences)
-
-<hr />
-
-# Disclaimer
-
-My opinions are my own, not those of my employer (who is awesome, btw). 
-Also, my opinions might be wrong, and I would love it if you want to argue 
-about why I'm wrong, send me some words at <a href="mailto:mail@tobilehman.com">mail@tobilehman.com</a>
