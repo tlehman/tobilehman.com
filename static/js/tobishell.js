@@ -1,6 +1,6 @@
 var term = new Terminal({
     cursorBlink: "block",
-    rows: 10,
+    rows: 7,
     cols: 80
 });
 var entries = [];

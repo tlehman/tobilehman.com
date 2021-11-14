@@ -6,12 +6,12 @@ card= "https://tobilehman.com/posts/how-big-identity/img/identity-scale.png"
 tags = ["self", "identity", "scale", "habits"]
 +++
 
-{{<img "img/identity-scale.png">}}
-
 
 Arguments are best when they don't engage either member's identities. For this reason, Paul Graham says to [keep your identity small](http://paulgraham.com/identity.html).  The title summarizes it well, but the __why__ is important. 
 
 If you are interested in the truth, then be prepared to follow arguments where they lead instead of letting the identity of the author interfere with your reasoning.
+
+{{<img "img/identity-scale.png">}}
 
 For example, suppose two scientists are publicly debating the precise value of [climate sensitivity](https://en.wikipedia.org/wiki/Climate_sensitivity), but one of the scientists is from Berkeley, where you also went. You both enthusiastically love the [Cal Bears](https://calbears.com/) and also hate the [Colorado Buffaloes](https://cubuffs.com/). It turns out the other scientist went to University of Colorado. Their debate gets into the details of climate feedback loops and uncertainty calculations, and it's just above your level of expertise, you only majored in geology, and have only a basic grasp of meterology and climate science. Both debaters seem well-informed, and they keep making good points and good counter points. It's this kind of situation where identities can substitute for specific knowledge, and in the end, you think the Berkeley scientist did a better job, despite the occasional errors that some over-caffeinated grad student in the front kept pointing out.
 
