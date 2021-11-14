@@ -36,6 +36,28 @@
         </div>
         <div class="col-2"></div>
       </div>
+      <div class="row" style="background-color: whitesmoke; border-top: solid 1px lightgray; border-bottom: solid 2px lightgray;">
+        <div class="col-2">
+          <p>Latest posts:</p>
+          <!-- Add Subscribe Section Here -->
+        </div>
+        <div class="col-10">
+          <row style="background-color: lightgray;">
+          {{ range where .Site.Pages ".Params.card" "!=" nil }}
+              <div class="col-4 frontpost" style="border: solid 1px lightgray; margin: 5px">
+                <div style="height: 200px; overflow: hidden">
+                  <a href="{{ .URL }}">
+                    <p>{{ .Params.title }}</p>
+                    <img src="{{ .Params.card }}" style="width: 200px; padding 20px;"></img>
+                  </a>
+                </div>
+                {{ .Params.date }}
+              </div>
+          {{ end }}
+          </row>
+
+        </div>
+      </div>
       {{ end }}
     </div>
     {{- partial "footer.html" . -}}
