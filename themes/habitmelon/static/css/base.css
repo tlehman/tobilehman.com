@@ -37,6 +37,9 @@
     [class*="col-"] {
       width: 100%;
     }
+    #terminal {
+        height: 90px;
+    }
     /* get rid of spacer col-3's when snapping to mobile */
     /* For mobile phones: */
     .col-3 {

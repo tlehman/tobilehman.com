@@ -1,8 +1,9 @@
 var term = new Terminal({
     cursorBlink: "block",
-    rows: 7,
+    rows: 8,
     cols: 80
 });
+
 var entries = [];
 var curr_line = "";
 function shortPwd() {
