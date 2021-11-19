@@ -32,23 +32,15 @@
     clear: both;
     display: table;
 }
-
-.frontpost {
-    background-color: lightgray;
-}
 @media only screen and (max-width: 800px) {
     /* For mobile phones: */
     [class*="col-"] {
-      max-width: none;
       width: 100%;
     }
     /* get rid of spacer col-3's when snapping to mobile */
     /* For mobile phones: */
     .col-3 {
         display: none;
-    }
-    .frontpost {
-        width: 100%;
     }
 
     nav ul {

@@ -23,48 +23,6 @@
         </div>
         <div class="col-2"></div>
       </div>
-      <div class="row" style="background-color: whitesmoke; border-top: solid 1px lightgray; border-bottom: solid 2px lightgray;">
-        <div class="col-2">
-          <p>Latest posts:</p>
-          <!-- Add Subscribe Section Here -->
-        </div>
-        <div class="col-10">
-          <row style="">
-          {{ range where .Site.Pages ".Params.card" "!=" nil }}
-            <div class="col-4">
-              <a href="{{ .URL }}">
-                <div style="padding: 5px; height: 25px">
-                {{ .Params.title }}
-                </div>
-                <div class="frontpost" style='height: 240px; border: solid 1px lightgray; margin: 5px; background-position: center; background-size: cover; background-image: url("{{ .Params.card }}")'>
-                </div>
-              </a>
-              {{ .Params.date }}
-              <hr />
-            </div>
-          {{ end }}
-          </row>
-        </div>
-      </div>
-
-      <div class="row" style="background-color: lightyellow; border-top: solid 1px; border-color: yellow">
-        <div class="col-2">
-          <p>My public notes: </p>
-          <!-- Add Subscribe Section Here -->
-        </div>
-        <div class="col-4">
-          <p>
-            <a href="/interest">Notes on interest rates %</a>
-          </p>
-        </div>
-
-        <div class="col-4">
-          <p>
-            <a href="/gpus">Notes on GPU Programming</a>
-          </p>
-        </div>
-     </div>
-
       {{ end }}
     </div>
     {{- partial "footer.html" . -}}
