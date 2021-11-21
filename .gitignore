@@ -5,6 +5,7 @@ public/
 *.#*
 *.hugo*
 .DS_Store
+book-reviews
 
 #amplify
 amplify/\#current-cloud-backend
