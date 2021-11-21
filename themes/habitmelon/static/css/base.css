@@ -35,6 +35,9 @@
 .hidden {
     display: none;
 }
+.other-menu {
+    padding-left: 2em;
+}
 @media only screen and (max-width: 800px) {
     .hidden-when-mobile {
         display: none;
@@ -71,6 +74,9 @@
         padding-top: 1px;
         padding-bottom: 1px;
         text-decoration: underline;
+    }
+    .other-menu {
+        float: right;
     }
 
 }
