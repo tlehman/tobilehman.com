@@ -29,6 +29,9 @@ function prompt() {
     const { groups: { cmd, args } } = /^(?<cmd>[a-z]+) *(?<args>.*)$/.exec(curr_line);
 
     switch(cmd) {
+        case "back":
+            window.history.back();
+            break;
         case "cd":
             if(args == "..") {
                 var href = window.location.href;

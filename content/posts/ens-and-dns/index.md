@@ -2,7 +2,7 @@
 title = "ENS, DNS and the future of internet names"
 date = 2021-11-09T21:05:17-08:00
 card = "https://tobilehman.com/posts/ens-and-dns/img/ens-dns.png"
-tags = ["ethereum", "ens", "dns", "governance"]
+tags = ["ethereum", "ens", "dns", "protocols", "governance"]
 +++
 
 Today [a DAO just distributed 1.5 billion dollars worth of ENS tokens](https://twitter.com/nileshtrivedi/status/1458002617439825920). They were distributed to owners of .eth domains. DAO is short for "Decentralized Autonomous Organization". 

@@ -1,7 +1,7 @@
 +++
 title = "History of Domain Names"
 date = 2013-10-06T20:09:01-08:00
-tags = ["history", "internet"]
+tags = ["history", "internet", "dns", "protocols"]
 +++
 
 In trying to understand DNS better, I stumbled upon this little bit of history in RFC 1034:
