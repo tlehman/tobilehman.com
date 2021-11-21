@@ -99,9 +99,6 @@ a:hover {
 nav > a {
     color: lightblue;
 }
-nav > a:visited {
-    color: lightblue;
-}
 nav > a:hover {
     color: darkcyan;
 }
@@ -127,6 +124,8 @@ body {
 
 article {
     max-width: 800px;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 pre {
