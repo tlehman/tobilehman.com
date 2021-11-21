@@ -1,6 +1,7 @@
 +++
 title = "Wildfire West"
 date = 2020-09-10T15:55:50-07:00
+card = "https://tobilehman.com/posts/wildfire-west/img/cause.png"
 tags = ["climate", "disaster", "causality", "zoning", "economics", "goats"]
 +++
 
