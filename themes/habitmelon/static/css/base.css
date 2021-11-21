@@ -32,7 +32,13 @@
     clear: both;
     display: table;
 }
+.hidden {
+    display: none;
+}
 @media only screen and (max-width: 800px) {
+    .hidden-when-mobile {
+        display: none;
+    }
     /* For mobile phones: */
     [class*="col-"] {
       width: 100%;
@@ -53,6 +59,8 @@
 
     nav li {
         float: left;
+        padding-left: 15px;
+        padding-right: 15px;
     }
 
     nav li a {
@@ -62,7 +70,7 @@
         padding-right: 2px;
         padding-top: 1px;
         padding-bottom: 1px;
-        text-decoration: none;
+        text-decoration: underline;
     }
 
 }

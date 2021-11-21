@@ -151,6 +151,8 @@ term.on("key", function(key, ev) {
     if(ev.keyCode === 13) {
         entries.push(curr_line);
         prompt();
+        // scroll to bottom of container div if it's in mobile mode
+        const t = document.getElementById("terminal"); t.scrollTop = t.scrollHeight;
     } else if(ev.keyCode === 8) {
         curr_line = curr_line.slice(0, -1);
         term.write("\r\n");

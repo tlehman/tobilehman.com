@@ -1,11 +1,14 @@
 <nav>
     <ul>
         <li><a href="/">Home</a></li>
-        <li><a href="/about">About</a></li>
-        <li><a href="/archive">Archive</a></li>
-        <li><a href="/contact">Contact</a></li>
         <li><a href="/posts">Posts</a></li>
         <li><a href="/tags">#Tags</a></li>
-        <li><a href="/projects">Projects</a></li>
+        <li><a href="javascript:m=document.getElementsByClassName('other-menu')[0];if(m.classList.contains('hidden')) { m.classList.remove('hidden') } else { m.classList.add('hidden') }">Other</a></li>
+        <div class="other-menu hidden" style="float: right">
+            <li><a href="/archive">Archive</a></li>
+            <li><a href="/about">About</a></li>
+            <li><a href="/contact">Contact</a></li>
+            <li><a href="/projects">Projects</a></li>
+        </div>
     </ul>
 </nav>
