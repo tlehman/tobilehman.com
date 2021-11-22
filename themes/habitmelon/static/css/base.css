@@ -78,6 +78,10 @@
     .other-menu {
         float: right;
     }
+    .other-menu li {
+        padding-left: 2px;
+        padding-right: 2px;
+    }
 
 }
 /* Centerpiece navigation element */
