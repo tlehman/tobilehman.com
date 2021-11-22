@@ -8,12 +8,14 @@
             {{- partial "nav.html" . -}}
             </div>
             <div class="col-8">
-                <hr />
                 <div id="content">
                 {{- block "main" . }}{{- end }}
                 </div>
             </div>
-            <div class="col-2"></div>
+            <div class="col-2 sidebar">
+            {{- block "sidebar" . -}}
+            {{- end }}
+            </div>
         </div>
         {{- partial "footer.html" . -}}
     </body>

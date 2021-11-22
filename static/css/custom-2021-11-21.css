@@ -82,7 +82,8 @@ a[href*='icann.org']::after { background-image: url("/images/icons/icann.ico");}
 
 
 /* internal link styles */
-a[href*='tobilehman.com']::after { background-image: url("/favicon-16x16.png") }
+a[href*='https://tobilehman.com']::after { background-image: url("/favicon-16x16.png") }
+
 /* S3 bucket archive link styles */
 a[href*='amazonaws.com']::after { background-image: url("/images/icons/amazon.svg") }
 
@@ -169,3 +170,108 @@ a[href*='supportblackowned.com']::after { background-image: url("/images/icons/s
   right: 0;
   transform: translateY(-50%);
 }
+
+/** timeline styles **/
+.timeline-container {
+   width: 95%;
+   padding: 0px 0;
+   margin: 0px auto;
+   position: relative;
+   overflow: hidden;
+   z-index: 1;
+}
+.timeline-container:before {
+   height: 100%;
+   position: absolute;
+   content: '';
+   display: block;
+   margin-left: -1px;
+   top: 0px;
+   left: 8px;
+   width: 3px;
+   background: #CCD1D9;
+   z-index: -1;
+}
+
+.timeline-block {
+   width: 100%;
+   margin-bottom: 30px;
+}
+.timeline-block-right {
+   float: none;
+}
+
+.timeline-block-left {
+   float: none;
+   direction: ltr;
+}
+.marker {
+   width: 16px;
+   height: 16px;
+   border-radius: 50%;
+   border: 2px solid #F5F7FA;
+   position: absolute;
+   background: #4FC1E9;
+   margin-top: 10px;
+   z-index: 9999;
+}
+
+.timeline-content {
+  width: 95%;
+  top: -15px;
+  padding-left: 15px;
+  color: #666
+}
+
+@media screen and (max-width: 800px) {
+    .timeline-content {
+      padding-left: 1em;
+      padding-right: 1em;
+    }
+    .timeline-container {
+        width: 80%;
+        padding: 50px 0;
+        margin: 50px auto;
+        position: relative;
+        overflow: hidden;
+    }
+    
+    .timeline-container:before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 50%;
+        margin-left: -1px;
+        width: 3px;
+        height: 100%;
+        background: #CCD1D9;
+        z-index: 1;
+    }
+    
+    .timeline-block {
+        width: -webkit-calc(50% + 8px);
+        width: -moz-calc(50% + 8px);
+        width: calc(50% + 8px);
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -moz-box;
+        display: flex;
+        -webkit-box-pack: justify;
+        -webkit-justify-content: space-between;
+        -moz-box-pack: justify;
+        justify-content: space-between;
+        clear: both;
+    }
+    
+    .timeline-block-right {
+        float: right;
+    }
+    
+    .timeline-block-left {
+        float: left;
+        direction: rtl;
+    }
+ 
+ }
+
+/** end timeline styles **/

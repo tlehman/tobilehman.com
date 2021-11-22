@@ -133,6 +133,7 @@ function prompt() {
         });
         term.write("\r\n");
         term.write(PS1());
+        curr_line = "";
         return;
     }
 

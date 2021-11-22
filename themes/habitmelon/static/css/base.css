@@ -38,9 +38,23 @@
 .other-menu {
     padding-left: 2em;
 }
+.sidebar {
+    overflow-x: hidden;
+    padding-left: 1em;
+    text-align: left;
+}
+.sidebar ul {
+    list-style-type: none;
+    display: block;
+}
+
 @media only screen and (max-width: 800px) {
     .hidden-when-mobile {
         display: none;
+    }
+    .sidebar ul {
+        list-style-type: none;
+        display: block;
     }
     /* For mobile phones: */
     [class*="col-"] {
@@ -62,8 +76,8 @@
 
     nav li {
         float: left;
-        padding-left: 15px;
-        padding-right: 15px;
+        padding-left: 5px;
+        padding-right: 8px;
     }
 
     nav li a {
@@ -84,47 +98,7 @@
     }
 
 }
-/* Centerpiece navigation element */
-.centerpiece {
-    background-color: rgb(103, 103, 109);
-    color: white;
-    font-family: 'Courier New', Courier, monospace;
-    height: 8em;
-    overflow-y: hidden;
-    overflow-y: scroll;
-}
-#blink {
-    font-size: 20px;
-    animation: blink-animation 1.5s steps(5, start) infinite;
-    -webkit-animation: blink-animation 1.5s steps(5, start) infinite;
-}
-@keyframes blink-animation {
-    to {
-      visibility: hidden;
-    }
-}
-@-webkit-keyframes blink-animation {
-    to {
-      visibility: hidden;
-    }
-}
-nav {
-    display: block;
-}
-a:hover {
-    color: darkcyan;
-}
-nav > a {
-    color: lightblue;
-}
-nav > a:hover {
-    color: darkcyan;
-}
-@media only screen and (max-width: 600px) {
-    .centerpiece {
-        width: 100%;
-    }
-}
+
 
 /* Each row should be wrapped in a <div>. The number of columns inside a row should always add up to 12 */
 
