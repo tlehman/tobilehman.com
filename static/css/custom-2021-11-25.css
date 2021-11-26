@@ -39,6 +39,8 @@ a::after {
 }
 
 a[href*='.pdf']::after { background-image: url("/images/icons/pdf.png"); }
+a[href*='replit.com']::after { background-image: url("/images/icons/replit.png"); }
+a[href*='repl.it']::after { background-image: url("/images/icons/replit.png"); }
 a[href*='bitcoin:']::after { background-image: url("/images/icons/bitcoin.ico"); }
 a[href*='bitcoin.org']::after { background-image: url("/images/icons/bitcoin.ico"); }
 a[href*='.eth']::after { background-image: url("/images/icons/ethereum.png"); }
