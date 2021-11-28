@@ -156,8 +156,10 @@ term.on("key", function(key, ev) {
         const t = document.getElementById("terminal"); t.scrollTop = t.scrollHeight;
     } else if(ev.keyCode === 8) {
         curr_line = curr_line.slice(0, -1);
-        term.write("\r\n");
-        term.write(PS1() + curr_line);
+        term.write('\x1b[D');
+        term.write("  ");
+        term.write('\x1b[D');
+        term.write('\x1b[D');
     } else if(ev.keyCode === 9) {
         // tab
         // find auto-complete candidates
