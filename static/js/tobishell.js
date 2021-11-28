@@ -158,6 +158,38 @@ term.on("key", function(key, ev) {
         curr_line = curr_line.slice(0, -1);
         term.write("\r\n");
         term.write(PS1() + curr_line);
+    } else if(ev.keyCode === 9) {
+        // tab
+        // find auto-complete candidates
+        // Special case, if path == "posts", then show the blog posts:
+        let delimiter = "\t";
+        let autocompletes = [];
+        if(listItems) {
+            // Display all hugo-generated listItems (see habitmelon/layouts/_default/list.html)
+            for(var i = 0; i < listItems.length; i++) {
+                if(listItems[i].split("/").length >= 3) {
+                    let listItem = listItems[i].split("/")[2];
+                    let arg = curr_line.split(" ")[1];
+                    if(listItem.startsWith(arg)) {
+                        autocompletes.push(listItem);
+                    }
+                }
+            }
+        }
+        if(autocompletes.length == 1) {
+            curr_line = curr_line.split(/\s+/)[0] + " " + autocompletes[0];
+            term.write(PS1() + curr_line);
+        } else if(autocompletes.length > 1) {
+            term.write("\r\n");
+            for(var i = 0; i < autocompletes.length; i++) {
+                term.write(autocompletes[i]);
+                term.write(delimiter);
+            }
+        }
+
+        term.write("\r\n");
+        term.write(PS1() + curr_line);
+
     } else {
         curr_line += key;
         term.write(key);
