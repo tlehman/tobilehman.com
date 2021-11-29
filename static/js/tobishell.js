@@ -77,7 +77,7 @@ const commands = [
             }
         }
         // Special case, if path == "posts", then show the blog posts:
-        if(path === "/home/tobi/posts") {
+        if((typeof "listItems" !== 'undefined') && (path === "/home/tobi/posts")) {
             // Display all hugo-generated listItems (see habitmelon/layouts/_default/list.html)
             for(var i = 0; i < listItems.length; i++) {
                 if(listItems[i].split("/").length >= 3) {
@@ -155,18 +155,20 @@ term.on("key", function(key, ev) {
         // scroll to bottom of container div if it's in mobile mode
         const t = document.getElementById("terminal"); t.scrollTop = t.scrollHeight;
     } else if(ev.keyCode === 8) {
-        curr_line = curr_line.slice(0, -1);
-        term.write('\x1b[D');
-        term.write("  ");
-        term.write('\x1b[D');
-        term.write('\x1b[D');
+        if(curr_line.length > 0) {
+            curr_line = curr_line.slice(0, -1);
+            term.write('\x1b[D');
+            term.write("  ");
+            term.write('\x1b[D');
+            term.write('\x1b[D');
+        }
     } else if(ev.keyCode === 9) {
         // tab
         // find auto-complete candidates
         // Special case, if path == "posts", then show the blog posts:
         let delimiter = "\t";
         let autocompletes = [];
-        if(listItems) {
+        if(typeof "listItems" !== 'undefined') {
             // Display all hugo-generated listItems (see habitmelon/layouts/_default/list.html)
             for(var i = 0; i < listItems.length; i++) {
                 if(listItems[i].split("/").length >= 3) {
