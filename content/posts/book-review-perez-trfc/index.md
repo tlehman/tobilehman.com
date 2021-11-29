@@ -30,10 +30,14 @@ When the bubble pops, the frenzy phase ends. The popped bubble leads to a larger
 
 Historical examples include the [Wall Street crash of 1929](https://en.wikipedia.org/wiki/Wall_Street_Crash_of_1929), for example, look at Chrysler's earnings around that time:
 
+<div style="overflow-x: scroll">
+
   | Chrysler  | 1926 | 1927 | 1928 | 1929 | 1930 | 1931 |
   |-----------|------|------|------|------|------|------|
   | Earnings  | 5.07 | 6.55 | 6.80 | 4.94 | 0.05 | 0.33 |
   | Dividends | 2.25 | 3.00 | 3.00 | 3.00 | 3.00 | 1.00 |
+
+</div>
 
 A more recent example is the [Dot-com crash of 2000](https://en.wikipedia.org/wiki/Dot-com_bubble). 
 
@@ -59,6 +63,8 @@ There are four complete historical examples that informed the Perez's model, and
 
 {{<favicon "jhu.edu" "https://sites.krieger.jhu.edu/wp-content/themes/ksas-blocks/dist/images/favicons/favicon.ico">}}
 
+<div style="overflow-x: scroll">
+
 | Technological Revolution | Core Countries | Years     | Crash |
 |--------------------------|----------------|-----------|-------|
 | Industrial Revolution    | U.K.        | 1770-1830 | [Canal panic 1797](https://sites.krieger.jhu.edu/iae/files/2017/04/Curott_Watts_Recession_of_1797.pdf) |
@@ -66,6 +72,8 @@ There are four complete historical examples that informed the Perez's model, and
 | Age of Steel, Electricity and Heavy Engineering | U.S. & Germany | 1875-1920 | [Panic of 1893](https://en.wikipedia.org/wiki/Panic_of_1893) |
 | Age of Oil, Cars and Mass Production | U.S. &rarr; Europe | 1910-1975 | [Wall Street crash of 1929](https://en.wikipedia.org/wiki/Wall_Street_Crash_of_1929) |
 | Age of Information | U.S. &rarr; Europe & Asia | 1970-? | [Dot-com crash of 2000](https://en.wikipedia.org/wiki/Dot-com_bubble). |
+
+</div>
 
 The four complete examples match the model qualitatively, and each of these revolutions lasted about half a century. The theory is not just about correlations, but attempts to draw a cause-effect link between the forces of technology, finance and government on the one side, and the boom/bust/golden-age/maturity cycle on the other side.
 
