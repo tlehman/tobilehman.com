@@ -68,7 +68,7 @@ There are four complete historical examples that informed the Perez's model, and
 | Technological Revolution | Core Countries | Years     | Crash |
 |--------------------------|----------------|-----------|-------|
 | Industrial Revolution    | U.K.        | 1770-1830 | [Canal panic 1797](https://sites.krieger.jhu.edu/iae/files/2017/04/Curott_Watts_Recession_of_1797.pdf) |
-| Age of Steam & Railways  | U.K. &rarr; U.S. | 1830-1875 | [Railway panic 1874](https://en.wikipedia.org/wiki/Panic_of_1847) |
+| Age of Steam & Railways  | U.K. &rarr; U.S. | 1830-1875 | [Railway panic 1847](https://en.wikipedia.org/wiki/Panic_of_1847) |
 | Age of Steel, Electricity and Heavy Engineering | U.S. & Germany | 1875-1920 | [Panic of 1893](https://en.wikipedia.org/wiki/Panic_of_1893) |
 | Age of Oil, Cars and Mass Production | U.S. &rarr; Europe | 1910-1975 | [Wall Street crash of 1929](https://en.wikipedia.org/wiki/Wall_Street_Crash_of_1929) |
 | Age of Information | U.S. &rarr; Europe & Asia | 1970-? | [Dot-com crash of 2000](https://en.wikipedia.org/wiki/Dot-com_bubble). |
@@ -163,7 +163,7 @@ It's also possible that the next big bang hasn't happened yet. Perhaps some comb
         - [Vertical farms](https://en.wikipedia.org/wiki/Vertical_farming) could become competitive with traditional ground-based agriculture. Currently they consume too much energy to be viable
         - New frontiers on earth open up. Places in the middle of the desert, or on Antarctica can be developed and turned into livable places with enough temperature control, desalination and vertical farming. This could enable intentional communities to form new cities and experiment with new governing regimes
  - 🧠 **Brain-computer interfaces**
-    - Higher-resolution control of computers can allow for increasing human intelligence by integrating it with machine intelligence. [Neuralink](https://neuralink.com) is currently working on this.
+    - Higher-bandwidth control of computers can allow for increasing human intelligence by integrating it with machine intelligence. [Neuralink](https://neuralink.com) is currently working on this.
  - 🕶 **The Metaverse** 
     - Okay, hear me out. If AR/VR headsets can be made small enough, they could open up new workflows that dramatically increase productivity. One person who is exploring this is [@asteroid_saku](https://twitter.com/asteroid_saku). 
         - Real world experiences and virtual experiences can be integrated more deeply, opening up shorter feedback loops between idea and demos
