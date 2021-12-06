@@ -39,6 +39,7 @@ a::after {
 }
 
 a[href*='.pdf']::after { background-image: url("/images/icons/pdf.png"); }
+a[href*='docs.google.com']::after { background-image: url("/images/icons/docs.ico"); }
 a[href*='replit.com']::after { background-image: url("/images/icons/replit.png"); }
 a[href*='repl.it']::after { background-image: url("/images/icons/replit.png"); }
 a[href*='bitcoin:']::after { background-image: url("/images/icons/bitcoin.ico"); }
@@ -136,6 +137,13 @@ a[href*='supportblackowned.com']::after { background-image: url("/images/icons/s
   background-color: lightyellow;
   overflow-x: scroll;
   overflow-y: hidden;
+}
+
+.yellow-note-noscroll {
+  padding: 1em;
+  border-style: solid;
+  border-color: lightgray;
+  background-color: lightyellow;
 }
 
 .yellow-note-noscroll {
