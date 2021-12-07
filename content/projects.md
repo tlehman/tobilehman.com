@@ -21,8 +21,10 @@ I wrote a mostly-working Go program in JS in 2014, then re-wrote it in Ruby in 2
 The reason I call it Ise Grand is because the Ise Grande Shrine in Japan is **rebuilt every 20 years**, and has been for 1300 years. 
 I keep rewriting the game to make it better, and never get around to playing it.
 
+{{<favicon "golang.org" "https://golang.org/favicon.ico">}}
+
 - (2014) https://github.com/tlehman/go-websocket (JS)
 - (2016) https://github.com/tlehman/goga.me (Ruby)
 - (2018) https://github.com/tlehman/gogame (Rust)
-
+- (2021) https://github.com/tlehman/go-api (Go), yes it finally happened. I wrote a Go game in [Go](https://golang.org)
 
