@@ -12,6 +12,7 @@ I think interest rates are interesting because they represent the value of [time
 ## Table of Contents
 1. [Interest rates](#positive)
    1. [Central Banking (The Federal Reserve)](#fed)
+   1. [The long-term decline of interest rates](#decline)
 2. [Negative interest rates](#negative)
 3. [Complex interest rates](#complex)
    1. [Ethereum Smart Contract Implementation](#eth)
@@ -43,10 +44,18 @@ You can see that if the interest rate r is fixed over time, that it grows <mark>
 <img src="/images/linear-exponential.png" alt="graph of linear versus exponential growth" />
 
 <a id="fed"></a>
+### The Federal Reserve
 
 The Federal Reserve is the central bank of the United States. It has a dual mandate to keep [inflation](https://fred.stlouisfed.org/series/FPCPITOTLZGUSA) low and also keep [unemployment](https://fred.stlouisfed.org/series/UNRATE) low. It's main tool for doing this are "Open Market Operations", which amount to buying bonds with newly printed money, or removing bonds from circulation. These buying and selling operations can guide the [federal funds rate](https://www.federalreserve.gov/monetarypolicy/openmarket.htm) to the Federal Reserve's goal. The federal funds rate is a minimum interest rate. If it's low, then borrowing is cheap and unemployment will fall, since it's cheaper for businesses to borrow and hire people. However, if it remains too low for too long, it's possible that all that cheap borrowed money could push up inflation.
 
 The Federal Reserve has to set the interest rate low enough to encourage job creation, but not too low that it stokes more inflation than the target.
+
+
+<a id="decline"></a>
+### The long-term decline of interest rates
+
+The Bank of England published an interesting document called [Eight centuries of global real interest rates, R-G, and the 'suprasecular' decline, 1311–2018](https://www.bankofengland.co.uk/-/media/boe/files/working-paper/2020/eight-centuries-of-global-real-interest-rates-r-g-and-the-suprasecular-decline-1311-2018.pdf). In it they find a -1.96bps (basis point, or 0.01%) per year trend. That means that <mark>for the last 800 years, real interest rates have been declining by -0.02% per year</mark>. 
+
 
 <a id="negative"></a>
 # Negative interest rates
