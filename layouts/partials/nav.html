@@ -1,18 +1,61 @@
+<style>
+.more-hidden::after {
+    content: " ▶";
+}
+.more-showing::after {
+    content: " ▼"
+}
+</style>
+<script>
+
+function moreShow() {
+    const m = document.getElementById('more-expander');
+    const o = document.getElementById('other-menu');
+    m.classList.remove('more-hidden');
+    m.classList.add('more-showing');
+    o.classList.remove('hidden');
+    localStorage.setItem('more-showing', true);
+}
+
+function moreHide() {
+    const m = document.getElementById('more-expander');
+    const o = document.getElementById('other-menu');
+    m.classList.add('more-hidden');
+    m.classList.remove('more-showing');
+    o.classList.add('hidden');
+    localStorage.setItem('more-showing', false);
+}
+
+function moreToggleShow() {
+    const m = document.getElementById('more-expander');
+    if(m.classList.contains('more-hidden')) {
+        moreShow();
+    } else {
+        moreHide();
+    }
+}
+
+</script>
 <nav>
     <ul>
         <li><a href="/">Home</a></li>
         <li><a href="/posts">Posts</a></li>
         <li><a href="/tags">#Tags</a></li>
         <li>
-           <a href="javascript:m=document.getElementsByClassName('other-menu')[0];if(m.classList.contains('hidden')) { m.classList.remove('hidden') } else { m.classList.add('hidden') }">
-           More &#9660;
-           </a>
+           <a id="more-expander" class="more-hidden" href="javascript:moreToggleShow()">More</a>
         </li>
-        <div class="other-menu hidden">
+        <div id="other-menu" class="hidden">
             <li><a href="/archive">Archive</a></li>
             <li><a href="/about">About</a></li>
             <li><a href="/contact">Contact</a></li>
+            <li><a href="/notes">Notes</a></li>
             <li><a href="/projects">Projects</a></li>
         </div>
     </ul>
 </nav>
+
+<script>
+if(localStorage.getItem('more-showing') == "true") {
+    moreShow();
+}
+</script>

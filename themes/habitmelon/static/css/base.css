@@ -35,7 +35,7 @@
 .hidden {
     display: none;
 }
-.other-menu {
+#other-menu {
     padding-left: 2em;
 }
 .sidebar {
@@ -108,8 +108,8 @@ img {
 
 /* Start Typography */
 body { 
-    font-size: 18px;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 15px;
+    font-family: Bitter, Georgia, 'Times New Roman', Times, serif;
     line-height: 1.4;
 }
 /* End Typography */
