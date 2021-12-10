@@ -2,6 +2,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <link rel="icon" href="/favicon-32x32.png" type="image/png" sizes="16x16 32x32">
+
     {{ if .IsHome }}
         <meta property="og:title" content="Tobi Lehman.com" />
         <meta property="og:type" content="website" />
@@ -12,7 +14,7 @@
         <meta name="twitter:creator" content="@tobi_lehman">
         <meta name="twitter:title" content="TobiLehman.com">
         <meta name="twitter:description" content="Tobi's web blog">
-        <meta name="twitter:image" content="https://tobilehman.com/images/tobilehman-com.png">
+        <meta name="twitter:image" content="https://tobilehman.com/images/tobilehman-com-2021-12-09.png">
     {{ else }}
         <meta property="og:title" content="{{ .Title }}" />
         <meta property="og:type" content="website" />
@@ -28,9 +30,9 @@
 
     <title>
         {{ if .IsHome }}
-            {{ .Site.Title }}
+            tobilehman.com
         {{ else }}
-            {{ .Title }}
+            {{ .Title }} : tobilehman.com
         {{ end }}
     </title>
 
@@ -58,9 +60,6 @@
     <link rel="stylesheet" href="/css/xterm.css"></link>
     <link rel="stylesheet" href="/css/base.css"></link>
     <link rel="stylesheet" href="/css/custom-2021-12-06.css"></link>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bitter&display=swap" rel="stylesheet">
     {{ partial "mathjax-js" }}
     {{ partial "hugo-vars-js.html" }}
 </head>

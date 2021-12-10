@@ -1,5 +1,5 @@
 html, body {
-        margin: 0px;
+  margin: 0px;
 }
 blockquote {
   background: #f9f9f9;
@@ -15,6 +15,20 @@ blockquote:before {
   line-height: 0.1em;
   margin-right: 0.25em;
   vertical-align: -0.4em;
+}
+@font-face {
+  font-family: 'Source Serif Pro';
+  src: url('/fonts/source-serif/SourceSerifPro-Regular.ttf');
+}
+@font-face {
+  font-family: 'Source Serif Pro';
+  src: url('/fonts/source-serif/SourceSerifPro-Bold.ttf');
+  font-weight: bold;
+}
+@font-face {
+  font-family: 'Source Serif Pro';
+  src: url('/fonts/source-serif/SourceSerifPro-Italic.ttf');
+  font-style: italic;
 }
 
 /** annotated links start */
@@ -38,6 +52,7 @@ a::after {
     text-decoration: underline;
 }
 
+a[href*='/*']::after { width: 0em; }
 a[href*='.pdf']::after { background-image: url("/images/icons/pdf.png"); }
 a[href*='docs.google.com']::after { background-image: url("/images/icons/docs.ico"); }
 a[href*='replit.com']::after { background-image: url("/images/icons/replit.png"); }
@@ -83,7 +98,8 @@ a[href*='repl.it']::after { background-image: url("/images/icons/replit.png");}
 a[href*='/gpus']::after { background-image: url("/images/icons/nvidia.ico");}
 a[href*='wyoleg.gov']::after { background-image: url("/images/icons/wyoming.png");}
 a[href*='icann.org']::after { background-image: url("/images/icons/icann.ico");}
-
+a[href*='js.org']::after { background-image: url("/images/icons/js.png");}
+a[href*='.js']::after { background-image: url("/images/icons/js.png");}
 
 /* internal link styles */
 a[href*='https://tobilehman.com']::after { background-image: url("/favicon-16x16.png") }
@@ -91,15 +107,20 @@ a[href*='https://tobilehman.com']::after { background-image: url("/favicon-16x16
 /* S3 bucket archive link styles */
 a[href*='amazonaws.com']::after { background-image: url("/images/icons/amazon.svg") }
 
-
+/* TODO put all ::after styles in auto-generated file */
 a[href*='tobilehman.com/about']::after { width: 0em; }
 a[href*='tobilehman.com/index.xml']::after { width: 0em; }
+a[href*='tobilehman.com/changelog']::after { width: 0em; }
+a[href*='tobilehman.com/interest']::after { width: 0em; }
 a[href*='tobilehman.com/projects']::after { width: 0em; }
 a[href*='tobilehman.com/posts']::after { width: 0em; }
 a[href*='tobilehman.com/tags']::after {  width: 0em; }
 
 a[href*='/about']::after { width: 0em; }
+a[href*='/changelog']::after { width: 0em; }
+a[href*='/book-club']::after { width: 0em; }
 a[href*='/index.xml']::after { width: 0em; }
+a[href*='/interest']::after { width: 0em; }
 a[href*='/projects']::after { width: 0em; }
 a[href*='/posts']::after { width: 0em; }
 a[href*='/tags']::after {  width: 0em; }

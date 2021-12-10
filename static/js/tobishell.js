@@ -99,7 +99,19 @@ const commands = [
             term.write(PS1() + curr_line);
         }
     },
-    
+    { name: "js", handler: (args) => {
+        try {
+            const result = eval(args);
+            curr_line = "";
+            term.write(`${result}\r\n`);
+            term.write(PS1() + curr_line);
+        } catch(e) {
+            curr_line = "";
+            term.write(e.toString() + "\r\n");
+            term.write(PS1() + curr_line);
+        }
+    }},
+
     { name: "mail", handler: () => {
         curr_line = "";
         term.write("mail@tobilehman.com\r\n");
