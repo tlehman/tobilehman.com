@@ -91,10 +91,12 @@
     }
     .other-menu {
         float: right;
+        overflow-x: hidden;
     }
     .other-menu li {
         padding-left: 2px;
         padding-right: 2px;
+        overflow-x: hidden;
     }
 
 }

@@ -1,0 +1,7 @@
+<p>
+    {{ define "main" }}
+        {{ range first 5 (where .Data.Pages "Section" "post") }}
+            {{ .Summary }}
+        {{ end }}
+    {{ end }}
+</p>

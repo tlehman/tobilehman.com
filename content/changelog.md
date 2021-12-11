@@ -9,6 +9,9 @@ This is the chronological record of all the changes I make to my site. It was in
 
 ### December 2021
 
+- 2021-12-10
+    - Added a tool for converting [Unix Epoch Times](/epoch) into ISO 8601 date strings and back
+    - Updated the front page to include more information about what I believe and what I'm doing about it
 - 2021-12-09
     - Added a [changelog](/changelog) page
     - Updated favicon to match my [twitter](https://twitter.com/tobi_lehman) avatar

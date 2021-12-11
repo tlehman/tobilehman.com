@@ -1,5 +1,6 @@
 ---
 title: "sats"
+tags: ["tools"]
 ---
 
 There are at most 21 million [Bitcoin](https://bitcoin.org), the currency code for it is BTC, and the Unicode character for it is ₿

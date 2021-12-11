@@ -109,6 +109,7 @@ a[href*='amazonaws.com']::after { background-image: url("/images/icons/amazon.sv
 
 /* TODO put all ::after styles in auto-generated file */
 a[href*='tobilehman.com/about']::after { width: 0em; }
+a[href*='tobilehman.com/epoch']::after { width: 0em; }
 a[href*='tobilehman.com/index.xml']::after { width: 0em; }
 a[href*='tobilehman.com/changelog']::after { width: 0em; }
 a[href*='tobilehman.com/interest']::after { width: 0em; }
@@ -117,6 +118,7 @@ a[href*='tobilehman.com/posts']::after { width: 0em; }
 a[href*='tobilehman.com/tags']::after {  width: 0em; }
 
 a[href*='/about']::after { width: 0em; }
+a[href*='/epoch']::after { width: 0em; }
 a[href*='/changelog']::after { width: 0em; }
 a[href*='/book-club']::after { width: 0em; }
 a[href*='/index.xml']::after { width: 0em; }

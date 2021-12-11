@@ -25,6 +25,7 @@ const fs = {
 };
 const commands = [
     { name: "back", handler: () => window.history.back() },
+    { name: "date", handler: () => window.location.href = "/epoch" },
     { name: "cd", handler: (args) => {
             if (args == "..") {
                 var href = window.location.href;

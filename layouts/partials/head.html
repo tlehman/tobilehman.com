@@ -43,7 +43,7 @@
     </script>
     {{ else }}
     <script>
-        var breadcrumbs = window.location.href.split("/");
+        var breadcrumbs = window.location.href.replace(/\?.*$/, '').split("/");
         var path = "";
         for(var i = 3; i < breadcrumbs.length; i++) {
             if(i > 3 && i < breadcrumbs.length-1) {

@@ -2,6 +2,8 @@
 title: "Projects"
 ---
 
+For converting from Unix Epoch Time to ISO 8601-_ish_ date strings, I wrote [Unix Epoch Time](/epoch)
+
 I wrote [pdf2png](https://github.com/tlehman/pdf2png) to make a fast PDF to PNG converter, uses C.
 
 I wrote [manipulate-mediastream](https://github.com/tlehman/manipulate-mediastream) to learn how to process data from a WebRTC stream and render it 
