@@ -19,11 +19,11 @@ Right now: <span class="time" id="now">2021-11-10 19:28:39 UTC</span>
 
 Difference: <span class="time" id="now-epoch">1639164541.801 seconds</span>
 
-Input Epoch: <span class="time"><input class="time-input" type="text" id="input-epoch"></input><span id="input-epoch-unit"></span></span> <span class="time-sidenote">&larr;<i>Paste epoch here</i></span>
+Input Epoch: <span class="time"><input class="time-input" type="text" id="input-epoch"></input><span id="input-epoch-unit"></span></span>
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 &nbsp;&nbsp;&nbsp;&nbsp;
-&#x21AA; <span class="time"><input class="time-input" type="text" id="input-datetime"></input></span></span> <span class="time-sidenote">&larr;<i>Paste datetime here</i></span>
+&#x21AA; <span class="time"><input class="time-input" type="text" id="input-datetime"></input></span></span> 
 
 ### Common epoch amounts
 
@@ -119,7 +119,7 @@ Input Epoch: <span class="time"><input class="time-input" type="text" id="input-
         position: absolute;
         width: 15em;
         left: 6em;
-        min-height: 1.9em;
+        min-height: 2.1em;
     }
     .time-sidenote {
         position: absolute;
@@ -132,6 +132,7 @@ Input Epoch: <span class="time"><input class="time-input" type="text" id="input-
         border: ;
         font-family: inherit;
         font-size: inherit;
+        min-height: 1.7em;
     }
     #input-epoch {
         width: 7.5em;
