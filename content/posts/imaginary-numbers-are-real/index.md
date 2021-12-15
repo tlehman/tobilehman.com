@@ -3,6 +3,7 @@ title = "Imaginary Numbers Are Real"
 date = 2019-08-21T15:34:03-07:00
 draft = false
 tags = ["math", "deep-dive"]
+cards = "https://tobilehman.com/posts/imaginary-numbers-are-real/img/complex-polar-card.png"
 +++
 <script src="/js/math-canvas.js"></script>
 
