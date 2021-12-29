@@ -19,6 +19,20 @@
     padding: 15px;
     /*border: 1px solid red;*/
 }
+
+/* dark mode and light theme */
+html[data-theme="dark"] {
+    background-color: rgb(53, 53, 53);
+    color: white;
+}
+html[data-theme="dark"] a { color: lightblue; }
+html[data-theme="dark"] a:visited { color: lightblue; }
+html[data-theme="dark"] a:hover { color: white; }
+
+body.light-theme {
+    background-color: white;
+    color: black;
+}
 /* hack for nav */
 .col-2 {
     padding: 5px;
@@ -127,17 +141,6 @@ pre {
     overflow-x: scroll;
 }
 
-/* dark theme and light theme */
-
-body.dark-theme { background-color: rgb(53, 53, 53); color: white; }
-body.dark-theme a { color: lightblue; }
-body.dark-theme a:visited { color: lightblue; }
-body.dark-theme a:hover { color: white; }
-
-body.light-theme {
-    background-color: white;
-    color: black;
-}
 
 /* Begin Taxonomy Styling */
 .series-header {

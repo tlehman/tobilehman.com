@@ -9,7 +9,7 @@ card = "https://tobilehman.com/posts/book-review-wheres-my-flying-car/img/wmfc.j
 
 This book has two parts, one looks back and asks why flying cars never came to market, and the other looks forward to what possibilities lay ahead. The author has a background in chip design and nanotechnology, and even became a pilot so he could better evaluate the feasibility of flying car designs.
 
-In the first part he goes through the history of flight, the development of mass-produced private automobiles, and the various flying car designs that almost took off.
+
 
 The autogyro, developed in the 1930s by Juan de la Cierva, was a promising candidate for a flying car. It was small, cheap, and was able to gracefully descend if the motor failed. Harold Pitcairn was more of a businessman and de la Cierva was more of an engineer, the two worked together until de la Cierva's tragic death in 1936. Juan de la Cierva died in a DC-8 plane crash on his way to Amsterdam. Pitcairn and the company pivoted towards helicopters after that, and after World War 2, the autogyro vanished to history.
 

@@ -1,17 +1,22 @@
 
 /* Begin Dark Mode */
 function activateDarkMode() {
-    document.getElementsByTagName("body")[0].setAttribute("class", "dark-theme");
-    document.cookie = "theme=dark";
+    document.getElementsByTagName("html")[0].dataset.theme = "dark";
+    var toggle = document.getElementById("dark-mode-toggle");
+    toggle.innerHTML = "Light Mode";
+    toggle.onclick = activateLightMode;
+    localStorage.setItem("color-scheme", "dark");
 }
 function activateLightMode() {
-    document.getElementsByTagName("body")[0].setAttribute("class", "light-theme");
+    document.getElementsByTagName("html")[0].dataset.theme = "light";
+    var toggle = document.getElementById("dark-mode-toggle");
+    toggle.onclick = activateDarkMode;
+    toggle.innerHTML = "Dark Mode";
     localStorage.setItem("color-scheme", "light");
-    document.cookie = "theme=light";
 }
 
 window.onload = function() {
-    if (document.cookie.match(/theme=dark/)) {
+    if (localStorage.getItem("color-scheme") == "dark") {
         activateDarkMode();
     } else {
         activateLightMode();
