@@ -80,7 +80,7 @@ body.light-theme {
     }
     /* get rid of spacer col-3's when snapping to mobile */
     /* For mobile phones: */
-    .col-3 {
+    .header-col-2 {
         display: none;
     }
 

@@ -3,13 +3,14 @@ title: "Changelog"
 date: 2021-12-09T09:15:10-08:00
 ---
 
-{{<favicon "brianlovin.com" "https://brianlovin.com/static/favicon.ico">}}
-
-This is the chronological record of all the changes I make to my site. It was inspired by Brian Lovin's post: ["make a personal changlog"](https://brianlovin.com/writing/make-a-personal-changelog).
-
 ### December 2021
 
+- 2021-12-29
+    - Aligned terminal with main content
+    - Fixed bug in terminal `cd` command. Now it errors properly when the destination is not found
+        - Example: <a href="javascript:curr_line='cd bogus';term.write(curr_line)">Click to try</a> and then hit **enter**
 - 2021-12-28
+    - Wrote a [Book Review: Where's My Flying Car?](/posts/book-review-wheres-my-flying-car/)
     - Added **Dark Mode** to "More" link. Click <a id="dark-mode-toggle" href="javascript:activateDarkMode">Here to try Dark Mode</a>
 - 2021-12-10
     - Added a tool for converting [Unix Epoch Times](/epoch) into ISO 8601 date strings and back

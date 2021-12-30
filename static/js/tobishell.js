@@ -39,7 +39,22 @@ const commands = [
             else if (args == "~" || args == "/home/tobi") {
                 window.location.href = "/";
             } else {
-                window.location.href = args;
+                const path = pwd + "/" + args;
+                console.log(path);
+                console.log(fs[path]);
+                var postIsInListItems = false;
+                try {
+                    postIsInListItems = listItems.filter((f) => { return f == `/posts/${args}`});
+                } catch(e) {
+                }
+                if(fs[path] || postIsInListItems) {
+                    window.location.href = args;
+                } else {
+                    term.write(`cd: no such file or directory: ${args}`);
+                    curr_line = "";
+                    term.write("\r\n");
+                    term.write(PS1() + curr_line);
+                }
             }
         }
     },
