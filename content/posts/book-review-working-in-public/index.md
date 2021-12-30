@@ -1,7 +1,7 @@
 +++
-title = "Review of Working in Public"
+title = "Book Review: Working in Public"
 date = 2020-10-20T21:22:39-07:00
-tags = ["programming", "open-source", "history", "economics", "stewardship", "book-review", "books"]
+tags = ["programming", "open-source", "history", "economics", "stewardship", "book-review", "book-review"]
 +++
 
 The story of open source software most of us believe is wrong. The production of open source software isn't like some egalitarian commune, it's driven mostly by a few individuals. Through analyzing git commit frequency distributions and interviewing prominent open source contributors and maintainers, [Nadia Eghbal](https://www.amazon.com/Nadia-Eghbal/e/B08BDZQ7XJ/ref=dp_byline_cont_pop_book_1) captures the living history of open source software.
