@@ -4,7 +4,7 @@ date = 2020-09-07T21:09:07-07:00
 tags = ["programming", "wasm", "math"]
 +++
 
-Ten years ago, a coworker tried to teach me cribbage on my last day, but I was too drunk to follow. I walked several miles home and lost my phone in a movie theater.
+Ten years ago, a coworker tried to teach me cribbage on my last day at work, but I didn't get it.
 
 The following year, I met my future wife, and she was a cribbage fan. She taught me, and I've loved the game ever since.
 
