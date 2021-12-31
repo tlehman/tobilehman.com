@@ -151,3 +151,10 @@ pre {
     border-style: solid;
 }
 /* End Taxonomy Styling */
+
+.hidden {
+    display: none;
+}
+.hover-show-hidden:hover ul {
+    display: block;
+}
