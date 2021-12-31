@@ -100,9 +100,12 @@ a[href*='wyoleg.gov']::after { background-image: url("/images/icons/wyoming.png"
 a[href*='icann.org']::after { background-image: url("/images/icons/icann.ico");}
 a[href*='js.org']::after { background-image: url("/images/icons/js.png");}
 a[href*='.js']::after { background-image: url("/images/icons/js.png");}
+a[href*='rootsofprogress.org']::after { background-image: url("/images/icons/rootsofprogress.png"); }
+a[href*='ourworldindata.org']::after { background-image: url("/images/icons/ourworldindata.ico"); }
+a[href*='longnow.org']::after { background-image: url("/images/icons/longnow.ico"); }
+a[href*='blackgirlscode.com']::after { background-image: url("/images/icons/bgc.png"); }
 
-/* internal link styles */
-a[href*='https://tobilehman.com']::after { background-image: url("/favicon-16x16.png") }
+
 
 /* S3 bucket archive link styles */
 a[href*='amazonaws.com']::after { background-image: url("/images/icons/amazon.svg") }
@@ -309,3 +312,6 @@ a[href*='supportblackowned.com']::after { background-image: url("/images/icons/s
  }
 
 /** end timeline styles **/
+
+/* internal link styles */
+a[href*='https://tobilehman.com']::after { background-image: url("/favicon-16x16.png") }

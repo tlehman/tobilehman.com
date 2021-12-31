@@ -52,8 +52,6 @@ This is the virtuous cycle of improving production through market feedback. It's
 
 Now imagine that instead of trying new things and seeing how the market responds, they had to file a form instead. The form is with a bureau that is run by a small number of people who will probably not get fired for delaying getting around to your form. The form isn't just for permission to sell your product, it's a form to start a _process_ that might end in permission, or end in more forms. While you are waiting on the regulators for permission, there's a government shutdown, and while other businesses are operating, you are stuck waiting around for the bureau to get back to work and finish the process. The process turns out to take longer than you expected, your most talented and ambitious people are chafing at having to wait, and they quit out of frustration and take their talents somewhere else. Even if they stay, your customers won't wait around forever. In this way, unchecked regulation can smother progress and destroy the learning curve.
 
-{{<favicon "rootsofprogress.org" "https://rootsofprogress.org/apple-touch-icon.png">}}
-
 One clear example of this is with nuclear power, you can see the learning curve in action in blue, until there's a sharp turn upward around 1975 (red). This is when the Nuclear Regulatory Commission was formed. 
 
 {{<img "img/learning-curve-nuclear.png">}}
