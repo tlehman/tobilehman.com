@@ -1,5 +1,6 @@
 public/
 *.swp
+a.out*
 *~
 *#
 *.#*
