@@ -10,7 +10,7 @@ date: 2021-12-09T09:15:10-08:00
     - Added a Recent Posts section to the frontpage
 - 2021-12-31
     - Added [OOO](/pdf/ooo.pdf) to frontpage, since it's kind of hidden
-    - Adeed a [Blogroll](/#blogroll) and a [Non-Profits](/#non-profits) list to the front page
+    - Added a [Blogroll](/#blogroll) and a [Non-Profits](/#non-profits) list to the front page
 - 2021-12-30
     - Posted a [literate program](/tags/literate-programming).
     - Updated [front page](/) to list [deep dives](/tags/deep-dive) and [book reviews](/tags/book-review)

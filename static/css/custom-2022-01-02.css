@@ -53,7 +53,6 @@ a::after {
 }
 
 a[href*='/*']::after { width: 0em; }
-a[href*='.pdf']::after { background-image: url("/images/icons/pdf.png"); }
 a[href*='docs.google.com']::after { background-image: url("/images/icons/docs.ico"); }
 a[href*='replit.com']::after { background-image: url("/images/icons/replit.png"); }
 a[href*='repl.it']::after { background-image: url("/images/icons/replit.png"); }
@@ -315,3 +314,7 @@ a[href*='supportblackowned.com']::after { background-image: url("/images/icons/s
 
 /* internal link styles */
 a[href*='https://tobilehman.com']::after { background-image: url("/favicon-16x16.png") }
+
+/* file types */
+a[href*='.pdf']::after { background-image: url("/images/icons/pdf.png"); }
+a[href*='.txt']::after { background-image: url("/images/icons/txt.png"); }
