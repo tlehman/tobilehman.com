@@ -5,6 +5,7 @@ tags = ["algorithms", "programming", "literate-programming"]
 draft = true
 +++
 
+
 Quicksort is a recursive algorithm for sorting. To be properly generic, it can sort any set \\( S \\) of items with a total ordering relation \\( R \\) defined on, it. But I'm going to use integers, and there will be no loss of generality in doing this.
 
 The input to quicksort is an array of integers `int[]`. If there are less than 2 elements, then return. Otherwise, you need to find a **pivot**, which has the property that there are no elements left of the pivot that are greater than the pivot, and there are no elements to the right of the pivot that are less. Quicksort's recursive structure makes it easy to implement, since there are only three basic things you need to do: handle the base case
