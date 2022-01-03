@@ -143,9 +143,9 @@ article {
 
 pre {
     overflow-x: hidden;
-    overflow-x: scroll;
+    overflow-x: hidden;
+    padding: 0.5em;
 }
-
 
 /* Begin Taxonomy Styling */
 .series-header {
