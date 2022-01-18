@@ -3,7 +3,7 @@
     <ul>
         {{ range (where .Site.Pages "Section" "posts" | first 5) }}
             {{ if ne .Title "Posts" }}
-            <li><a href="{{ .URL }}">{{ .Title }}</a> ({{ .Date.Year }}-{{ .Date.Month }}-{{ .Date.Day }})</li>
+            <li><a href="{{ .Permalink }}">{{ .Title }}</a> ({{ .Date.Year }}-{{ .Date.Month }}-{{ .Date.Day }})</li>
             {{ end }}
         {{ end }}
     </ul>
