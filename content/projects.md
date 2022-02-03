@@ -2,6 +2,8 @@
 title: "Projects"
 ---
 
+An experiment in classical physics simulation and rendering (WIP) [lcp](https://github.com/tlehman/literate-classical-physics).
+
 For converting from Unix Epoch Time to ISO 8601-_ish_ date strings, I wrote [Unix Epoch Time](/epoch)
 
 I wrote [pdf2png](https://github.com/tlehman/pdf2png) to make a fast PDF to PNG converter, uses C.

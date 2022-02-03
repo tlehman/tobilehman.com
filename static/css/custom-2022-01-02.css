@@ -92,6 +92,7 @@ a[href*='cern.ch']::after { background-image: url("/images/icons/cern.ico");}
 a[href*='techdirt.com']::after { background-image: url("/images/icons/techdirt.ico");}
 a[href*='wiringpi.com']::after { background-image: url("/images/icons/wiringpi.png");}
 a[href*='nvidia.com']::after { background-image: url("/images/icons/nvidia.ico");}
+a[href*='literateprogramming.com']::after { background-image: url("/images/icons/litprog.ico");}
 a[href*='replit.com']::after { background-image: url("/images/icons/replit.png");}
 a[href*='repl.it']::after { background-image: url("/images/icons/replit.png");}
 a[href*='/gpus']::after { background-image: url("/images/icons/nvidia.ico");}
