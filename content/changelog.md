@@ -5,6 +5,11 @@ date: 2021-12-09T09:15:10-08:00
 
 ### December 2021
 
+- 2022-02-08
+    - Added [lcp-0.3.pdf](/pdf/lcp-0.3.pdf)
+- 2022-02-04
+    - Added [lcp-0.2.pdf](/pdf/lcp-0.2.pdf)
+    - Posted [CWEB LaTeX Experiment](/posts/cweb-latex-experiment)
 - 2022-01-02
     - Added comments using [Commento.io](https://commento.io)
     - Added a Recent Posts section to the frontpage
