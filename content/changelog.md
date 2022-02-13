@@ -5,6 +5,8 @@ date: 2021-12-09T09:15:10-08:00
 
 ### February 2022
 
+- 2022-02-13
+    - Added [lcp-0.4.pdf](/pdf/lcp-0.4.pdf), I made a nice ray-tracing diagram to explain the rendering code: [diagram](/pdf/lcp-0.4.pdf#page=5)
 - 2022-02-11
     - Removed the tobishell.js, it was too terminal-like to not want to keep adding features, but not worth all the effort. The removal will speed up page load times by 25%. This change also preserves the look and feel of the terminal, but without the interactivity.
 - 2022-02-08
