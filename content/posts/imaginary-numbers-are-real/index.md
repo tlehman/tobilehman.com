@@ -166,13 +166,7 @@ Given two complex numbers
 
 Click or tap below to move the blue point, pay attention to the blue number above also, since it has the radius and angle information in it. The way to read this presentation of complex numbers is: `radius` * e<sup>i`angle`</sup>
 
-<canvas id="example-2" class="polar-plot"
-        data-rmax="4" 
-        data-point-red='{"r": 2.2, "theta": -0.3}'
-        data-point-blue='{"r": 0.5, "theta": 0.3}'
-        data-point-purple='{"r": 1.1, "theta": 0.0}'
-        >
-</canvas>
+<canvas id="example-2" class="polar-plot" data-rmax="4" data-point-red='{"r": 2.2, "theta": -0.3}' data-point-blue='{"r": 0.5, "theta": 0.3}' data-point-purple='{"r": 1.1, "theta": 0.0}'></canvas>
 
 After playing around with a bunch of values, can you guess the rule? The geometric rule for multiplying complex numbers is multiply the radiuses and add the angles. This kind of beauty is lurking underneath all that old high school homework, obscured by rote memorization and inadequate tools for teachers. There's a whole flat world out there that makes Euclidean geometry computable with symbols in such an elegant way. I just had to share that, imaginary numbers are not some arbitrary contrivance, they are _real_.
 
