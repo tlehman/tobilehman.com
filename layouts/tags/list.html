@@ -1,7 +1,8 @@
 {{ define "main" }}
     <!-- display pages matching the tag -->
     
-    {{ $relurl := .Permalink }}
+    
+    {{ $relurl := relref . .Permalink }}
     {{ if eq $relurl "/tags/"}}
         {{ .Render "tagcloud" }}
     {{ else }}

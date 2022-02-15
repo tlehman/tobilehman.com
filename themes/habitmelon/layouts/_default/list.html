@@ -2,13 +2,5 @@
   {{ range .Pages }}
     {{ .Render "summary" }}
   {{ end }}
-
-<script>
-  const listItems = [
-  {{ range .Pages }}
-    {{ .Permalink }} ,
-  {{ end }}
-];
-</script>
 {{ end }}
 
