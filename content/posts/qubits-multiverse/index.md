@@ -2,6 +2,7 @@
 title = "Qubits and the Multiverse: how to 𝚐𝚒𝚝-𝚋𝚛𝚊𝚗𝚌𝚑 your life"
 date = 2022-02-18T08:28:59-08:00
 tags = ["decision-theory", "physics", "qubits", "time", "multiverse"]
+card = "https://tobilehman.com/posts/qubits-multiverse/img/multiverse-interference.png"
 +++
 
 Have you ever had a decision that was hard to make because both sides of the decision were great in their own way? Where you stress over the decision and wish you could split into two copies of yourself? Some decision theorists recommend [flipping a coin](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0220736), but there is a better way.
