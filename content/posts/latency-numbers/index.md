@@ -9,7 +9,7 @@ Jeff Dean of Google. I use a [Roam Research](http://roamresearch.com) plugin to 
 
 I created a Repl in [Go](https://golang.org) to directly measure these numbers. I started with mutex lock/unlock. Locally, I get about 19ns, but the repl gives me between 12-14ns.
 
-Try (or fork) the repl here: https://replit.com/@tlehman/LatencyNumbersEveryProgrammerShouldKnow#main.go
+Try (or fork) the repl [here](https://replit.com/@tlehman/LatencyNumbersEveryProgrammerShouldKnow#main.go)
 
 {{<favicon "golang.org" "https://golang.org/favicon.ico">}}
 {{<favicon "replit.com" "https://replit.com/public/icons/icon-rounded-192x192.png">}}
