@@ -319,3 +319,5 @@ a[href*='https://tobilehman.com']::after { background-image: url("/favicon-16x16
 /* file types */
 a[href*='.pdf']::after { background-image: url("/images/icons/pdf.png"); }
 a[href*='.txt']::after { background-image: url("/images/icons/txt.png"); }
+
+/* auto-generated css caching from css-favicon-append.go

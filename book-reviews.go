@@ -1,3 +1,9 @@
+/* book-reviews.go is a utility program to quickly look up 
+   all my posts with a #book-review tag.
+
+   by Tobi Lehman <mail@tobilehman.com> on 2021-11-21
+ */
+
 package main
 
 import (
