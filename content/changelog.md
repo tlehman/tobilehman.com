@@ -5,6 +5,8 @@ date: 2021-12-09T09:15:10-08:00
 
 ### February 2022
 
+- 2022-03-19
+	- Wrote about [Moving to SUSE](/posts/moving-to-suse)
 - 2022-02-16
     - Added [lcp-0.5.pdf](/pdf/lcp-0.5.pdf), I worked out the ray tracing math and reorganized the text to make the document flow better.
 - 2022-02-13

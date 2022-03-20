@@ -320,4 +320,8 @@ a[href*='https://tobilehman.com']::after { background-image: url("/favicon-16x16
 a[href*='.pdf']::after { background-image: url("/images/icons/pdf.png"); }
 a[href*='.txt']::after { background-image: url("/images/icons/txt.png"); }
 
-/* auto-generated css caching from css-favicon-append.go
+/* auto-generated css caching from css-favicon-append.go */
+a[href*='suse.com']::after { background-image: url("/images/icons/suse.ico"); }
+a[href*='harvesterhci.io']::after { background-image: url("/images/icons/harvester.ico"); }
+a[href*='kubernetes.io']::after { background-image: url("/images/icons/k8s.png"); }
+a[href*='golang.org']::after { background-image: url("/images/icons/go.ico"); }

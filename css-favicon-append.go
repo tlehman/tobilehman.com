@@ -70,43 +70,41 @@ func appendToCss(icourlp *url.URL, nick string, ext string) {
 	}
 	// open the current custom-$DATE.css file
 	currentFilename := files[0]
-	file, err := os.OpenFile(currentFilename, os.O_APPEND, 0600)
+	cssFile, err := os.OpenFile(currentFilename, os.O_APPEND | os.O_RDWR, 0660)
 	if err != nil {
 		log.Fatal(err)
 		os.Exit(1)
 	}
 	// format the line to append
 	cssline := fmt.Sprintf(
-		"a[href*='%s']::after { background-image: url(\"/images/icons/%s.%s\"); }",
+		"a[href*='%s']::after { background-image: url(\"/images/icons/%s.%s\"); }\n",
 		icourlp,
 		nick,
 		ext,
 	)
 	// append the line to the file
 	fmt.Printf("Writing %s to %s\n", cssline, currentFilename);
-	file.WriteString(cssline)
-	defer file.Close()
+	cssFile.WriteString(cssline)
+	cssFile.Close()
 	now := time.Now()
-	newFilename := fmt.Sprintf(
-		"custom-%d-%02d-%02d.css",
-		now.Year(),
-		now.Month(),
-		now.Day(),
-	)
-	// rename file to current-$TODAY.css (to invalidate browser caches)
-	os.Rename(currentFilename, newFilename)
+	newShortFilename := fmt.Sprintf("custom-%d-%02d-%02d.css", now.Year(), now.Month(), now.Day()) 
+	newFilename := fmt.Sprintf("static/css/%s", newShortFilename)
 	// find index of currentFilename in head.html
 	content, err := os.ReadFile("./layouts/partials/head.html")
-	startIndex := int64(strings.Index(string(content), currentFilename))
+	shortFilename := strings.Split(currentFilename, "/")[2]
+	startIndex := int64(strings.Index(string(content), shortFilename))
     // point head.html to new file
-	file, err = os.OpenFile("./layouts/partials/head.html", os.O_RDWR, 0644)
+	headFile, err := os.OpenFile("./layouts/partials/head.html", os.O_RDWR, 0644)
 	if err != nil {
 		log.Fatal(err)
 		os.Exit(1)
 	}
-	defer file.Close()
-	file.Seek(startIndex, 0)
-	file.Write([]byte(newFilename))
+	headFile.Seek(startIndex, 0)
+	headFile.Write([]byte(newShortFilename))
+	headFile.Close()
+
+	// rename file to current-$TODAY.css (to invalidate browser caches)
+	os.Rename(currentFilename, newFilename)
 }
 
 func parseUrlAndGetExt(ico string) (*url.URL, string) {
