@@ -325,3 +325,4 @@ a[href*='suse.com']::after { background-image: url("/images/icons/suse.ico"); }
 a[href*='harvesterhci.io']::after { background-image: url("/images/icons/harvester.ico"); }
 a[href*='kubernetes.io']::after { background-image: url("/images/icons/k8s.png"); }
 a[href*='golang.org']::after { background-image: url("/images/icons/go.ico"); }
+a[href*='openwrt.org']::after { background-image: url("/images/icons/openwrt.ico"); }
