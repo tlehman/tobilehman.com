@@ -1,5 +1,5 @@
 +++
-title = "Dapper Build tool: consist builds with docker"
+title = "Dapper Build tool: consistent builds with docker"
 date = 2022-03-29T13:47:55-07:00
 tags = ["docker", "containers", "immutability", "programming", "go"]
 +++
