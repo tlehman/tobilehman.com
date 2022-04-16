@@ -59,7 +59,7 @@ func download(icourlp *url.URL, nick string, ext string) {
 	}
 }
 
-func appendToCss(icourlp *url.URL, nick string, ext string) {
+func appendToCss(url string, nick string, ext string) {
 	// find the current custom-$DATE.css file
 	files, err := filepath.Glob("./static/css/custom-*.css")
 	if err != nil {
@@ -78,7 +78,7 @@ func appendToCss(icourlp *url.URL, nick string, ext string) {
 	// format the line to append
 	cssline := fmt.Sprintf(
 		"a[href*='%s']::after { background-image: url(\"/images/icons/%s.%s\"); }\n",
-		icourlp,
+		url,
 		nick,
 		ext,
 	)
@@ -123,10 +123,10 @@ func main() {
 		usage()
 		os.Exit(1)
 	}
-	//_url := os.Args[1]
+	url := os.Args[1]
 	ico := os.Args[2]
 	nick := os.Args[3]
 	icourlp, ext := parseUrlAndGetExt(ico)
 	download(icourlp, nick, ext)
-	appendToCss(icourlp, nick, ext)
+	appendToCss(url, nick, ext)
 }
