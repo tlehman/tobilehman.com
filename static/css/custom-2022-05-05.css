@@ -328,3 +328,4 @@ a[href*='golang.org']::after { background-image: url("/images/icons/go.ico"); }
 a[href*='openwrt.org']::after { background-image: url("/images/icons/openwrt.ico"); }
 a[href*='media.mit.edu']::after { background-image: url("/images/icons/mitmedia.ico"); }
 a[href*='9p.io']::after { background-image: url("/images/icons/plan9.gif"); }
+a[href*='google.com']::after { background-image: url("/images/icons/google.ico"); }

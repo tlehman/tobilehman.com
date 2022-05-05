@@ -5,6 +5,8 @@ date: 2021-12-09T09:15:10-08:00
 
 ### February 2022
 
+- 2022-05-05
+	- Wrote about [Wildcard TLS certs for your LAN](/posts/wildcard-tls-certs-for-your-lan)
 - 2022-03-29
 	- Wrote about [Dapper build tool](/posts/dapper-build-consistent)
 - 2022-03-19
