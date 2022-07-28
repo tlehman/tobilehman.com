@@ -1,7 +1,7 @@
 +++
 title = "Cybernetics in the Age of the Cloud"
 date = 2022-04-15T19:04:54-07:00
-tags = ["cybernetics", "control-theory", "cloud-computing", "kubernetes"]
+tags = ["cybernetics", "control-theory", "cloud-computing", "k8s"]
 card = "https://tobilehman.com/posts/cybernetics-age-of-cloud/img/cloud-cybernetics.png"
 +++
 
