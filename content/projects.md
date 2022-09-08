@@ -2,6 +2,8 @@
 title: "Projects"
 ---
 
+A Kubernetes controller to enable PCI passthrough for VMs: https://github.com/tlehman/harvester
+
 An experiment in classical physics simulation and rendering (WIP) [lcp](https://github.com/tlehman/literate-classical-physics).
 
 For converting from Unix Epoch Time to ISO 8601-_ish_ date strings, I wrote [Unix Epoch Time](/epoch)
