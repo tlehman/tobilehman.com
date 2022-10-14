@@ -1,0 +1,12 @@
+
+<p>
+    <ul>
+        {{ range (where .Site.Pages "Section" "posts") }}
+            {{ if ne .Title "Posts" }}
+			  {{ if in .Params.tags "book-review" }}
+              <li><a href="{{ .Permalink }}">{{ .Title }}</a> ({{ .Date.Year }}-{{ .Date.Month }}-{{ .Date.Day }})</li>
+              {{ end }}
+            {{ end }}
+        {{ end }}
+    </ul>
+</p>

@@ -1,7 +1,7 @@
 <p>
     <h3>Recent Posts</h3>
     <ul>
-        {{ range (where .Site.Pages "Section" "posts" | first 5) }}
+        {{ range (where .Site.Pages "Section" "posts" | first 6) }}
             {{ if ne .Title "Posts" }}
             <li><a href="{{ .Permalink }}">{{ .Title }}</a> ({{ .Date.Year }}-{{ .Date.Month }}-{{ .Date.Day }})</li>
             {{ end }}

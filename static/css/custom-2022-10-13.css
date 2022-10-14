@@ -330,3 +330,5 @@ a[href*='media.mit.edu']::after { background-image: url("/images/icons/mitmedia.
 a[href*='9p.io']::after { background-image: url("/images/icons/plan9.gif"); }
 a[href*='google.com']::after { background-image: url("/images/icons/google.ico"); }
 a[href*='raspberrypi.org']::after { background-image: url("/images/icons/raspberrypi.png"); }
+a[href*='http://www.thenightshirt.com']::after { background-image: url("/images/icons/thenightshirt.ico"); }
+a[href*='https://www.cia.gov']::after { background-image: url("/images/icons/cia.png"); }
