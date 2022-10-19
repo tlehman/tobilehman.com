@@ -311,6 +311,8 @@ a[href*='supportblackowned.com']::after { background-image: url("/images/icons/s
  
  }
 
+
+a.tag{ color: lightgray; }
 /** end timeline styles **/
 
 /* internal link styles */
@@ -332,3 +334,4 @@ a[href*='google.com']::after { background-image: url("/images/icons/google.ico")
 a[href*='raspberrypi.org']::after { background-image: url("/images/icons/raspberrypi.png"); }
 a[href*='http://www.thenightshirt.com']::after { background-image: url("/images/icons/thenightshirt.ico"); }
 a[href*='https://www.cia.gov']::after { background-image: url("/images/icons/cia.png"); }
+a[href*='kubevirt.io']::after { background-image: url("/images/icons/kubevirt.png"); }

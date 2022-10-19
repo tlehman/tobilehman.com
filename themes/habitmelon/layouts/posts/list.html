@@ -1,14 +1,17 @@
 {{ define "main" }}
+  <ul>
   {{ range .Pages }}
-    {{ .Render "summary" }}
+    <li>
+      {{ .Date.Format "2006-01-02" }} <a href="{{ .Permalink }}">{{ .Title }}</a>
+      <span>
+        <div>
+        {{ range .Params.Tags }}
+        <a href="/tags/{{.}}" class="tag">#{{.}}</a>
+        {{ end }}
+        </div>
+      </span>
+    </li>
   {{ end }}
-
-<script>
-  const listItems = [
-  {{ range .Pages }}
-    {{ .Permalink }} ,
-  {{ end }}
-];
-</script>
+  </ul>
 {{ end }}
 
