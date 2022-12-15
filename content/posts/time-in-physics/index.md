@@ -28,7 +28,7 @@ In this model, it's possible to define simultaneity between any two points in sp
 
 In 1750, less than 100 years later, Benjamin Franklin discovers that lightning is made of electricity, and invents the lightning rod. Soon after, a man named Hans Christian &Oslash;rsted discovered that electricity can create magnetic fields. Throughout the 18th and 19th centuries, people tinkered with electricity and magnetism, building on &Oslash;rsted's discoveries, and discovered the rules that govern those two intertwined forces. The Scotsman James Clerk Maxwell was like Euclid, a unifier who took the existing body of knowledge that existed scattered around and summarized it all in a set of four equations:
 1. Gauss's Law ([deep-dive explanation](/posts/gauss-law))
- $$\nabla \cdot \boldsymbol{e} = 4 \pi \rho$$
+ $$\nabla \cdot \boldsymbol{E} = 4 \pi \rho$$
 
 2. Gauss's Law for magnetism ([deep-dive explanation](/posts/gauss-law-magnetism)):
  $$\nabla \cdot \boldsymbol{B} = 0$$
