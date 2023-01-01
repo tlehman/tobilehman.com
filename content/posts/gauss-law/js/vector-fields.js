@@ -58,23 +58,41 @@ function d(v, vf) {
     return Math.sqrt(dx*dx + dy*dy + dz*dz);
 }
 
-const vn = 5; // number of vectors along a dimension
-const vectors = [];
+const π = Math.PI;
+const k = 10;
+const r_max = 100;
+const m = 5;
+const sin = Math.sin;
+const cos = Math.cos;
 const hex = 0xffff00;
-for(var x = -vn/2; x < vn/2; x += 0.25) {
-    for(var y = -vn/2; y < vn/2; y += 0.25) {
-        for(var z = -vn/2; z < vn/2; z += 0.25) {
-            var v = new THREE.Vector3(x,y,z);
-            vectors.push(v);
-            var vf = vectorField(v);
-            var df = 0.1;
-            vf.normalize();
-            const arrow = new THREE.ArrowHelper(vf, v, df, 16776960-Math.floor(df));
-            scene.add(arrow);
-        }
+// Sweep around a circle, plotting k equidistant points
+for(var θ = 0; θ < 2*π; θ+=2*π/k) {
+  // Sweep around a circle, plotting k equidistant points
+  for(var ϕ = 0; ϕ < 2*π; ϕ+=2*π/k) {
+    // Radiate out from the center, plotting m points
+    for(var r = 0.01; r < r_max; r += r_max/m) {
+      // Compute (x,y,z) from (θ,ϕ,r)
+      var x = r*sin(θ)*cos(ϕ);
+      var y = r*sin(θ)*sin(ϕ);
+      var z = r*cos(θ);
+      // Compute E(x,y,z) at (x,y,z)
+      var Ex = 1/(r*r);
+      var Ey = 1/(r*r);
+      var Ez = 1/(r*r);
+      // Create vectors v1=(0,0,0) and v2=(Ex,Ey,Ez)
+      var v1 = new THREE.Vector3(0,0,0);
+      var v2 = new THREE.Vector3(Ex,Ey,Ez);
+      var dir = new THREE.Vector3();
+      dir.subVectors(v2, v1);
+      dir.normalize();
+      // Render the direction vector at (x,y,z)
+      var arr = new THREE.ArrowHelper(dir, v1, 1, hex);
+      scene.add(arr);
+      console.log(`(x,y,z) = (${x},${y},${z}`);
+      console.log(`(Ex,Ey,Ez) = (${Ex},${Ey},${Ez}`);
     }
+  }
 }
-
 
 
 // controls

@@ -1,6 +1,6 @@
 +++
 title = "Understanding Gauss's Law"
-date = 2022-11-15T07:04:00-08:00
+date = 2022-12-19T17:04:00-08:00
 tags = ["math", "physics", "deep-dive"]
 series = "maxwells-equations"
 draft = true
