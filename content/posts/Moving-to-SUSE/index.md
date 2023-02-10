@@ -1,7 +1,7 @@
 +++
 title = "Moving to SUSE"
 date = 2022-03-18T13:13:42-07:00
-tags = ["open-source", "history", "hyperconverged-infrastructure", "linux", "k8s", "kubernetes"]
+tags = ["open-source", "history", "hyperconverged", "linux", "k8s", "kubernetes"]
 card = "https://tobilehman.com/posts/moving-to-suse/img/suse-9.0.png"
 +++
 

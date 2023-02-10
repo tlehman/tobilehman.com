@@ -1,7 +1,7 @@
 +++
 title = "PCI Device passthrough on Harvester"
 date = 2022-10-17T14:33:01-07:00
-tags = ["pci", "gpu", "vm", "open-source", "hyperconverged-infrastructure", "linux", "kubernetes", "vfio", "deep-dive"]
+tags = ["pci", "gpu", "vm", "open-source", "hyperconverged", "linux", "kubernetes", "vfio", "deep-dive"]
 card = "https://tobilehman.com/posts/suse-harvester-pci/img/harvester-gpu.png"
 +++
 
