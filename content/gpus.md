@@ -2,8 +2,15 @@
 title: "Notes on GPU Programming"
 date: 2021-09-14T07:06:08-07:00
 ---
-
 <i>These notes are <a href="https://developer.nvidia.com/cuda-toolkit">CUDA</a>-specific</i>
+
+# Table of Contents 
+- [Introduction](#introduction)
+- [Blocks versus Threads](#blocks-vs-threads)
+- [Shared Memory](#shared-memory)
+- [CUDA C](#cuda-c)
+
+## Introduction
 
 Programming using a GPU requires thinking in two memory spaces. There's the `host` and the `device`. The host is powered by your CPU. Your CPU is very clever, has lots of tricks like [speculative execution](https://en.wikipedia.org/wiki/Speculative_execution). The device is powered by the GPU. The GPU is not as clever, but it is built for problems that can be broken up into lots of parallel subproblems.
 
@@ -29,3 +36,19 @@ And finally, use the special CUDA C syntax to launch your C function on the GPU 
 There are problems that are not embarassingly parallel, like training a neural network, but they can still benefit from parallelization on a GPU.
 
 TODO: illustrate how backpropagation works and how it uses CUDA to accelerate the computation.
+## Blocks vs Threads
+
+The CUDA programming model breaks everything up in to blocks and threads. Blocks contain many threads.
+
+Each block has many threads. The GPU has many SMs (Streaming multiprocessors)
+
+A block is assigned to an available SM, and it runs all the threads until it completes.
+
+(image below taken from this [official NVIDIA CUDA C programming guide](https://developer.download.nvidia.com/compute/DevZone/docs/html/C/doc/CUDA_C_Programming_Guide.pdf))
+![](/images/gpu/blocks-threads.png)
+
+Different NVIDIA Cards have different numbers of SMs.
+
+# Shared Memory
+
+# CUDA C

@@ -2,7 +2,7 @@ baseURL = "https://tobilehman.com"
 languageCode = "en-us"
 title = "tobilehman.com:~"
 theme = "habitmelon"
-copyright = "Copyright 2010-2022 Tobi Lehman. All rights reserved."
+copyright = "Copyright 2010-2023 Tobi Lehman. All rights reserved."
 
 [taxonomies]
   tag = "tags"
