@@ -335,3 +335,4 @@ a[href*='raspberrypi.org']::after { background-image: url("/images/icons/raspber
 a[href*='http://www.thenightshirt.com']::after { background-image: url("/images/icons/thenightshirt.ico"); }
 a[href*='https://www.cia.gov']::after { background-image: url("/images/icons/cia.png"); }
 a[href*='kubevirt.io']::after { background-image: url("/images/icons/kubevirt.png"); }
+a[href*='apple.com']::after { background-image: url("/images/icons/apple.ico"); }

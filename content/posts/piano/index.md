@@ -1,7 +1,7 @@
 +++
 title = "Piano  ♪"
 date = 2020-01-21T19:37:48-08:00
-tags = ["music", "programming", "hobby", "digital-audio"]
+tags = ["music", "programming", "hobby", "audio"]
 +++
  
 To start the decade off right, I decided to learn the piano. I am paying for lessons from [Ethan Maier](https://www.ethanmaier.com/about), he's excellent, I've been enjoying learning from him and practicing.
