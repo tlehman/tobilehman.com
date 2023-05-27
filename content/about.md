@@ -11,7 +11,7 @@ I am an experienced software engineer with a background in math.
 
 I studied mathematics and computer science at [PSU](https://pdx.edu). 
 
-I currently work at [Apple](https://apple.com) as a contractor, working on network optimization using the [ServiceTalk](https://github.com/apple/servicetalk) Java library.
+I currently work at [Apple](https://apple.com) as a contractor, working on network optimization using the [ServiceTalk](https://github.com/apple/servicetalk) Java framework.
 
 
 ### Some notable things I did
