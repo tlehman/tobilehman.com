@@ -1,7 +1,7 @@
 +++
 title = "Fourier's Finches: A Primer on Digital Audio"
 date = 2023-05-26T15:06:48-07:00
-tags = ["deep-dive", "audio", "birds", "compression", "time"]
+tags = ["deep-dive", "audio", "birds", "compression", "time", "fourier"]
 card = "https://tobilehman.com/posts/fouriers-finches/img/finch.png"
 +++
 

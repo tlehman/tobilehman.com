@@ -1,7 +1,7 @@
 +++
 title = "Lossy Image Compression"
 date = 2018-11-30T19:27:47-08:00
-tags = ["compression", "deep-dive", "interactive"]
+tags = ["compression", "deep-dive", "interactive", "fourier"]
 draft = false
 +++
 
