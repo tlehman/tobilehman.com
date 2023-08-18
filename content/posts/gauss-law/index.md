@@ -1,6 +1,6 @@
 +++
 title = "Understanding Gauss's Law"
-date = 2022-12-19T17:04:00-08:00
+date = 2023-08-11T16:04:00-08:00
 tags = ["math", "physics", "deep-dive"]
 series = "maxwells-equations"
 draft = true
@@ -21,10 +21,5 @@ $$\boldsymbol{E} : \mathbb{R}^3 \to \mathbb{R^3}$$
 
 Another way to think about this is if you have a coordinate system and the point \\((x,y,z)\\), then \\(\boldsymbol{E}(x,y,z)\\) is the electric force vector at that point in space
 
-<script src="/js/three.min.js"></script>
-
-<div id="vector-fields"></div>
-<script src="./js/trackball-controls.js"></script>
-<script src="./js/vector-fields.js"></script>
 
 Backlink: [Time in Physics](/posts/time-in-physics)
