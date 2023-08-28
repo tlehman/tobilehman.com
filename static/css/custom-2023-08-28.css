@@ -336,3 +336,4 @@ a[href*='http://www.thenightshirt.com']::after { background-image: url("/images/
 a[href*='https://www.cia.gov']::after { background-image: url("/images/icons/cia.png"); }
 a[href*='kubevirt.io']::after { background-image: url("/images/icons/kubevirt.png"); }
 a[href*='apple.com']::after { background-image: url("/images/icons/apple.ico"); }
+a[href*='perforce.com']::after { background-image: url("/images/icons/perforce.ico"); }
